@@ -1,0 +1,90 @@
+@media all and (min-width: 1696px) {
+  .container {
+    padding-right: 158px;
+    padding-left: 158px;
+  }
+
+  .header__container {
+    padding-top: 15px;
+    padding-bottom: 19px;
+  }
+
+  .header-logo {
+    padding-top: 2px;
+  }
+
+  .header-nav {
+    width: 80%;
+  }
+
+  .header__login {
+    margin-right: 0;
+    padding-top: 1px;
+    padding-left: 18px;
+    padding-right: 0;
+    background-position: center left;
+  }
+
+  .header-nav__item {
+    margin-right: 50px;
+  }
+
+  .header-nav__item:first-child {
+    margin-right: 0;
+    margin-left: 100px;
+  }
+
+  .header-nav__link {
+    padding: 0 6px;
+  }
+
+  .header-nav__list {
+    justify-content: flex-end;
+  }
+
+  .header-submenu__container {
+    padding-top: 24px;
+    padding-bottom: 13px;
+  }
+
+  .header-submenu__item {
+    margin-right: 95px;
+  }
+
+  .search-form__wrap {
+    padding: 5px 0;
+  }
+
+  .search-form__text {
+    position: relative;
+    padding-left: 0;
+    width: 218px;
+  }
+
+  .search-form__text::placeholder {
+    padding-top: 10px;
+  }
+
+  .header-submenu__sublist {
+    top: 55px;
+  }
+
+  /*--hero---*/
+
+  .hero__container {
+    padding-left: 155px;
+    padding-bottom: 122px;
+  }
+
+  .hero__desk {
+    margin-top: 17px;
+    margin-bottom: 93px;
+    padding-right: 65%;
+  }
+
+  /*--about--*/
+
+  .about__desk {
+    padding-right: 32%;
+  }
+}

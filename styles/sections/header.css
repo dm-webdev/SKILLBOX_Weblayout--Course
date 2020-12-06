@@ -1,0 +1,215 @@
+.header {
+  /* position: sticky;
+  top: 0;
+  z-index: 10; */
+  background-color: var(--background_dark);
+}
+
+.header__container,
+.header-submenu__container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 11px;
+}
+
+.header-submenu__list {
+  display: none;
+}
+
+.header-logo {
+  order: 2;
+  margin-left: 2px;
+  object-fit: cover;
+  font-size: 0;
+  line-height: 0;
+}
+
+.header-logo__picture {
+  width: 97px;
+}
+
+.header-nav {
+  order: 1;
+  display: flex;
+}
+
+.header-nav__burger {
+  position: relative;
+  border: none;
+  width: 15px;
+  height: 2px;
+  background-color: var(--text_light);
+  transition: outline .2s, filter .2s;
+}
+
+.header-nav__burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+  width: 20px;
+  height: 2px;
+  background-color: var(--text_light);
+  transition: outline .2s, filter .2s;
+}
+
+.header-nav__burger::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 13px;
+  height: 2px;
+  background-color: var(--text_light);
+  transition: outline .2s, filter .2s;
+}
+
+.search-form__open:focus,
+.header-nav__burger:focus,
+.header-nav__burger:focus.header-nav__burger::after,
+.header-nav__burger:focus.header-nav__burger::before {
+  outline: 2px solid var(--background_btn);
+}
+
+.search-form__open:active,
+.header-nav__burger:active,
+.header-nav__burger:active.header-nav__burger::after,
+.header-nav__burger:active.header-nav__burger::before {
+  outline: 2px solid var(--text_light);
+  filter: invert(30%) sepia(35%) saturate(1393%) hue-rotate(234deg) brightness(98%) contrast(91%);
+}
+
+.header-nav__list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 10px 20px;
+  max-width: 320px;
+  border: 1px solid var(--background_dark);
+  font-weight: 600;
+  color: var(--text_light);
+  background: var(--background_dark);
+  transform: translateX(-120%);
+  transition: transform 0.5s;
+}
+
+.header-nav__list_show {
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.header-nav__link {
+  display: block;
+  padding: 5px 23px;
+}
+
+.header-nav__item:first-child {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+}
+
+.header__login {
+  margin-right: 30px;
+  padding-left: 15px;
+  padding-right: 5px;
+  background-image: url('../../pictures/header/logIn.svg');
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+}
+
+.header-nav__hide-btn {
+  padding: 8px;
+  border: none;
+  background-color: inherit;
+  background-image: url('../../pictures/header/close.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.search-form__open {
+  order: 3;
+  padding: 8px;
+  border: none;
+  background-color: inherit;
+  background-image: url('../../pictures/header/search.svg');
+  background-position: center;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  transition: outline .2s, filter .2s;
+}
+
+.header-submenu {
+  position: absolute;
+  z-index: 50;
+  top: -10px;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  background: var(--background_dark);
+  transform: translateY(-120%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.header-submenu_show {
+  transform: translateY(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-form__wrap {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 15px;
+  width: 70vw;
+}
+
+.search-form__text {
+  padding-bottom: 0;
+  width: 60%;
+  line-height: 15px;
+  border: none;
+  border-bottom: 1px solid var(--text_light);
+  color: var(--text_light);
+  background-color: inherit;
+}
+
+.search-form__text::placeholder {
+  color: var(--text_light);
+}
+
+.search-form__clean {
+  margin-left: 10px;
+  padding: 8px;
+  border: none;
+  background-color: inherit;
+  background-image: url("../../pictures/header/close.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}
+
+.search-form__start {
+  margin-right: 5px;
+  padding: 10px;
+  border: none;
+  background-color: inherit;
+  background-image: url('../../pictures/header/search.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}

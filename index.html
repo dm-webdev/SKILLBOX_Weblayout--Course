@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanchard - художественная галерея</title>
+
+  <link rel="preload" href="fonts/OpenSans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+  
+  <link rel="stylesheet" href="styles/modules/simplebar.css">
+
+  <link rel="stylesheet" href="styles/common/fonts.css">
+  <link rel="stylesheet" href="styles/common/normalize.css">  
+  <link rel="stylesheet" href="styles/common/style.css">
+  <link rel="stylesheet" href="styles/common/hover.css">
+
+  <link rel="stylesheet" href="styles/sections/header.css">
+  <link rel="stylesheet" href="styles/sections/hero.css">
+  <link rel="stylesheet" href="styles/sections/about.css">
+
+  <link rel="stylesheet" href="styles/adaptation/min768.css">
+  <link rel="stylesheet" href="styles/adaptation/min1024.css">
+  <link rel="stylesheet" href="styles/adaptation/min1224.css">
+  <link rel="stylesheet" href="styles/adaptation/min1696.css">
+  <link rel="stylesheet" href="styles/adaptation/min1920.css">
+
+
+  <script src="scripts/modules/simplebar-min.js" defer></script>
+  <script src="scripts/modules/inert.js" defer></script>
+  <script src="scripts/js/menu.js" defer></script>
+  <script src="scripts/js/search.js" defer></script>
+  <script src="scripts/js/submenu.js" defer></script>
+
+
+
+</head>
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a class="header-logo link_style" href="#">
+        <img class="header-logo__picture" src="pictures/header/logo.svg" alt="Blanchard - художественная галерея" />
+      </a>       
+
+      <nav class="header-nav">
+        <button class="header-nav__burger" aria-hidden="открыть меню"></button>
+
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a class="header__login link_style" href="#">Войти</a>
+
+            <button class="header-nav__hide-btn link_style" type="button" aria-label="скрыть меню"></button>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link link_style">О нас</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link link_style">Галерея</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link link_style">Каталог</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link link_style">События</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link link_style">Издания</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link link_style">Проекты</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link link_style">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <button class="search-form__open" type="button" aria-hidden="открыть поиск по сайту"></button>      
+    </div>
+    
+    <div class="header-submenu">
+      <div class="header-submenu__container container">
+        <ul class="header-submenu__list">
+        <li class="header-submenu__item">
+          <button class="header-submenu__btn link_style header-submenu__btn_style" type="button">Реализм</button>
+
+          <ul class="header-submenu__sublist display" data-simplebar>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Реализм-1</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Реализм-2</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Реализм-3</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Реализм-4</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Реализм-5</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header-submenu__item">
+          <button class="header-submenu__btn link_style header-submenu__btn_style" type="button">Импрессионизм</button>
+          
+          <ul class="header-submenu__sublist display" data-simplebar>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Импрессионизм-1</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Импрессионизм-2</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Импрессионизм-3</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Импрессионизм-4</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Импрессионизм-5</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header-submenu__item">
+          <button class="header-submenu__btn link_style header-submenu__btn_style" type="button">Постимпрессионизм</button>
+          
+          <ul class="header-submenu__sublist display" data-simplebar>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Постимпрессионизм-1</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Постимпрессионизм-2</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Постимпрессионизм-3</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Постимпрессионизм-4</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Постимпрессионизм-5</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header-submenu__item">
+          <button class="header-submenu__btn link_style header-submenu__btn_style" type="button">Авангард</button>
+          
+          <ul class="header-submenu__sublist display" data-simplebar>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Авангард-1</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Авангард-2</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Авангард-3</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Авангард-4</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Авангард-5</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header-submenu__item">
+          <button class="header-submenu__btn link_style header-submenu__btn_style" type="button">Футуризм</button>
+          
+          <ul class="header-submenu__sublist display" data-simplebar>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Футуризм-1</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Футуризм-2</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Футуризм-3</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Футуризм-4</a>
+            </li>
+            <li class="header-submenu__subitem">
+              <a href="#" class="header-submenu__link">Футуризм-5</a>
+            </li>
+          </ul>
+        </li>
+        </ul>
+
+        <form class="search-form">          
+          <div class="search-form__wrap">
+            <button class="search-form__start link_style" type="submit" aria-label="начать поиск"></button>
+
+            <input class="search-form__text input_style" type="text" placeholder="Поиск по сайту" aria-label="введите фразу для поиска по сайту" autofocus>
+
+            <button class="search-form__clean link_style" type="button" aria-label="отменить поиск"></button>          
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden start__anime">Blanchard - художественная галерея</h1>
+
+    <section class="hero">
+      <div class="container hero__container">
+        <h2 class="hero__heading">Прикоснитесь к&nbsp;прекрасному</h2>
+
+        <p class="hero__desk">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+
+        <a class="hero__link" href="#">Подписаться на рассылку</a>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container about__container">
+        <h2 class="about__heading section_heading">О нас</h2>
+
+        <p class="about__desk">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а&nbsp;значит, должны быть разоблачены.</p>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <p class="about__desk">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
+    <p class="about__desk">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
+    <p class="about__desk">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
+    <p class="about__desk">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
+    <p class="about__desk">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
+    <p class="about__desk">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
+    <p class="about__desk">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
+    <p class="about__desk">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
+    <p class="about__desk">Также как жопа планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта жопа повышению качества экспериментов.</p> -->
+  </main>
+
+
+ 
+  
+</body>
+</html>
