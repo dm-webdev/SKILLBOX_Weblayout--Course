@@ -87,4 +87,24 @@
   .about__desk {
     padding-right: 32%;
   }
+
+  .swiper-wrapper {
+    height: 750px;
+    width: 1150px;
+  }
+
+  .swiper-slide {
+    height: 350px;
+    width: 350px;
+  }
+
+  .gallery__showroom {
+    width: 1150px;
+  }
+
+  .gallery__container {
+    height: 995px;
+  }
+
+  
 }

@@ -8,6 +8,16 @@
   filter: invert(30%) sepia(35%) saturate(1393%) hue-rotate(234deg) brightness(98%) contrast(91%);
 }
 
+.link_underline {
+  transition: filter .2s, underline .2s;
+}
+
+.link_underline:active,
+.link_underline:focus {
+  text-decoration: underline;
+  outline: 2px solid var(--background_btn);
+}
+
 .input_style {
   transition: outline .2s;
 }
@@ -51,5 +61,9 @@
 
   .hero__link:hover {
     border: 3px solid var(--background_btn_active);
+  }
+  
+  .link_underline:hover {
+    text-decoration: underline;
   }
 }

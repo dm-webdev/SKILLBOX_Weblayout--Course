@@ -1,0 +1,44 @@
+.modal__wrap {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: scroll;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal__picture__wrap {
+  position: relative;
+  display: flex;
+  max-height: 95vh;
+  object-fit: cover;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 2.5vh;
+  right: 0;
+  padding: 15px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: url('../../pictures/header/close.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.modal__img {
+  display: flex;
+  margin-top: 2.5vh;
+}
+
+.modal__desc {
+  margin-top: 2em;
+  font-weight: 500;
+  color: var(--text_light);
+}

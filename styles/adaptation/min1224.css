@@ -132,7 +132,7 @@
     position: relative;
     padding: 5px 18px 5px 0;
     outline: none;
-    border: none;    
+    border: none;
     color: var(--text_light);
     background: inherit;
     background-image: url('../../pictures/header/arrow_submenu.svg');
@@ -142,25 +142,26 @@
   }
 
   .header-submenu__sublist {
-    position: absolute;    
+    position: absolute;
     overflow-y: auto;
     top: 63px;
     left: -42px;
     padding: 30px;
     width: 300px;
     height: 300px;
-    background: rgba(0, 0, 0, 0.4);    
-    animation: show  .4s ease-in-out;
-  }
-
-  .display {
-    display: none;
+    background: rgba(0, 0, 0, 0.4);
+    animation: show .4s ease-in-out;
   }
 
   @keyframes show {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+      opacity: 0;
     }
+
+    to {
+      opacity: 1;
+    }
+  }
 
   .header-submenu__link {
     display: block;
@@ -183,7 +184,7 @@
     background: var(--background_dark);
     border-color: var(--background_dark);
   }
-  
+
   .simplebar-scrollbar:before {
     background: var(--background_dark);
   }
@@ -206,8 +207,76 @@
   .hero__heading {
     padding-right: 35%;
   }
-  
+
   .hero__desk {
     padding-right: 35%;
   }
+
+  /*gallery*/
+
+  .choices:hover {
+    box-shadow: 0 0 15px var(--background_btn_active);
+  }
+
+  .gallery__btn:hover.gallery__btn::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+  }
+
+  .gallery__btn:hover.gallery__btn::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    margin: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("../../pictures/gallery/magnifier.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 81px 79px;
+  }
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    outline: none;
+    background: var(--background_btn_hover);
+    border: 2px solid var(--background_btn_hover);
+  }
+
+  .gallery__controls,
+  .gallery__note {
+    width: 400px;
+  }
+
+  /*katalog*/
+
+  .katalog__group:hover .katalog__group__desc {
+    color: var(--background_btn);
+  }
+
+  .katalog__group:hover.katalog__group::after {
+    background-color: var(--background_btn);
+    border: 2px solid var(--background_btn);
+  }
+
+  .katalog__group:hover.katalog__group::before {
+    border-color: var(--text_light) var(--text_light) transparent transparent;
+  }
+
+  .katalog__group:active.katalog__group::after {
+    background-color: var(--background_btn_hover);
+    border: 2px solid var(--background_btn_active);
+  }
+
+  .katalog__link:hover {
+    color: var(--background_btn);
+    text-decoration: underline;
+  }
+
 }

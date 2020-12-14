@@ -2,39 +2,63 @@
   .header-nav__item:first-child {
     margin-left: 223px;
   }
- 
+
   .hero {
     background-image: url("../../pictures/hero/xl/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-xl@x1-min.jpg");
   }
-    
+
   @keyframes background-img {
     0% {
       background-image: url("../../pictures/hero/xl/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-xl@x1-min.jpg");
       background-size: 100% 100%;
     }
-  
+
     17% {
       background-image: url("../../pictures/hero/xl/birmingham-museums-trust-MK_98NuC4-4-unsplash_2-xl@x1-min.jpg");
     }
-  
+
     50% {
       background-image: url("../../pictures/hero/xl/birmingham-museums-trust-MK_98NuC4-4-unsplash_3-xl@x1-min.jpg");
       background-size: 120% 120%;
     }
-  
+
     83% {
       background-image: url("../../pictures/hero/xl/birmingham-museums-trust-MK_98NuC4-4-unsplash_2-xl@x1-min.jpg");
     }
-  
+
     100% {
       background-image: url("../../pictures/hero/xl/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-xl@x1-min.jpg");
       background-size: 100% 100%;
     }
   }
 
+  /*--katalog--*/
+
+  .katalog__countries {
+    margin-left: 42px;
+    margin-bottom: 7px;
+  }
+
+  .kontainer__remark {
+    padding-right: 31%;
+  }
+
+  .katalog__desc {
+    max-width: 46.9%;
+  }
+
+  .katalog__subitem {
+    width: 33.3%;
+  }
+
+  .katalog__sublist {
+    max-height: 341px;
+  }
 }
 
-@media screen and (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1920px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 754px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 1920px) and (-o-min-device-pixel-ratio: 2/1),
+screen and (min-width: 754px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../../pictures/hero/xl/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-xl@x2-min.jpg");
   }
@@ -44,20 +68,20 @@
       background-image: url("../../pictures/hero/xl/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-xl@x2-min.jpg");
       background-size: 100% 100%;
     }
-  
+
     17% {
       background-image: url("../../pictures/hero/xl/birmingham-museums-trust-MK_98NuC4-4-unsplash_2-xl@x2-min.jpg");
     }
-  
+
     50% {
       background-image: url("../../pictures/hero/xl/birmingham-museums-trust-MK_98NuC4-4-unsplash_3-xl@x2-min.jpg");
       background-size: 120% 120%;
     }
-  
+
     83% {
       background-image: url("../../pictures/hero/xl/birmingham-museums-trust-MK_98NuC4-4-unsplash_2-xl@x2-min.jpg");
     }
-  
+
     100% {
       background-image: url("../../pictures/hero/xl/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-xl@x2-min.jpg");
       background-size: 100% 100%;
@@ -65,7 +89,9 @@
   }
 }
 
-@media screen and (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1920px) and (-o-min-device-pixel-ratio: 3/1), screen and (min-width: 754px) and (min-resolution: 3dppx) {
+@media screen and (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 3),
+screen and (min-width: 1920px) and (-o-min-device-pixel-ratio: 3/1),
+screen and (min-width: 754px) and (min-resolution: 3dppx) {
   .hero {
     background-image: url("../../pictures/hero/xl/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-xl@x3-min.jpg");
   }
@@ -75,20 +101,20 @@
       background-image: url("../../pictures/hero/xl/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-xl@x3-min.jpg");
       background-size: 100% 100%;
     }
-  
+
     17% {
       background-image: url("../../pictures/hero/xl/birmingham-museums-trust-MK_98NuC4-4-unsplash_2-xl@x3-min.jpg");
     }
-  
+
     50% {
       background-image: url("../../pictures/hero/xl/birmingham-museums-trust-MK_98NuC4-4-unsplash_3-xl@x3-min.jpg");
       background-size: 120% 120%;
     }
-  
+
     83% {
       background-image: url("../../pictures/hero/xl/birmingham-museums-trust-MK_98NuC4-4-unsplash_2-xl@x3-min.jpg");
     }
-  
+
     100% {
       background-image: url("../../pictures/hero/xl/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-xl@x3-min.jpg");
       background-size: 100% 100%;

@@ -82,19 +82,19 @@
   .hero {
     background-image: url("../../pictures/hero/m/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-m@x1-min.jpg");
   }
-  
+
   .hero__container {
     padding-top: 110px;
     padding-bottom: 114px;
     padding-left: 45px;
   }
-  
+
   .hero__heading {
     font-size: 72px;
     line-height: 84px;
     text-align: left;
   }
-  
+
   .hero__desk {
     margin-top: 12px;
     margin-bottom: 133px;
@@ -104,34 +104,34 @@
     line-height: 30px;
     text-align: left;
   }
-  
+
   .hero__link {
     align-self: flex-start;
     margin-left: 5px;
     padding: 18px 32px 21px 32px;
     font-size: 18px;
     line-height: 25px;
-  }  
-  
+  }
+
   @keyframes background-img {
     0% {
       background-image: url("../../pictures/hero/m/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-m@x1-min.jpg");
       background-size: 100% 100%;
     }
-  
+
     17% {
       background-image: url("../../pictures/hero/m/birmingham-museums-trust-MK_98NuC4-4-unsplash_2-m@x1-min.jpg");
     }
-  
+
     50% {
       background-image: url("../../pictures/hero/m/birmingham-museums-trust-MK_98NuC4-4-unsplash_3-m@x1-min.jpg");
       background-size: 120% 120%;
     }
-  
+
     83% {
       background-image: url("../../pictures/hero/m/birmingham-museums-trust-MK_98NuC4-4-unsplash_2-m@x1-min.jpg");
     }
-  
+
     100% {
       background-image: url("../../pictures/hero/m/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-m@x1-min.jpg");
       background-size: 100% 100%;
@@ -144,19 +144,176 @@
     padding-top: 81px;
     padding-bottom: 53px;
   }
-  
+
   .section_heading {
     font-size: 48px;
     line-height: 65px;
   }
-  
+
   .about__heading {
     margin-bottom: 16px;
   }
-  
+
   .about__desk {
     margin-top: 0;
     padding-top: 0;
+  }
+
+  /*modal*/
+
+  .modal__close-btn {
+    padding: 20px;
+  }
+
+  /*gallery*/
+
+  .gallery {
+    background-image: url("../../pictures/gallery/bgimg/birmingham-museums-trust-mk_98nuc4-4-unsplash-3-m@x1_optimized.jpg");
+  }
+
+  .gallery__container {
+    padding-top: 80px;
+  }
+
+  .gallery__heading {
+    margin-bottom: 16px;
+  }
+
+  .controls__heading {
+    margin-bottom: 10px;
+  }
+
+  .controls {
+    width: 42%;
+  }
+
+  .gallery__controls {
+    margin-bottom: 29px;
+  }
+
+  .swiper-wrapper {
+    height: 594px;
+  }
+
+  .swiper-slide {
+    height: 280px;
+  }
+
+  .gallery__showroom {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 0;
+    bottom: auto;
+  }
+
+  .swiper-button-prev,
+  .swiper-container-rtl .swiper-button-next {
+    left: 0;
+  }
+
+  .swiper-button-next,
+  .swiper-container-rtl .swiper-button-prev {
+    left: 100px;
+  }
+
+  .swiper-pagination-fraction {
+    top: 0;
+    bottom: auto;
+    padding-left: 48px;
+    text-align: left;
+  }
+
+  .gallery__note {
+    margin-top: 31px;
+  }
+
+  /*--katalog--*/
+
+  .katalog__controls {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .katalog__countries {
+    margin-bottom: 0;
+    flex-grow: 1;
+    margin-left: 40px;
+    margin-bottom: 7px;
+  }
+
+  .katalog__custom__btn {
+    padding: 23px;
+    background-size: 46px 46px;
+  }
+
+  .katalog__btn:checked+.katalog__custom__btn::after {
+    width: 58px;
+    height: 58px;
+    top: -6px;
+    left: -6px;
+  }
+
+  .kontainer__remark {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .katalog__list {
+    margin-bottom: 51px;
+  }
+
+  .katalog__group {
+    padding: 38px 0 42px 0;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .katalog__group::after {
+    top: 32px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .katalog__group::before {
+    right: 18px;
+    top: 52px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .katalog__group_active::before {
+    top: 52px;
+  }
+
+  .katalog__sublist {
+    display: flex;
+    flex-flow: column wrap;
+    padding-right: 0px;
+    max-height: 341px;
+  }
+
+  .katalog__subitem {
+    width: 33%;
+  }
+
+  .katalog__subtitle {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .katalog__meta {
+    margin-top: 9px;
+  }
+
+  .katalog__text {
+    padding: 0px 0px 0 0;
   }
 
 }
@@ -167,7 +324,9 @@
 
 
 
-@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 754px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 754px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 754px) and (-o-min-device-pixel-ratio: 2/1),
+screen and (min-width: 754px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../../pictures/hero/m/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-m@x2-min.jpg");
   }
@@ -177,28 +336,34 @@
       background-image: url("../../pictures/hero/m/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-m@x2-min.jpg");
       background-size: 100% 100%;
     }
-  
+
     17% {
       background-image: url("../../pictures/hero/m/birmingham-museums-trust-MK_98NuC4-4-unsplash_2-m@x2-min.jpg");
     }
-  
+
     50% {
       background-image: url("../../pictures/hero/m/birmingham-museums-trust-MK_98NuC4-4-unsplash_3-m@x2-min.jpg");
       background-size: 120% 120%;
     }
-  
+
     83% {
       background-image: url("../../pictures/hero/m/birmingham-museums-trust-MK_98NuC4-4-unsplash_2-m@x2-min.jpg");
     }
-  
+
     100% {
       background-image: url("../../pictures/hero/m/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-m@x2-min.jpg");
       background-size: 100% 100%;
     }
   }
+
+  .gallery {
+    background-image: url("../../pictures/gallery/bgimg/birmingham-museums-trust-mk_98nuc4-4-unsplash-3-m@x2_optimized.jpg");
+  }
 }
 
-@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 754px) and (-o-min-device-pixel-ratio: 3/1), screen and (min-width: 754px) and (min-resolution: 3dppx) {
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 3),
+screen and (min-width: 754px) and (-o-min-device-pixel-ratio: 3/1),
+screen and (min-width: 754px) and (min-resolution: 3dppx) {
   .hero {
     background-image: url("../../pictures/hero/m/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-m@x3-min.jpg");
   }
@@ -208,23 +373,29 @@
       background-image: url("../../pictures/hero/m/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-m@x3-min.jpg");
       background-size: 100% 100%;
     }
-  
+
     17% {
       background-image: url("../../pictures/hero/m/birmingham-museums-trust-MK_98NuC4-4-unsplash_2-m@x3-min.jpg");
     }
-  
+
     50% {
       background-image: url("../../pictures/hero/m/birmingham-museums-trust-MK_98NuC4-4-unsplash_3-m@x3-min.jpg");
       background-size: 120% 120%;
     }
-  
+
     83% {
       background-image: url("../../pictures/hero/m/birmingham-museums-trust-MK_98NuC4-4-unsplash_2-m@x3-min.jpg");
     }
-  
+
     100% {
       background-image: url("../../pictures/hero/m/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-m@x3-min.jpg");
       background-size: 100% 100%;
     }
   }
+
+  .gallery {
+    background-image: url("../../pictures/gallery/bgimg/birmingham-museums-trust-mk_98nuc4-4-unsplash-3-m@x3_optimized.jpg");
+  }
+
+
 }

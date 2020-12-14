@@ -1,0 +1,9 @@
+.display,
+.none {
+  display: none;
+}
+
+.overflow {
+  overflow: hidden;
+  /* display: none; */
+}

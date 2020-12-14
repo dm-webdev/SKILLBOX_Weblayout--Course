@@ -1,15 +1,14 @@
 "use strict";
 window.addEventListener("DOMContentLoaded", function () {
-
   const showButton = document.querySelector(".search-form__open");
   const hideButton = document.querySelector(".search-form__clean");
   const menu = document.querySelector(".header-submenu");
 
   if (window.innerWidth < 1224) {
     menu.inert = true;
-      showButton.addEventListener("click", show);
-      menu.addEventListener("click", hideOnClick);
-      document.addEventListener("keydown", hideOnPress);    
+    showButton.addEventListener("click", show);
+    menu.addEventListener("click", hideOnClick);
+    document.addEventListener("keydown", hideOnPress);
   } else {
     menu.inert = false;
   }
@@ -30,7 +29,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   function show() {
     showMenu(menu, "header-submenu_show", showButton);
-  };
+  }
 
   function hideOnClick(ev) {
     if (
@@ -39,14 +38,14 @@ window.addEventListener("DOMContentLoaded", function () {
       ev.target.tagName == "SPAN"
     ) {
       hideMenu(menu, "header-submenu_show", showButton);
-    };
-  };
+    }
+  }
 
   function hideOnPress(ev) {
     if (ev.code == "Escape") {
       hideMenu(menu, "header-submenu_show", showButton);
     }
-  };
+  }
 
   function hideMenu(element, showClass, showButton) {
     element.classList.remove(showClass);
@@ -76,6 +75,7 @@ window.addEventListener("DOMContentLoaded", function () {
     ev.preventDefault();
     canceling();
     searchInput.value = "";
+    location.reload();
   });
 
   searchForm.addEventListener("submit", (ev) => {
@@ -88,7 +88,10 @@ window.addEventListener("DOMContentLoaded", function () {
     const searchPhrase = inputElement.value.trim();
     if (searchPhrase.length < 4) {
       canceling();
-      return alert("it's to shot");
+      return () => {
+        location.reload();
+        alert("it's to shot");
+      };
     }
     canceling();
 
@@ -105,7 +108,10 @@ window.addEventListener("DOMContentLoaded", function () {
 
     if (isAlert) {
       canceling();
-      return alert("Не найдено ни одного совпадения");
+      return () => {
+        alert("Не найдено ни одного совпадения");
+        location.reload();
+      };
     }
 
     let resultArr = [];
@@ -119,8 +125,10 @@ window.addEventListener("DOMContentLoaded", function () {
     for (let i = 0; i < searchArea.length; i++) {
       replacingHtml = replacingHtml.replace(searchArea[i], resultArr[i]);
     }
-    
+
     document.querySelector("main").innerHTML = replacingHtml;
-    document.querySelector(".result").scrollIntoView({block: "center", behavior: "smooth"});
+    document
+      .querySelector(".result")
+      .scrollIntoView({ block: "center", behavior: "smooth" });
   }
 });
