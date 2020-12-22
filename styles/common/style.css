@@ -3,23 +3,23 @@
   --text_light: #FFFFFF;
   --background_dark: #000000;
   --background_btn: #9D5CD0;
-  --background_btn_hover: #7943A4;  
-  --background_btn_active: #D1A9F0;  
+  --background_btn_hover: #7943A4;
+  --background_btn_active: #D1A9F0;
   --grey_CE: #ECECEC;
-  --grey_CA:  #CACACA;
+  --grey_CA: #CACACA;
   --grey_99: #999999;
   --grey_66: #666666;
 }
 
 html {
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 input,

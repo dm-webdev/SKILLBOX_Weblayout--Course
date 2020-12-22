@@ -91,7 +91,7 @@
   opacity: .3;
 }
 
-.kontainer__remark {
+.katalog__remark {
   display: none;
 }
 
@@ -189,6 +189,7 @@
 
 .katalog__group:active.katalog__group::before {
   border-color: var(--text_light) var(--text_light) transparent transparent;
+  top: 53px;
 }
 
 .katalog__sublist {

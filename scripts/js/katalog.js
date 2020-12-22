@@ -8,8 +8,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
   showBtn.forEach(function (element) {
     element.addEventListener("click", function (ev) {
-      ev.target.classList.toggle("katalog__group_active");
-      let key = arrayElements.indexOf(ev.target);
+      ev.currentTarget.classList.toggle("katalog__group_active");
+      let key = arrayElements.indexOf(ev.currentTarget);
       let targetList = katalogList[key];
 
       targetList.classList.toggle("none");
@@ -438,7 +438,7 @@ window.addEventListener("DOMContentLoaded", function () {
       katalog.forEach((item) => item.classList.remove("active_link"));
       ev.target.classList.add("active_link");
       const dataOfArtikle = katalogDataBase.find(
-        (item) => item.dataId === ev.target.attributes.dataid.value
+        (item) => item.dataId === ev.currentTarget.dataset.name
       );
       article.innerHTML = "";
       createArticle(

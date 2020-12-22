@@ -88,12 +88,12 @@
     padding-right: 32%;
   }
 
-  .swiper-wrapper {
+  .swiper-wrapper_gallery {
     height: 750px;
     width: 1150px;
   }
 
-  .swiper-slide {
+  .swiper-slide_gallery {
     height: 350px;
     width: 350px;
   }
@@ -106,5 +106,182 @@
     height: 995px;
   }
 
-  
+  /*--events--*/
+
+  .events-card {
+    padding: 314px 0 40px 0;
+    background-size: 100% 300px;
+  }
+
+  .events-card__text {
+    margin-bottom: 15px;
+    -webkit-line-clamp: 8;
+  }
+
+  .events-card__text,
+  .events-card__link {
+    padding: 0 34px 0 53px;
+  }
+
+  .events_one {
+    background-image: url("../../pictures/events/xl/rectangle-101-xl@x1_optimized.jpg");
+  }
+
+  .events_two {
+    background-image: url("../../pictures/events/xl/rectangle-101-xl@x1-1_optimized.jpg");
+  }
+
+  .events_three {
+    background-image: url("../../pictures/events/xl/rectangle-101-xl@x1-2_optimized.jpg");
+  }
+
+  .events_four {
+    background-image: url("../../pictures/events/xl/rectangle-101-xl@x1-3_optimized.jpg");
+  }
+
+  .events_five {
+    background-image: url("../../pictures/events/xl/rectangle-101-xl@x1-4_optimized.jpg");
+  }
+
+  /*--publication--*/
+
+  .publication {
+    background-image: url("../../pictures/publication/bgimg/birmingham-museums-trust-mk_98nuc4-4-unsplash-4-xl@x1_optimized.jpg");
+  }
+
+  .publication__price {
+    position: relative;
+    top: auto;
+    right: auto;
+    z-index: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+
+  .publication__choice {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 28.2%;
+  }
+
+  .swiper-container_publication {
+    width: 71.8%;
+  }
+
+  .publication__category__wrap {
+    padding-bottom: 29px;
+  }
+
+  .publication__price__heading {
+    margin-bottom: 9px;
+  }
+
+  .publication__container {
+    padding-bottom: 58px;
+  }
+
+  .publication-card__heading {
+    margin-top: 24px;
+  }
+
+  /*--projects--*/
+
+  .tooltip__desc {
+    min-width: 256px;
+  }
+
+  .projects__desc {
+    padding-right: 34%;
+  }
+
+  .project-swiper {
+    padding-left: 76px;
+    padding-right: 76px;
+  }
+
+  .projects__card {
+    min-height: 150px;
+    max-height: 150px;
+  }
+
+  /*--contacts--*/
+
+  .contacts__heading {
+    padding-right: 160px;
+    padding-left: 156px;
+  }
+
+  .contacts__adress {
+    margin-bottom: 26px;
+    padding-top: 126px;
+    padding-right: 60px;
+    padding-left: 158px;
+  }
+
+  .feedback-form {
+    padding-right: 120px;
+    padding-left: 158px;
+  }
+
+  .contacts__adress {
+    width: 35.5%;
+  }
+
+  .contacts__map {
+    width: 64.5%;
+  }
+
+  .contacts__social {
+    padding-right: 120px;
+    padding-left: 158px;
+  }
+}
+
+@media screen and (min-width: 1696px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 1696px) and (-o-min-device-pixel-ratio: 2/1),
+screen and (min-width: 1696px) and (min-resolution: 2dppx) {
+  .events_one {
+    background-image: url("../../pictures/events/xl/rectangle-101-xl@x2_optimized.jpg");
+  }
+
+  .events_two {
+    background-image: url("../../pictures/events/xl/rectangle-101-xl@x2-1_optimized.jpg");
+  }
+
+  .events_three {
+    background-image: url("../../pictures/events/xl/rectangle-101-xl@x2-2_optimized.jpg");
+  }
+
+  .events_four {
+    background-image: url("../../pictures/events/xl/rectangle-101-xl@x2-3_optimized.jpg");
+  }
+
+  .events_five {
+    background-image: url("../../pictures/events/xl/rectangle-101-xl@x2-4_optimized.jpg");
+  }
+}
+
+@media screen and (min-width: 1696px) and (-webkit-min-device-pixel-ratio: 3),
+screen and (min-width: 1696px) and (-o-min-device-pixel-ratio: 3/1),
+screen and (min-width: 1696px) and (min-resolution: 3dppx) {
+  .events_one {
+    background-image: url("../../pictures/events/xl/rectangle-101-xl@x3_optimized.jpg");
+  }
+
+  .events_two {
+    background-image: url("../../pictures/events/xl/rectangle-101-xl@x3-1_optimized.jpg");
+  }
+
+  .events_three {
+    background-image: url("../../pictures/events/xl/rectangle-101-xl@x3-2_optimized.jpg");
+  }
+
+  .events_four {
+    background-image: url("../../pictures/events/xl/rectangle-101-xl@x3-3_optimized.jpg");
+  }
+
+  .events_five {
+    background-image: url("../../pictures/events/xl/rectangle-101-xl@x3-4_optimized.jpg");
+  }
 }

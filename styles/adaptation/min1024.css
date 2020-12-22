@@ -104,7 +104,7 @@
     margin-right: 46px;
   }
 
-  .kontainer__remark {
+  .katalog__remark {
     margin-bottom: 39px;
   }
 
@@ -140,15 +140,165 @@
     padding: 0;
   }
 
+  /*--events--*/
+
+  .events__container {
+    padding-top: 30px;
+    padding-bottom: 79px;
+  }
+
+  .events-card:nth-child(2n-1) {
+    margin-right: auto;
+  }
+
+  .events-card {
+    margin-right: 2.91%;
+    width: 31.35%;
+  }
+
+  .events-card:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .events_one {
+    background-image: url("../../pictures/events/l/rectangle-101-l@x1_optimized.jpg");
+  }
+
+  .events_two {
+    background-image: url("../../pictures/events/l/rectangle-104-l@x1-1_optimized.jpg");
+  }
+
+  .events_three {
+    background-image: url("../../pictures/events/l/rectangle-101-l@x1-2_optimized.jpg");
+  }
+
+  .events_four {
+    background-image: url("../../pictures/events/l/rectangle-104-l@x1_optimized.jpg");
+  }
+
+  .events_five {
+    background-image: url("../../pictures/events/l/rectangle-104-l@x1-1_optimized.jpg");
+  }
+
+  /*--publication--*/
+
+  .publication {
+    background-image: url("../../pictures/publication/bgimg/birmingham-museums-trust-mk_98nuc4-4-unsplash-4-l@x1_optimized.jpg");
+  }
+
+  .publication__container {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    padding-bottom: 60px;
+  }
+
+  .publication__category__wrap {
+
+    flex-flow: column nowrap;
+    max-height: 100%;
+    padding-bottom: 0;
+  }
+
+  .publication__price {
+    position: absolute;
+    top: 104px;
+    right: 50px;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+  }
+
+  .publication__price__heading {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+
+  .category {
+    margin-right: 30px;
+  }
+
+  .publication__choice {
+    width: 31.9%;
+  }
+
+  .swiper-container_publication {
+    padding-top: 93px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 68.1%;
+  }
+
+  .swiper-controls_publication {
+    top: 33px;
+  }
+
+  .swiper-pagination_publication {
+    margin: 0 19px;
+  }
+
+  .publication-card__price {
+    bottom: 99px;
+  }
+
+  .publication-card {
+    margin-bottom: 0;
+  }
+
+  .publication-card__btn {
+    margin-bottom: 23px;
+  }
+
+  .publication-card__heading {
+    width: 70%;
+  }
+
+  /*--projects--*/
+
+  .projects__desc {
+    padding-right: 0;
+  }
+
+  .projects__subheading {
+    margin-top: 18px;
+    margin-bottom: 24px;
+  }
+
+  .projects__card {
+    min-height: 128px;
+    max-height: 128px;
+  }
+
+  /*--contacts--*/
+
+  .contacts__adress {
+    width: 47.6%;
+  }
+
+  .feedback-form {
+    padding-right: 101px;
+  }
+
+  .contacts__map {
+    width: 52.4%;
+  }
+
+  .feedback-form__heading {
+    margin-bottom: 16px;
+  }
+  
+  .contacts__street {
+    line-height: 35px;
+  }
+
+  .contacts__social__heading {
+    margin-bottom: 13px;
+  }
 }
-
-
-
-
 
 @media screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
 screen and (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1),
-screen and (min-width: 754px) and (min-resolution: 2dppx) {
+screen and (min-width: 1024px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../../pictures/hero/l/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-l@x2-min.jpg");
   }
@@ -177,11 +327,33 @@ screen and (min-width: 754px) and (min-resolution: 2dppx) {
       background-size: 100% 100%;
     }
   }
+
+  .events_one {
+    background-image: url("../../pictures/events/l/rectangle-101-l@x2_optimized.jpg");
+  }
+
+  .events_two {
+    background-image: url("../../pictures/events/l/rectangle-104-l@x2-1_optimized.jpg");
+  }
+
+  .events_three {
+    background-image: url("../../pictures/events/l/rectangle-101-l@x2-2_optimized.jpg");
+  }
+
+  .events_four {
+    background-image: url("../../pictures/events/l/rectangle-104-l@x2_optimized.jpg");
+  }
+
+  .events_five {
+    background-image: url("../../pictures/events/l/rectangle-104-l@x2-1_optimized.jpg");
+  }
+
+
 }
 
 @media screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 3),
 screen and (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/1),
-screen and (min-width: 754px) and (min-resolution: 3dppx) {
+screen and (min-width: 1024px) and (min-resolution: 3dppx) {
   .hero {
     background-image: url("../../pictures/hero/l/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-l@x3-min.jpg");
   }
@@ -210,4 +382,26 @@ screen and (min-width: 754px) and (min-resolution: 3dppx) {
       background-size: 100% 100%;
     }
   }
+
+  .events_one {
+    background-image: url("../../pictures/events/l/rectangle-101-l@x3_optimized.jpg");
+  }
+
+  .events_two {
+    background-image: url("../../pictures/events/l/rectangle-104-l@x3-1_optimized.jpg");
+  }
+
+  .events_three {
+    background-image: url("../../pictures/events/l/rectangle-101-l@x3-2_optimized.jpg");
+  }
+
+  .events_four {
+    background-image: url("../../pictures/events/l/rectangle-104-l@x3_optimized.jpg");
+  }
+
+  .events_five {
+    background-image: url("../../pictures/events/l/rectangle-104-l@x3-1_optimized.jpg");
+  }
+
+
 }

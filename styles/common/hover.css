@@ -27,22 +27,53 @@
 }
 
 .header-submenu__link {
-  transition: outline .2s, background .2s;
+  transition: outline .2s, background-color .2s;
 }
 
-.hero__link:focus {
+.hero__link_style:focus {
   border: 3px solid var(--background_btn_hover);
 }
 
-.hero__link {
+.hero__link_style {
   outline: none;
   transition: border .2s, background-color .2s;
 }
 
-.hero__link:active {
+.hero__link_style:active {
   border: 3px solid var(--background_btn_active);
   background-color: var(--background_btn_hover);
 }
+
+.events__btn_style,
+.ovalbtn_style {
+  position: relative;
+  transition: outline .2s, background-color .2s, border .2s;
+}
+
+.events__btn_style,
+.ovalbtn_style {
+  transition: outline .2s;
+}
+
+.events__btn_style:focus::after,
+.ovalbtn_style:focus::after {
+  position: absolute;
+  content: "";
+  top: 11px;
+  right: 30px;
+  bottom: 13px;
+  left: 30px;
+  outline: 2px solid var(--background_btn_hover);
+}
+
+.events__btn_style:active,
+.ovalbtn_style:active {
+  color: var(--text_light);
+  background-color: var(--background_btn_hover);
+  border: 3px solid var(--background_btn_active);
+}
+
+
 
 @media all and (min-width: 1224px) {
   .link_style:hover {
@@ -55,15 +86,22 @@
   }
 
   .header-submenu__link:active {
-    background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
+    background-color: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
     outline: 2px solid var(--background_btn);
   }
 
-  .hero__link:hover {
+  .hero__link_style:hover {
     border: 3px solid var(--background_btn_active);
   }
   
   .link_underline:hover {
     text-decoration: underline;
+  }
+
+  .events__btn_style:hover,
+  .ovalbtn_style:hover {
+    color: var(--text_light);
+    background-color: var(--background_btn);
+    border: 3px solid var(--background_btn);
   }
 }

@@ -1,5 +1,6 @@
 .gallery {
   color: var(--text_light);
+  background-color: var(--text_dark);
   background-image: url("../../pictures/gallery/bgimg/birmingham-museums-trust-mk_98nuc4-4-unsplash-3-xs@x1_optimized.jpg");
   background-position: center;
   background-size: cover;
@@ -130,7 +131,7 @@
   width: 100%;
 }
 
-.swiper-slide {
+.swiper-slide_gallery {
   display: flex;
   justify-content: center;
   align-items: center;

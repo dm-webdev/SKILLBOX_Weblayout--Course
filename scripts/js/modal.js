@@ -313,7 +313,7 @@ window.addEventListener("DOMContentLoaded", function () {
     item.addEventListener("click", (ev) => {
       ev.preventDefault();
       const dataOfModal = modalDataBase.find(
-        (item) => item.dataid === ev.target.attributes.dataid.value
+        (item) => item.dataid === ev.currentTarget.dataset.number
       );
       createModal(
         dataOfModal.xs,

@@ -3,6 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
   <title>Blanchard - художественная галерея</title>
 
   <link rel="preload" href="fonts/OpenSans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -25,6 +34,11 @@
   <link rel="stylesheet" href="styles/sections/gallery.css">
   <link rel="stylesheet" href="styles/sections/modal.css">
   <link rel="stylesheet" href="styles/sections/katalog.css">
+  <link rel="stylesheet" href="styles/sections/events.css">
+  <link rel="stylesheet" href="styles/sections/publication.css">
+  <link rel="stylesheet" href="styles/sections/projects.css">
+  <link rel="stylesheet" href="styles/sections/contacts.css">
+  <link rel="stylesheet" href="styles/sections/footer.css">
 
 
   <link rel="stylesheet" href="styles/adaptation/min768.css">
@@ -38,17 +52,24 @@
 
   <script src="scripts/modules/swiper-bundle.min.js"></script>
   <script src="scripts/modules/choices.min.js" defer></script>
-  <!-- <script src="scripts/modules/simplebar-min.js"></script> -->
+  <script src="scripts/modules/simplebar-min.js"></script>
   <script src="scripts/modules/inert.js"></script>
-  <!-- <script src="scripts/js/menu.js" defer></script>
-  <script src="scripts/js/search.js" defer></script>
-  <script src="scripts/js/submenu.js" defer></script> -->
+  <script src="scripts/modules/just-validate.min.js"></script>
+  <script src="scripts/modules/inputmask.min.js"></script> 
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=8941aad9-b29c-4f71-be96-d498cf86e841&lang=ru_RU"></script>
   
+  <script src="scripts/js/menu.js" defer></script>
+  <script src="scripts/js/search.js" defer></script>
+  <script src="scripts/js/submenu.js" defer></script>  
   <script src="scripts/js/gallery.js" defer></script>
   <script src="scripts/js/modal.js" defer></script>
   <script src="scripts/js/select.js" defer></script>
   <script src="scripts/js/katalog.js" defer></script>
-
+  <script src="scripts/js/events.js" defer></script>
+  <script src="scripts/js/publication.js" defer></script>
+  <script src="scripts/js/projects.js" defer></script>
+  <script src="scripts/js/map.js" defer></script>
+  <script src="scripts/js/form.js" defer></script>
 
 
 </head>
@@ -60,7 +81,7 @@
       </a>       
 
       <nav class="header-nav">
-        <button class="header-nav__burger" aria-hidden="открыть меню"></button>
+        <button class="header-nav__burger" aria-label="открыть меню"></button>
 
         <ul class="header-nav__list">
           <li class="header-nav__item">
@@ -69,30 +90,30 @@
             <button class="header-nav__hide-btn link_style" type="button" aria-label="скрыть меню"></button>
           </li>
           <li class="header-nav__item">
-            <a href="#" class="header-nav__link link_style">О нас</a>
+            <a href="#about" class="header-nav__link link_style">О нас</a>
           </li>
           <li class="header-nav__item">
-            <a href="#" class="header-nav__link link_style">Галерея</a>
+            <a href="#gallery" class="header-nav__link link_style">Галерея</a>
           </li>
           <li class="header-nav__item">
-            <a href="#" class="header-nav__link link_style">Каталог</a>
+            <a href="#katalog" class="header-nav__link link_style">Каталог</a>
           </li>
           <li class="header-nav__item">
-            <a href="#" class="header-nav__link link_style">События</a>
+            <a href="#events" class="header-nav__link link_style">События</a>
           </li>
           <li class="header-nav__item">
-            <a href="#" class="header-nav__link link_style">Издания</a>
+            <a href="#publication" class="header-nav__link link_style">Издания</a>
           </li>
           <li class="header-nav__item">
-            <a href="#" class="header-nav__link link_style">Проекты</a>
+            <a href="#projects" class="header-nav__link link_style">Проекты</a>
           </li>
           <li class="header-nav__item">
-            <a href="#" class="header-nav__link link_style">Контакты</a>
+            <a href="#contacts" class="header-nav__link link_style">Контакты</a>
           </li>
         </ul>
       </nav>
       
-      <button class="search-form__open" type="button" aria-hidden="открыть поиск по сайту"></button>      
+      <button class="search-open" type="button" aria-label="открыть поиск по сайту"></button>      
     </div>
     
     <div class="header-submenu">
@@ -219,7 +240,7 @@
   </header>
 
   <main>
-    <h1 class="visually-hidden start__anime">Blanchard - художественная галерея</h1>
+    <h1 class="visually-hidden start_anime">Blanchard - художественная галерея</h1>
 
     <section class="hero">
       <div class="container hero__container">
@@ -227,13 +248,13 @@
 
         <p class="hero__desk">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
 
-        <a class="hero__link" href="#">Подписаться на рассылку</a>
+        <a class="hero__link hero__link_style" href="#subscribe">Подписаться на рассылку</a>
       </div>
     </section>
 
     <section class="about">
       <div class="container about__container">
-        <h2 class="about__heading section_heading">О нас</h2>
+        <h2 id="about" class="about__heading section_heading">О нас</h2>
 
         <p class="about__desk">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а&nbsp;значит, должны быть разоблачены.</p>
       </div>
@@ -242,7 +263,7 @@
     <section class="gallery">
       <div class="container gallery__container">
         <div class="gallery__controls">
-          <h2 class="gallery__heading section_heading">Галерея</h2>
+          <h2 id="gallery" class="gallery__heading section_heading">Галерея</h2>
 
           <form class="controls">
             <h3 class="controls__heading">Фильтровать по:</h3>
@@ -270,10 +291,10 @@
           </form>
         </div>
 
-        <div class="gallery__showroom swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide" author="author_1" artdirection="artdirection_1" arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" dataid="slide#1">
+        <div class="gallery__showroom swiper-container swiper-container_gallery">
+          <div class="swiper-wrapper swiper-wrapper_gallery">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
+              <button class="gallery__btn" type="button" data-number="slide#1">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-68-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-68-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-68-xl@x3_optimized.jpg 3x">
         
@@ -286,8 +307,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_1" artdirection="artdirection_2" arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#2">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_2" data-arttechnique="arttechnique_1">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#2">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-71-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-71-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-71-xl@x3_optimized.jpg 3x">
         
@@ -300,8 +321,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_1" artdirection="artdirection_3" arttechnique="arttechnique_3">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#3">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_3" data-arttechnique="arttechnique_3">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#3">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-70-xl@x1-1_optimized.jpg 1x, pictures/gallery/xl/rectangle-70-xl@x2-1_optimized.jpg 2x, pictures/gallery/xl/rectangle-70-xl@x3-1_optimized.jpg 3x">
         
@@ -314,8 +335,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_1" artdirection="artdirection_2" arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#4">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_2" data-arttechnique="arttechnique_1">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#4">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-72-xl@x1-1_optimized.jpg 1x, pictures/gallery/xl/rectangle-72-xl@x2-1_optimized.jpg 2x, pictures/gallery/xl/rectangle-72-xl@x3-1_optimized.jpg 3x">
         
@@ -328,8 +349,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_2" artdirection="artdirection_2" arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  dataid="slide#5">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_2" data-arttechnique="arttechnique_2">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#5">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-68-xl@x1-1_optimized.jpg 1x, pictures/gallery/xl/rectangle-68-xl@x2-1_optimized.jpg 2x, pictures/gallery/xl/rectangle-68-xl@x3-1_optimized.jpg 3x">
         
@@ -342,8 +363,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_2" artdirection="artdirection_1" arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  dataid="slide#6">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#6">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-71-xl@x1-1_optimized.jpg 1x, pictures/gallery/xl/rectangle-71-xl@x2-1_optimized.jpg 2x, pictures/gallery/xl/rectangle-71-xl@x3-1_optimized.jpg 3x">
         
@@ -356,8 +377,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_2" artdirection="artdirection_3" arttechnique="arttechnique_3">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  dataid="slide#7">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_3" data-arttechnique="arttechnique_3">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#7">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-73-xl@x1-1_optimized.jpg 1x, pictures/gallery/xl/rectangle-73-xl@x2-1_optimized.jpg 2x, pictures/gallery/xl/rectangle-73-xl@x3-1_optimized.jpg 3x">
         
@@ -370,8 +391,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_3" artdirection="artdirection_1" arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  dataid="slide#8">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#8">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-69-xl@x1-1_optimized.jpg 1x, pictures/gallery/xl/rectangle-69-xl@x2-1_optimized.jpg 2x, pictures/gallery/xl/rectangle-69-xl@x3-1_optimized.jpg 3x">
         
@@ -384,8 +405,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_3" artdirection="artdirection_3" arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  dataid="slide#9">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_3" data-arttechnique="arttechnique_2">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#9">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-74-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-74-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-74-xl@x3_optimized.jpg 3x">
         
@@ -398,8 +419,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_3" artdirection="artdirection_1" arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  dataid="slide#10">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_1" data-arttechnique="arttechnique_2">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#10">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-75-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-75-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-75-xl@x3_optimized.jpg 3x">
         
@@ -412,8 +433,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_3" artdirection="artdirection_3" arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#11">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_3" data-arttechnique="arttechnique_2">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#11">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-77-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-77-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-77-xl@x3_optimized.jpg 3x">
         
@@ -426,8 +447,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_2" artdirection="artdirection_1" arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  dataid="slide#12">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#12">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-78-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-78-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-78-xl@x3_optimized.jpg 3x">
         
@@ -440,8 +461,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_2" artdirection="artdirection_1" arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#13">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#13">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-76-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-76-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-76-xl@x3_optimized.jpg 3x">
         
@@ -454,8 +475,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_2" artdirection="artdirection_2" arttechnique="arttechnique_3">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#14">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_2" data-arttechnique="arttechnique_3">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#14">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-79-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-79-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-79-xl@x3_optimized.jpg 3x">
         
@@ -468,8 +489,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_2" artdirection="artdirection_2" arttechnique="arttechnique_3">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#15">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_2" data-arttechnique="arttechnique_3">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#15">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-80-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-80-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-80-xl@x3_optimized.jpg 3x">
         
@@ -482,8 +503,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_1" artdirection="artdirection_2" arttechnique="arttechnique_3">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#16">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_2" data-arttechnique="arttechnique_3">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#16">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-81-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-81-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-81-xl@x3_optimized.jpg 3x">
         
@@ -496,8 +517,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_1" artdirection="artdirection_2" arttechnique="arttechnique_3">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#17">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_2" data-arttechnique="arttechnique_3">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#17">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-82-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-82-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-82-xl@x3_optimized.jpg 3x">
         
@@ -510,8 +531,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_1" artdirection="artdirection_3" arttechnique="arttechnique_3">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#18">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_3" data-arttechnique="arttechnique_3">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#18">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-83-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-83-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-83-xl@x3_optimized.jpg 3x">
       
@@ -524,8 +545,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_1" artdirection="artdirection_3" arttechnique="arttechnique_3">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#19">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_3" data-arttechnique="arttechnique_3">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#19">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-84-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-84-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-84-xl@x3_optimized.jpg 3x">
       
@@ -538,8 +559,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_3" artdirection="artdirection_3" arttechnique="arttechnique_3">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#20">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_3" data-arttechnique="arttechnique_3">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#20">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-85-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-85-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-85-xl@x3_optimized.jpg 3x">
       
@@ -552,8 +573,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_1" artdirection="artdirection_3" arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#21">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_3" data-arttechnique="arttechnique_2">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#21">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-86-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-86-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-86-xl@x3_optimized.jpg 3x">
       
@@ -566,8 +587,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_2" artdirection="artdirection_3" arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#22">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_3" data-arttechnique="arttechnique_2">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#22">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-87-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-87-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-87-xl@x3_optimized.jpg 3x">
       
@@ -580,8 +601,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_3" artdirection="artdirection_1" arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#23">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_1" data-arttechnique="arttechnique_2">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#23">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-88-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-88-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-88-xl@x3_optimized.jpg 3x">
       
@@ -594,8 +615,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_3" artdirection="artdirection_1" arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#24">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_1" data-arttechnique="arttechnique_2">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#24">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-89-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-89-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-89-xl@x3_optimized.jpg 3x">
       
@@ -608,8 +629,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_3" artdirection="artdirection_2" arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#25">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_2" data-arttechnique="arttechnique_2">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#25">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-90-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-90-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-90-xl@x3_optimized.jpg 3x">
       
@@ -622,8 +643,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_2" artdirection="artdirection_2" arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#26">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_2" data-arttechnique="arttechnique_2">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#26">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-91-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-91-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-91-xl@x3_optimized.jpg 3x">
       
@@ -636,8 +657,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_1" artdirection="artdirection_1" arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#27">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#27">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-69-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-69-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-69-xl@x3_optimized.jpg 3x">
       
@@ -650,8 +671,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_2" artdirection="artdirection_1" arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#28">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#28">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-70-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-70-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-70-xl@x3_optimized.jpg 3x">
       
@@ -664,8 +685,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_3" artdirection="artdirection_1" arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#29">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#29">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-72-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-72-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-72-xl@x3_optimized.jpg 3x">
       
@@ -678,8 +699,8 @@
               </button>
             </div>
 
-            <div class="swiper-slide" author="author_1" artdirection="artdirection_1" arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" dataid="slide#30">
+            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
+              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#30">
                 <picture>
                   <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-73-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-73-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-73-xl@x3_optimized.jpg 3x">
       
@@ -708,7 +729,7 @@
     <section class="katalog">
       <div class="container katalog__container">
         <div class="katalog__controls">
-          <h2 class="katalog__heading section_heading">Каталог</h2>
+          <h2 id="katalog" class="katalog__heading section_heading">Каталог</h2>
 
           <div class="katalog__countries">
 
@@ -745,7 +766,7 @@
           </div>
         </div>
 
-        <p class="kontainer__remark">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
+        <p class="katalog__remark">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
 
         <div class="katalog__content">
           <ul class="katalog__list">
@@ -756,76 +777,76 @@
 
               <ul class="katalog__sublist none">
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BenedettoDiBindo">Бенедетто ди Биндо</button>
+                  <button class="katalog__link" type="button" data-name="BenedettoDiBindo">Бенедетто ди Биндо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button"  dataid="AmbrogioBergognone">Бергоньоне, Амброджо</button>
+                  <button class="katalog__link" type="button"  data-name="AmbrogioBergognone">Бергоньоне, Амброджо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoBissolo">Биссоло, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoBissolo">Биссоло, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoBonsignori">Бонсиньори, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoBonsignori">Бонсиньори, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="RaffaelloBotticini">Боттичини, Рафаэлло</button>
+                  <button class="katalog__link" type="button" data-name="RaffaelloBotticini">Боттичини, Рафаэлло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Bartolommeo">Брамантино</button>
+                  <button class="katalog__link" type="button" data-name="Bartolommeo">Брамантино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="LouisBrea">Бреа, Людовико</button>
+                  <button class="katalog__link" type="button" data-name="LouisBrea">Бреа, Людовико</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BiagioTucci">Бьяджо д’Антонио Туччи</button>
+                  <button class="katalog__link" type="button" data-name="BiagioTucci">Бьяджо д’Антонио Туччи</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="LorenzoPietro">Веккьетта</button>
+                  <button class="katalog__link" type="button" data-name="LorenzoPietro">Веккьетта</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="AndreaVerrocchio">Андреа Верроккьо</button>
+                  <button class="katalog__link" type="button" data-name="AndreaVerrocchio">Андреа Верроккьо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link active_link" type="button" dataid="DomenicoGhirlandaio">Доменико Гирландайо</button>
+                  <button class="katalog__link active_link" type="button" data-name="DomenicoGhirlandaio">Доменико Гирландайо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BenozzoGozzoli">Беноццо Гоццоли</button>
+                  <button class="katalog__link" type="button" data-name="BenozzoGozzoli">Беноццо Гоццоли</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoGranacci">Граначчи, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoGranacci">Граначчи, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GregorioCecco">Грегорио ди Чекко</button>
+                  <button class="katalog__link" type="button" data-name="GregorioCecco">Грегорио ди Чекко</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniUdine">Джованни да Удине</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniUdine">Джованни да Удине</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniPaolo">Джованни ди Паоло</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniPaolo">Джованни ди Паоло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Giorgione">Джорджоне</button>
+                  <button class="katalog__link" type="button" data-name="Giorgione">Джорджоне</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BernardoParentino">Парентино, Бернардо</button>
+                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Pesellino">Пезеллино</button>
+                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="PietroPerugino">Пьетро Перуджино</button>
+                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="PuccioPisano">Пизанелло</button>
+                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Pinturicchio">Пинтуриккьо</button>
+                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </li>
@@ -837,76 +858,76 @@
 
               <ul class="katalog__sublist none">
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BenedettoDiBindo">Бенедетто ди Биндо</button>
+                  <button class="katalog__link" type="button" data-name="BenedettoDiBindo">Бенедетто ди Биндо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button"  dataid="AmbrogioBergognone">Бергоньоне, Амброджо</button>
+                  <button class="katalog__link" type="button"  data-name="AmbrogioBergognone">Бергоньоне, Амброджо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoBissolo">Биссоло, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoBissolo">Биссоло, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoBonsignori">Бонсиньори, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoBonsignori">Бонсиньори, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="RaffaelloBotticini">Боттичини, Рафаэлло</button>
+                  <button class="katalog__link" type="button" data-name="RaffaelloBotticini">Боттичини, Рафаэлло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Bartolommeo">Брамантино</button>
+                  <button class="katalog__link" type="button" data-name="Bartolommeo">Брамантино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="LouisBrea">Бреа, Людовико</button>
+                  <button class="katalog__link" type="button" data-name="LouisBrea">Бреа, Людовико</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BiagioTucci">Бьяджо д’Антонио Туччи</button>
+                  <button class="katalog__link" type="button" data-name="BiagioTucci">Бьяджо д’Антонио Туччи</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="LorenzoPietro">Веккьетта</button>
+                  <button class="katalog__link" type="button" data-name="LorenzoPietro">Веккьетта</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="AndreaVerrocchio">Андреа Верроккьо</button>
+                  <button class="katalog__link" type="button" data-name="AndreaVerrocchio">Андреа Верроккьо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link active_link" type="button" dataid="DomenicoGhirlandaio">Доменико Гирландайо</button>
+                  <button class="katalog__link active_link" type="button" data-name="DomenicoGhirlandaio">Доменико Гирландайо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BenozzoGozzoli">Беноццо Гоццоли</button>
+                  <button class="katalog__link" type="button" data-name="BenozzoGozzoli">Беноццо Гоццоли</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoGranacci">Граначчи, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoGranacci">Граначчи, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GregorioCecco">Грегорио ди Чекко</button>
+                  <button class="katalog__link" type="button" data-name="GregorioCecco">Грегорио ди Чекко</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniUdine">Джованни да Удине</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniUdine">Джованни да Удине</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniPaolo">Джованни ди Паоло</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniPaolo">Джованни ди Паоло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Giorgione">Джорджоне</button>
+                  <button class="katalog__link" type="button" data-name="Giorgione">Джорджоне</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BernardoParentino">Парентино, Бернардо</button>
+                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Pesellino">Пезеллино</button>
+                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="PietroPerugino">Пьетро Перуджино</button>
+                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="PuccioPisano">Пизанелло</button>
+                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Pinturicchio">Пинтуриккьо</button>
+                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </li>
@@ -918,76 +939,76 @@
 
               <ul class="katalog__sublist none">
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BenedettoDiBindo">Бенедетто ди Биндо</button>
+                  <button class="katalog__link" type="button" data-name="BenedettoDiBindo">Бенедетто ди Биндо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button"  dataid="AmbrogioBergognone">Бергоньоне, Амброджо</button>
+                  <button class="katalog__link" type="button"  data-name="AmbrogioBergognone">Бергоньоне, Амброджо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoBissolo">Биссоло, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoBissolo">Биссоло, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoBonsignori">Бонсиньори, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoBonsignori">Бонсиньори, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="RaffaelloBotticini">Боттичини, Рафаэлло</button>
+                  <button class="katalog__link" type="button" data-name="RaffaelloBotticini">Боттичини, Рафаэлло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Bartolommeo">Брамантино</button>
+                  <button class="katalog__link" type="button" data-name="Bartolommeo">Брамантино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="LouisBrea">Бреа, Людовико</button>
+                  <button class="katalog__link" type="button" data-name="LouisBrea">Бреа, Людовико</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BiagioTucci">Бьяджо д’Антонио Туччи</button>
+                  <button class="katalog__link" type="button" data-name="BiagioTucci">Бьяджо д’Антонио Туччи</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="LorenzoPietro">Веккьетта</button>
+                  <button class="katalog__link" type="button" data-name="LorenzoPietro">Веккьетта</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="AndreaVerrocchio">Андреа Верроккьо</button>
+                  <button class="katalog__link" type="button" data-name="AndreaVerrocchio">Андреа Верроккьо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link active_link" type="button" dataid="DomenicoGhirlandaio">Доменико Гирландайо</button>
+                  <button class="katalog__link active_link" type="button" data-name="DomenicoGhirlandaio">Доменико Гирландайо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BenozzoGozzoli">Беноццо Гоццоли</button>
+                  <button class="katalog__link" type="button" data-name="BenozzoGozzoli">Беноццо Гоццоли</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoGranacci">Граначчи, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoGranacci">Граначчи, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GregorioCecco">Грегорио ди Чекко</button>
+                  <button class="katalog__link" type="button" data-name="GregorioCecco">Грегорио ди Чекко</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniUdine">Джованни да Удине</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniUdine">Джованни да Удине</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniPaolo">Джованни ди Паоло</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniPaolo">Джованни ди Паоло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Giorgione">Джорджоне</button>
+                  <button class="katalog__link" type="button" data-name="Giorgione">Джорджоне</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BernardoParentino">Парентино, Бернардо</button>
+                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Pesellino">Пезеллино</button>
+                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="PietroPerugino">Пьетро Перуджино</button>
+                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="PuccioPisano">Пизанелло</button>
+                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Pinturicchio">Пинтуриккьо</button>
+                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </li>
@@ -999,76 +1020,76 @@
 
               <ul class="katalog__sublist none">
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BenedettoDiBindo">Бенедетто ди Биндо</button>
+                  <button class="katalog__link" type="button" data-name="BenedettoDiBindo">Бенедетто ди Биндо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button"  dataid="AmbrogioBergognone">Бергоньоне, Амброджо</button>
+                  <button class="katalog__link" type="button"  data-name="AmbrogioBergognone">Бергоньоне, Амброджо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoBissolo">Биссоло, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoBissolo">Биссоло, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoBonsignori">Бонсиньори, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoBonsignori">Бонсиньори, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="RaffaelloBotticini">Боттичини, Рафаэлло</button>
+                  <button class="katalog__link" type="button" data-name="RaffaelloBotticini">Боттичини, Рафаэлло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Bartolommeo">Брамантино</button>
+                  <button class="katalog__link" type="button" data-name="Bartolommeo">Брамантино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="LouisBrea">Бреа, Людовико</button>
+                  <button class="katalog__link" type="button" data-name="LouisBrea">Бреа, Людовико</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BiagioTucci">Бьяджо д’Антонио Туччи</button>
+                  <button class="katalog__link" type="button" data-name="BiagioTucci">Бьяджо д’Антонио Туччи</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="LorenzoPietro">Веккьетта</button>
+                  <button class="katalog__link" type="button" data-name="LorenzoPietro">Веккьетта</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="AndreaVerrocchio">Андреа Верроккьо</button>
+                  <button class="katalog__link" type="button" data-name="AndreaVerrocchio">Андреа Верроккьо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link active_link" type="button" dataid="DomenicoGhirlandaio">Доменико Гирландайо</button>
+                  <button class="katalog__link active_link" type="button" data-name="DomenicoGhirlandaio">Доменико Гирландайо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BenozzoGozzoli">Беноццо Гоццоли</button>
+                  <button class="katalog__link" type="button" data-name="BenozzoGozzoli">Беноццо Гоццоли</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoGranacci">Граначчи, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoGranacci">Граначчи, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GregorioCecco">Грегорио ди Чекко</button>
+                  <button class="katalog__link" type="button" data-name="GregorioCecco">Грегорио ди Чекко</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniUdine">Джованни да Удине</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniUdine">Джованни да Удине</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniPaolo">Джованни ди Паоло</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniPaolo">Джованни ди Паоло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Giorgione">Джорджоне</button>
+                  <button class="katalog__link" type="button" data-name="Giorgione">Джорджоне</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BernardoParentino">Парентино, Бернардо</button>
+                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Pesellino">Пезеллино</button>
+                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="PietroPerugino">Пьетро Перуджино</button>
+                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="PuccioPisano">Пизанелло</button>
+                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Pinturicchio">Пинтуриккьо</button>
+                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </li>
@@ -1080,76 +1101,76 @@
 
               <ul class="katalog__sublist none">
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BenedettoDiBindo">Бенедетто ди Биндо</button>
+                  <button class="katalog__link" type="button" data-name="BenedettoDiBindo">Бенедетто ди Биндо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button"  dataid="AmbrogioBergognone">Бергоньоне, Амброджо</button>
+                  <button class="katalog__link" type="button"  data-name="AmbrogioBergognone">Бергоньоне, Амброджо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoBissolo">Биссоло, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoBissolo">Биссоло, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoBonsignori">Бонсиньори, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoBonsignori">Бонсиньори, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="RaffaelloBotticini">Боттичини, Рафаэлло</button>
+                  <button class="katalog__link" type="button" data-name="RaffaelloBotticini">Боттичини, Рафаэлло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Bartolommeo">Брамантино</button>
+                  <button class="katalog__link" type="button" data-name="Bartolommeo">Брамантино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="LouisBrea">Бреа, Людовико</button>
+                  <button class="katalog__link" type="button" data-name="LouisBrea">Бреа, Людовико</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BiagioTucci">Бьяджо д’Антонио Туччи</button>
+                  <button class="katalog__link" type="button" data-name="BiagioTucci">Бьяджо д’Антонио Туччи</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="LorenzoPietro">Веккьетта</button>
+                  <button class="katalog__link" type="button" data-name="LorenzoPietro">Веккьетта</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="AndreaVerrocchio">Андреа Верроккьо</button>
+                  <button class="katalog__link" type="button" data-name="AndreaVerrocchio">Андреа Верроккьо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link active_link" type="button" dataid="DomenicoGhirlandaio">Доменико Гирландайо</button>
+                  <button class="katalog__link active_link" type="button" data-name="DomenicoGhirlandaio">Доменико Гирландайо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BenozzoGozzoli">Беноццо Гоццоли</button>
+                  <button class="katalog__link" type="button" data-name="BenozzoGozzoli">Беноццо Гоццоли</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoGranacci">Граначчи, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoGranacci">Граначчи, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GregorioCecco">Грегорио ди Чекко</button>
+                  <button class="katalog__link" type="button" data-name="GregorioCecco">Грегорио ди Чекко</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniUdine">Джованни да Удине</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniUdine">Джованни да Удине</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniPaolo">Джованни ди Паоло</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniPaolo">Джованни ди Паоло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Giorgione">Джорджоне</button>
+                  <button class="katalog__link" type="button" data-name="Giorgione">Джорджоне</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BernardoParentino">Парентино, Бернардо</button>
+                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Pesellino">Пезеллино</button>
+                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="PietroPerugino">Пьетро Перуджино</button>
+                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="PuccioPisano">Пизанелло</button>
+                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Pinturicchio">Пинтуриккьо</button>
+                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </li>
@@ -1161,76 +1182,76 @@
 
               <ul class="katalog__sublist none">
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BenedettoDiBindo">Бенедетто ди Биндо</button>
+                  <button class="katalog__link" type="button" data-name="BenedettoDiBindo">Бенедетто ди Биндо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button"  dataid="AmbrogioBergognone">Бергоньоне, Амброджо</button>
+                  <button class="katalog__link" type="button"  data-name="AmbrogioBergognone">Бергоньоне, Амброджо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoBissolo">Биссоло, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoBissolo">Биссоло, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoBonsignori">Бонсиньори, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoBonsignori">Бонсиньори, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="RaffaelloBotticini">Боттичини, Рафаэлло</button>
+                  <button class="katalog__link" type="button" data-name="RaffaelloBotticini">Боттичини, Рафаэлло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Bartolommeo">Брамантино</button>
+                  <button class="katalog__link" type="button" data-name="Bartolommeo">Брамантино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="LouisBrea">Бреа, Людовико</button>
+                  <button class="katalog__link" type="button" data-name="LouisBrea">Бреа, Людовико</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BiagioTucci">Бьяджо д’Антонио Туччи</button>
+                  <button class="katalog__link" type="button" data-name="BiagioTucci">Бьяджо д’Антонио Туччи</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="LorenzoPietro">Веккьетта</button>
+                  <button class="katalog__link" type="button" data-name="LorenzoPietro">Веккьетта</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="AndreaVerrocchio">Андреа Верроккьо</button>
+                  <button class="katalog__link" type="button" data-name="AndreaVerrocchio">Андреа Верроккьо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link active_link" type="button" dataid="DomenicoGhirlandaio">Доменико Гирландайо</button>
+                  <button class="katalog__link active_link" type="button" data-name="DomenicoGhirlandaio">Доменико Гирландайо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BenozzoGozzoli">Беноццо Гоццоли</button>
+                  <button class="katalog__link" type="button" data-name="BenozzoGozzoli">Беноццо Гоццоли</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoGranacci">Граначчи, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoGranacci">Граначчи, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GregorioCecco">Грегорио ди Чекко</button>
+                  <button class="katalog__link" type="button" data-name="GregorioCecco">Грегорио ди Чекко</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniUdine">Джованни да Удине</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniUdine">Джованни да Удине</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniPaolo">Джованни ди Паоло</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniPaolo">Джованни ди Паоло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Giorgione">Джорджоне</button>
+                  <button class="katalog__link" type="button" data-name="Giorgione">Джорджоне</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BernardoParentino">Парентино, Бернардо</button>
+                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Pesellino">Пезеллино</button>
+                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="PietroPerugino">Пьетро Перуджино</button>
+                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="PuccioPisano">Пизанелло</button>
+                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Pinturicchio">Пинтуриккьо</button>
+                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </li>
@@ -1242,76 +1263,76 @@
 
               <ul class="katalog__sublist none">
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BenedettoDiBindo">Бенедетто ди Биндо</button>
+                  <button class="katalog__link" type="button" data-name="BenedettoDiBindo">Бенедетто ди Биндо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button"  dataid="AmbrogioBergognone">Бергоньоне, Амброджо</button>
+                  <button class="katalog__link" type="button"  data-name="AmbrogioBergognone">Бергоньоне, Амброджо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoBissolo">Биссоло, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoBissolo">Биссоло, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoBonsignori">Бонсиньори, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoBonsignori">Бонсиньори, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="RaffaelloBotticini">Боттичини, Рафаэлло</button>
+                  <button class="katalog__link" type="button" data-name="RaffaelloBotticini">Боттичини, Рафаэлло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Bartolommeo">Брамантино</button>
+                  <button class="katalog__link" type="button" data-name="Bartolommeo">Брамантино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="LouisBrea">Бреа, Людовико</button>
+                  <button class="katalog__link" type="button" data-name="LouisBrea">Бреа, Людовико</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BiagioTucci">Бьяджо д’Антонио Туччи</button>
+                  <button class="katalog__link" type="button" data-name="BiagioTucci">Бьяджо д’Антонио Туччи</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="LorenzoPietro">Веккьетта</button>
+                  <button class="katalog__link" type="button" data-name="LorenzoPietro">Веккьетта</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="AndreaVerrocchio">Андреа Верроккьо</button>
+                  <button class="katalog__link" type="button" data-name="AndreaVerrocchio">Андреа Верроккьо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link active_link" type="button" dataid="DomenicoGhirlandaio">Доменико Гирландайо</button>
+                  <button class="katalog__link active_link" type="button" data-name="DomenicoGhirlandaio">Доменико Гирландайо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BenozzoGozzoli">Беноццо Гоццоли</button>
+                  <button class="katalog__link" type="button" data-name="BenozzoGozzoli">Беноццо Гоццоли</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="FrancescoGranacci">Граначчи, Франческо</button>
+                  <button class="katalog__link" type="button" data-name="FrancescoGranacci">Граначчи, Франческо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GregorioCecco">Грегорио ди Чекко</button>
+                  <button class="katalog__link" type="button" data-name="GregorioCecco">Грегорио ди Чекко</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniUdine">Джованни да Удине</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniUdine">Джованни да Удине</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="GiovanniPaolo">Джованни ди Паоло</button>
+                  <button class="katalog__link" type="button" data-name="GiovanniPaolo">Джованни ди Паоло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Giorgione">Джорджоне</button>
+                  <button class="katalog__link" type="button" data-name="Giorgione">Джорджоне</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="BernardoParentino">Парентино, Бернардо</button>
+                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Pesellino">Пезеллино</button>
+                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="PietroPerugino">Пьетро Перуджино</button>
+                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="PuccioPisano">Пизанелло</button>
+                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
                 <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" dataid="Pinturicchio">Пинтуриккьо</button>
+                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </li>
@@ -1338,35 +1359,534 @@
       </div>
     </section>
 
+    <section class="events">
+      <div class="container events__container">
+        <h2 id="events" class="events__heading section_heading">События</h2>
 
+        <div class="swiper-container swiper-container_events">
+          <div class="swiper-wrapper swiper-wrapper_events">
+              <div class="swiper-slide swiper-slide_events events-card events_one">
+                
+                <div class="events-card__place">Музей им. Щусева</div>
 
+                <div class="events-card__date">с 20 марта по 30 апреля</div>
 
+                <p class="events-card__text">
+                  <span class="events-card__heading">Книжная гравюра в живом восприятии</span><br>Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат&nbsp;Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+                </p>
 
+                <a class="events-card__link" href="#">Подробнее</a>
+              </div>
 
+              <div class="swiper-slide swiper-slide_events events-card events_two">
+                
+                <div class="events-card__place">ММОМА</div>
 
+                <div class="events-card__date">24 марта 19:00</div>
 
+                <p class="events-card__text">
+                  <span class="events-card__heading">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</span><br>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования.
+                </p>
 
+                <a class="events-card__link" href="#">Подробнее</a>
+              </div>
 
+              <div class="swiper-slide swiper-slide_events events-card events_three">
+                
+                <div class="events-card__place">Еврейский музей</div>
 
-    <!-- <p class="about__desk">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
-    <p class="about__desk">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
-    <p class="about__desk">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
-    <p class="about__desk">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
-    <p class="about__desk">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
-    <p class="about__desk">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
-    <p class="about__desk">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
-    <p class="about__desk">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
-    <p class="about__desk">Также как жопа планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта жопа повышению качества экспериментов.</p> -->
+                <div class="events-card__date">с 31 марта по 21 апреля</div>
+
+                <p class="events-card__text">
+                  <span class="events-card__heading">Выставка «Формация 2020»</span><br>Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.
+                </p>
+
+                <a class="events-card__link" href="#">Подробнее</a>
+              </div>
+
+              <div class="swiper-slide swiper-slide_events events-card events_four">
+                
+                <div class="events-card__place">Третьяковка на Крымском валу</div>
+
+                <div class="events-card__date">с 30 марта по 30 апреля</div>
+
+                <p class="events-card__text">
+                  <span class="events-card__heading">XXIV Международная биеннале молодого искусства</span><br>Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых. Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых.
+                </p>
+
+                <a class="events-card__link" href="#">Подробнее</a>
+              </div>
+
+              <div class="swiper-slide swiper-slide_events events-card events_five">
+                
+                <div class="events-card__place">ММАМ</div>
+
+                <div class="events-card__date">с 8 апреля по 20 мая</div>
+
+                <p class="events-card__text">
+                  <span class="events-card__heading">Джон Винзор. Фотографии из серии «Метафора серебра»</span><br>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+                </p>
+
+                <a class="events-card__link" href="#">Подробнее</a>
+              </div>
+          </div>
+          
+          <div class="swiper-pagination_events events__controls"></div>
+        </div>
+
+        <button class="events__btn events__btn_style" type="button">Все события</button>
+      </div>
+    </section>
+
+    <section class="publication">
+      <div class="container publication__container">
+        <form class="publication__choice">
+          <h2 id="publication" class="publication__heading section_heading">Издания</h2>
+
+          <div class="publication__category__heading" tabindex="0">Категории</div>
+          
+          <div class="publication__category__wrap">
+            <label class="category none">
+              <input type="checkbox" class="category__btn btn_hide" name="bookCategory" value="bestSellers" />
+
+              <span class="category__custom"></span>
+
+              <span class="category__desc">Бестселлеры</span>
+            </label>
+  
+            <label class="category none">
+              <input type="checkbox" class="category__btn btn_hide" name="bookCategory" value="art" />
+
+              <span class="category__custom"></span>
+              
+              <span class="category__desc">Искусство</span>
+            </label>
+
+            <label class="category none">
+              <input type="checkbox" class="category__btn btn_hide" name="bookCategory" value="architecture" />
+
+              <span class="category__custom"></span>
+
+              <span class="category__desc">Архитектура</span>
+            </label>
+  
+            <label class="category none">
+              <input type="checkbox" class="category__btn btn_hide" name="bookCategory" value="design" />
+
+              <span class="category__custom"></span>
+
+              <span class="category__desc">Дизайн</span>
+            </label>
+
+            <label class="category none">
+              <input type="checkbox" class="category__btn btn_hide" name="bookCategory" value="fashion" />
+
+              <span class="category__custom"></span>
+
+              <span class="category__desc">Мода</span>
+            </label>
+
+            <label class="category none">
+              <input type="checkbox" class="category__btn btn_hide" name="bookCategory" value="children" />
+
+              <span class="category__custom"></span>
+
+              <span class="category__desc">Детям</span>
+            </label>
+
+            <label class="category none">
+              <input type="checkbox" class="category__btn btn_hide" name="bookCategory" value="fiction" />
+
+              <span class="category__custom"></span>
+
+              <span class="category__desc">Художественная литература</span>
+            </label>
+
+            <label class="category none">
+              <input type="checkbox" class="category__btn btn_hide" name="bookCategory" value="journalism" />
+
+              <span class="category__custom"></span>
+
+              <span class="category__desc">Публицистика</span>
+            </label>
+
+            <label class="category none">
+              <input type="checkbox" class="category__btn btn_hide" name="bookCategory" value="trevelGuides" />
+
+              <span class="category__custom"></span>
+
+              <span class="category__desc">Путеводители</span>
+            </label>
+
+            <label class="category none">
+              <input type="checkbox" class="category__btn btn_hide" name="bookCategory" value="philosophy" />
+
+              <span class="category__custom"></span>
+
+              <span class="category__desc">Философия</span>
+            </label>
+
+            <label class="category none">
+              <input type="checkbox" class="category__btn btn_hide" name="bookCategory" value="educationalLiterature" />
+
+              <span class="category__custom"></span>
+
+              <span class="category__desc">Учебная литература</span>
+            </label>
+
+            <label class="category none">
+              <input type="checkbox" class="category__btn btn_hide" name="bookCategory" value="newspaper" />
+
+              <span class="category__custom"></span>
+
+              <span class="category__desc">Журналы и газеты</span>
+            </label>
+          </div>
+
+          <div class="publication__price">
+            <div class="publication__price__heading">Цена</div>
+
+            <div class="publication__price__wrap">
+              <label for="min_price" class="publication__price__min" >От</label>
+
+              <input id="min_price" type="text" class="publication__price__text" name="minPrice" />                
+
+              <label for="max_price" class="publication__price__max">до</label>
+
+              <input id="max_price" type="text" class="publication__price__text" name="minPrice" />                
+
+              <span class="publication__price__unit">рублей</span>
+            </div>
+          </div>
+        </form>
+
+        <div class="swiper-container_publication">
+          <div class="swiper-wrapper_publication">
+              <article class="swiper-slide_publication publication-card">
+                <picture class="publication-card__img" >
+                  <source media="(min-width: 1920px)" srcset="pictures/publication/xl/rectangle-111-xl@x1_optimized.jpg 1x, pictures/publication/xl/rectangle-111-xl@x2_optimized.jpg 2x, pictures/publication/xl/rectangle-111-xl@x3_optimized.jpg 3x">
+      
+                  <source media="(min-width: 1024px)" srcset="pictures/publication/l/rectangle-111-l@x1-1_optimized.jpg 1x, pictures/publication/l/rectangle-111-l@x2-1_optimized.jpg 2x, pictures/publication/l/rectangle-111-l@x3-1_optimized.jpg 3x">
     
-    
+                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1-1_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2-1_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3-1_optimized.jpg 3x">                  
+                
+                  <img class="publication-card__img" src="pictures/publication/xs/rectangle-111-xs@x1_optimized.jpg" srcset="pictures/publication/xs/rectangle-111-xs@x2_optimized.jpg 2x, pictures/publication/xs/rectangle-111-xs@x3_optimized.jpg 3x" alt="Искусство цвета Иттен, Иоханнес" />
+                </picture>
 
+                <h3 class="publication-card__heading">Искусство цвета</h3>
+
+                <p class="publication-card__author">Иттен, Иоханнес</p>
+
+                <p class="publication-card__price">620 руб</p>
+
+                <button class="publication-card__btn ovalbtn_style" type="button">Заказать</button>
+              </article>
+
+              <article class="swiper-slide_publication publication-card">
+                <picture class="publication-card__img" >
+                  <source media="(min-width: 1920px)" srcset="pictures/publication/xl/rectangle-111-xl@x1-1_optimized.jpg 1x, pictures/publication/xl/rectangle-111-xl@x2-1_optimized.jpg 2x, pictures/publication/xl/rectangle-111-xl@x3-1_optimized.jpg 3x">
+      
+                  <source media="(min-width: 1024px)" srcset="pictures/publication/l/rectangle-111-l@x1_optimized.jpg 1x, pictures/publication/l/rectangle-111-l@x2_optimized.jpg 2x, pictures/publication/l/rectangle-111-l@x3_optimized.jpg 3x">
+    
+                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3_optimized.jpg 3x">                  
+                
+                  <img class="publication-card__img" src="pictures/publication/xs/rectangle-111-xs@x1-3_optimized.jpg" srcset="pictures/publication/xs/rectangle-111-xs@x2-3_optimized.jpg 2x, pictures/publication/xs/rectangle-111-xs@x3-3_optimized.jpg 3x" alt="Типографика" />
+                </picture>
+
+                <h3 class="publication-card__heading">Типографика</h3>
+
+                <p class="publication-card__author">Рудер, Эмиль</p>
+
+                <p class="publication-card__price">2 450 руб</p>
+
+                <button class="publication-card__btn ovalbtn_style" type="button">Заказать</button>
+              </article>
+
+              <article class="swiper-slide_publication publication-card">
+                <picture class="publication-card__img" >
+                  <source media="(min-width: 1920px)" srcset="pictures/publication/xl/rectangle-111-xl@x1-2_optimized.jpg 1x, pictures/publication/xl/rectangle-111-xl@x2-2_optimized.jpg 2x, pictures/publication/xl/rectangle-111-xl@x3-2_optimized.jpg 3x">
+      
+                  <source media="(min-width: 1024px)" srcset="pictures/publication/l/rectangle-111-l@x1-6_optimized.jpg 1x, pictures/publication/l/rectangle-111-l@x2-6_optimized.jpg 2x, pictures/publication/l/rectangle-111-l@x3-6_optimized.jpg 3x">
+    
+                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1-6_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2-6_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3-6_optimized.jpg 3x">                  
+                
+                  <img class="publication-card__img" src="pictures/publication/xs/rectangle-112-xs@x1_optimized.jpg" srcset="pictures/publication/xs/rectangle-112-xs@x2_optimized.jpg 2x, pictures/publication/xs/rectangle-112-xs@x3_optimized.jpg 3x" alt="Книга про буквы" />
+                </picture>
+
+                <h3 class="publication-card__heading">Книга про буквы</h3>
+
+                <p class="publication-card__author">Гордон, Юрий</p>
+
+                <p class="publication-card__price">2 200 руб</p>
+
+                <button class="publication-card__btn ovalbtn_style" type="button">Заказать</button>
+              </article>
+
+              <article class="swiper-slide_publication publication-card">
+                <picture class="publication-card__img" >
+                  <source media="(min-width: 1920px)" srcset="pictures/publication/xl/rectangle-111-xl@x1-3_optimized.jpg 1x, pictures/publication/xl/rectangle-111-xl@x2-3_optimized.jpg 2x, pictures/publication/xl/rectangle-111-xl@x3-3_optimized.jpg 3x">
+      
+                  <source media="(min-width: 1024px)" srcset="pictures/publication/l/rectangle-111-l@x1-2_optimized.jpg 1x, pictures/publication/l/rectangle-111-l@x2-2_optimized.jpg 2x, pictures/publication/l/rectangle-111-l@x3-2_optimized.jpg 3x">
+    
+                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1-2_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2-2_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3-2_optimized.jpg 3x">                  
+                
+                  <img class="publication-card__img" src="pictures/publication/xs/rectangle-111-xs@x1-4_optimized.jpg" srcset="pictures/publication/xs/rectangle-111-xs@x2-4_optimized.jpg 2x, pictures/publication/xs/rectangle-111-xs@x3-4_optimized.jpg 3x" alt="Николай Ильин" />
+                </picture>
+
+                <h3 class="publication-card__heading">Николай Ильин</h3>
+
+                <p class="publication-card__author">Кричевский, Владимир</p>
+
+                <p class="publication-card__price">1 100 руб</p>
+
+                <button class="publication-card__btn ovalbtn_style" type="button">Заказать</button>
+              </article>
+
+              <article class="swiper-slide_publication publication-card">
+                <picture class="publication-card__img" >
+                  <source media="(min-width: 1920px)" srcset="pictures/publication/xl/rectangle-111-xl@x1-4_optimized.jpg 1x, pictures/publication/xl/rectangle-111-xl@x2-4_optimized.jpg 2x, pictures/publication/xl/rectangle-111-xl@x3-4_optimized.jpg 3x">
+      
+                  <source media="(min-width: 1024px)" srcset="pictures/publication/l/rectangle-111-l@x1-3_optimized.jpg 1x, pictures/publication/l/rectangle-111-l@x2-3_optimized.jpg 2x, pictures/publication/l/rectangle-111-l@x3-3_optimized.jpg 3x">
+    
+                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1-3_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2-3_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3-3_optimized.jpg 3x">                  
+                
+                  <img class="publication-card__img" src="pictures/publication/xs/rectangle-111-xs@x1-1_optimized.jpg" srcset="pictures/publication/xs/rectangle-111-xs@x2-1_optimized.jpg 2x, pictures/publication/xs/rectangle-111-xs@x3-1_optimized.jpg 3x" alt="Модульные системы в графическом дизайне" />
+                </picture>
+
+                <h3 class="publication-card__heading">Модульные системы в графическом дизайне</h3>
+
+                <p class="publication-card__author">Мюллер-Брокманнскоий</p>
+
+                <p class="publication-card__price">1 450 руб</p>
+
+                <button class="publication-card__btn ovalbtn_style" type="button">Заказать</button>
+              </article>
+
+              <article class="swiper-slide_publication publication-card">
+                <picture class="publication-card__img" >
+                  <source media="(min-width: 1920px)" srcset="pictures/publication/xl/rectangle-111-xl@x1-5_optimized.jpg 1x, pictures/publication/xl/rectangle-111-xl@x2-5_optimized.jpg 2x, pictures/publication/xl/rectangle-111-xl@x3-5_optimized.jpg 3x">
+      
+                  <source media="(min-width: 1024px)" srcset="pictures/publication/l/rectangle-111-l@x1-4_optimized.jpg 1x, pictures/publication/l/rectangle-111-l@x2-4_optimized.jpg 2x, pictures/publication/l/rectangle-111-l@x3-4_optimized.jpg 3x">
+    
+                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1-4_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2-4_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3-4_optimized.jpg 3x">                  
+                
+                  <img class="publication-card__img" src="pictures/publication/xs/rectangle-112-xs@x1-1_optimized.jpg" srcset="pictures/publication/xs/rectangle-112-xs@x2-1_optimized.jpg 2x, pictures/publication/xs/rectangle-112-xs@x3-1_optimized.jpg 3x" alt="Эволюция графических стилей" />
+                </picture>
+
+                <h3 class="publication-card__heading">Эволюция графических стилей</h3>
+
+                <p class="publication-card__author">Хеллер, Чваст</p>
+
+                <p class="publication-card__price">3 200 руб</p>
+
+                <button class="publication-card__btn ovalbtn_style" type="button">Заказать</button>
+              </article>
+
+              <article class="swiper-slide_publication publication-card">
+                <picture class="publication-card__img" >
+                  <source media="(min-width: 1920px)" srcset="pictures/publication/xl/rectangle-111-xl@x1-6_optimized.jpg 1x, pictures/publication/xl/rectangle-111-xl@x2-6_optimized.jpg 2x, pictures/publication/xl/rectangle-111-xl@x3-6_optimized.jpg 3x">
+      
+                  <source media="(min-width: 1024px)" srcset="pictures/publication/l/rectangle-111-l@x1-5_optimized.jpg 1x, pictures/publication/l/rectangle-111-l@x2-5_optimized.jpg 2x, pictures/publication/l/rectangle-111-l@x3-5_optimized.jpg 3x">
+    
+                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1-5_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2-5_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3-5_optimized.jpg 3x">                  
+                
+                  <img class="publication-card__img" src="pictures/publication/xs/rectangle-111-xs@x1-2_optimized.jpg" srcset="pictures/publication/xs/rectangle-111-xs@x2-2_optimized.jpg 2x, pictures/publication/xs/rectangle-111-xs@x3-2_optimized.jpg 3x" alt="Эволюция графических стилей" />
+                </picture>
+
+                <h3 class="publication-card__heading">Исскуство и визуальное восприятие</h3>
+
+                <p class="publication-card__author">Арнхейм, Рудольф</p>
+
+                <p class="publication-card__price">2 200 руб</p>
+
+                <button class="publication-card__btn ovalbtn_style" type="button">Заказать</button>
+              </article>
+          </div>
+
+          <div class="swiper-controls_publication">
+            <div class="swiper-button-prev_publication"></div>
+
+            <div class="swiper-pagination_publication"></div>
+
+            <div class="swiper-button-next_publication"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="container projects__container">
+
+        <h2 id="projects" class="projects__heading section_heading">Проекты</h2>
+
+        <div class="projects__desc">
+          <p class="projects__text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское</p>
+
+          <div class="tooltip">
+            <button class="tooltip__btn" aria-labelledby="tooltip-label__one">i</button>
+
+            <span class="tooltip__desc" role="tooltip" id="tooltip-label__one">Пример современных тенденций - современная методология разработки</span>
+          </div>
+
+          <p class="projects__text">обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены</p>
+
+          <div class="tooltip">
+            <button class="tooltip__btn" aria-labelledby="tooltip-label__two">i</button>
+
+            <span class="tooltip__desc" role="tooltip" id="tooltip-label__two">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции</span>
+          </div>
+          
+          <p class="projects__text">исключительно в разрезе маркетинговых и финансовых</p>
+
+          <div class="tooltip">
+            <button class="tooltip__btn" aria-labelledby="tooltip-label__tree">i</button>
+
+            <span class="tooltip__desc" role="tooltip" id="tooltip-label__tree">В стремлении повысить качество </span>
+          </div>
+
+          <p class="projects__text"> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее:</p>
+
+          <a class="projects__link link_underline" href="blanchard-art.ru/projects/about">blanchard-art.ru/projects/about</a>
+        </div>
+
+        <h3 class="projects__subheading">Партнёры проектов:</h3>
+
+        <div class="project-swiper">
+          <div class="swiper-container_projects swiper-container">
+            <div class="swiper-wrapper swiper-wrapper_projects">
+                <div class="swiper-slide swiper-slide_projects">
+                  <a class="projects__card" href="#">
+                    <img class="projects__img" src="pictures/projects/group-73-@x1_optimized.jpg" srcset="pictures/projects/group-73-@x2_optimized.jpg 2x, pictures/projects/group-73-@x3_optimized.jpg 3x" alt="Freelands Foundation">
+                  </a>
+                </div>
+  
+                <div class="swiper-slide swiper-slide_projects">
+                  <a class="projects__card" href="#">
+                    <img class="projects__img" src="pictures/projects/group-72-@x1_optimized.jpg" srcset="pictures/projects/group-72-@x2_optimized.jpg 2x, pictures/projects/group-72-@x3_optimized.jpg 3x" alt="Institute for contemporary art">
+                  </a>
+                </div>
+  
+                <div class="swiper-slide swiper-slide_projects">
+                  <a class="projects__card" href="#">
+                    <img class="projects__img" src="pictures/projects/group-37-@x1_optimized.jpg" srcset="pictures/projects/group-37-@x2_optimized.jpg 2x, pictures/projects/group-37-@x3_optimized.jpg 3x" alt="Workhouse arts center">
+                  </a>
+                </div>
+  
+                <div class="swiper-slide swiper-slide_projects">
+                  <a class="projects__card" href="#">
+                    <img class="projects__img" src="pictures/projects/group-22-@x1_optimized.jpg" srcset="pictures/projects/group-22-@x2_optimized.jpg 2x, pictures/projects/group-22-@x3_optimized.jpg 3x" alt="1849">
+                  </a>
+                </div>
+  
+                <div class="swiper-slide swiper-slide_projects">
+                  <a class="projects__card" href="#">
+                    <img class="projects__img" src="pictures/projects/group-60-@x1_optimized.jpg" srcset="pictures/projects/group-60-@x2_optimized.jpg 2x, pictures/projects/group-60-@x3_optimized.jpg 3x" alt="Hiscox">
+                  </a>
+                </div>
+  
+                <div class="swiper-slide swiper-slide_projects">
+                  <a class="projects__card" href="#">
+                    <img class="projects__img" src="pictures/projects/group-23-@x1_optimized.jpg" srcset="pictures/projects/group-23-@x2_optimized.jpg 2x, pictures/projects/group-23-@x3_optimized.jpg 3x" alt="Camden arts centre">
+                  </a>
+                </div>
+  
+                <div class="swiper-slide swiper-slide_projects">
+                  <a class="projects__card" href="#">
+                    <img class="projects__img" src="pictures/projects/group-26-@x1_optimized.jpg" srcset="pictures/projects/group-26-@x2_optimized.jpg 2x, pictures/projects/group-26-@x3_optimized.jpg 3x" alt="Stassen">
+                  </a>
+                </div>
+  
+                <div class="swiper-slide swiper-slide_projects">
+                  <a class="projects__card" href="#">
+                    <img class="projects__img" src="pictures/projects/group-59-@x1_optimized.jpg" srcset="pictures/projects/group-59-@x2_optimized.jpg 2x, pictures/projects/group-59-@x3_optimized.jpg 3x" alt="Watts gallery artsts village">
+                  </a>
+                </div>
+  
+                <div class="swiper-slide swiper-slide_projects">
+                  <a class="projects__card" href="#">
+                    <img class="projects__img" src="pictures/projects/group-27-@x1_optimized.jpg" srcset="pictures/projects/group-27-@x2_optimized.jpg 2x, pictures/projects/group-27-@x3_optimized.jpg 3x" alt="Ecole superieure d'ar et de design de valenciennes">
+                  </a>
+                </div>
+            </div>          
+          </div>
+
+          <div class="swiper-button-prev_projects"></div>
+  
+          <div class="swiper-button-next_projects"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">      
+      <h2 id="contacts" class="section_heading contacts__heading">Контакты</h2>
+
+      <div class="contacts__container">
+        <address class="contacts__adress">
+          <p class="contacts__showroom">Шоурум №2</p>
+          <p class="contacts__street">Покровский бульвар, дом 24, строение 3</p>
+        </address>
+
+        <div id="map" class="contacts__map"></div>
+
+        <form id="subscribe" class="feedback-form" name="contactUs">
+          <h3 class="feedback-form__heading">Заказать обратный звонок</h3>
+
+          <input type="hidden" name="project_name" value="blanchard">
+          <input type="hidden" name="admin_email" value="dmwebdevelop@gmail.com">
+          <input type="hidden" name="form_subject" value="Форма обратной связи">
+      
+          <label class="feedback-form__wrap">      
+            <input class="feedback-form__item item_name" type="text" name="name" data-validate-field="name" placeholder="Имя*" required>
+          </label>
+
+          <label class="feedback-form__wrap">      
+            <input class="feedback-form__item item_tel" type="tel" name="phoneNumber" data-validate-field="phoneNumber" placeholder="Телефон*" required>
+          </label>
+      
+          <button class="feedback-form__btn ovalbtn_style" type="submit">Заказать</button>
+        </form>
+
+        <div class="contacts__social">
+          <h3 class="contacts__social__heading">Связаться в один клик</h3>
+
+          <ul class="contacts__list">         
+            <li class="contacts__item">
+              <a class="contacts__link whatsapp input_style" href="https://api.whatsapp.com/send?phone=79805592680&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D1%8F%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83..." target="_blank" aria-label="напиши в Whatsapp"></a>
+            </li>
+  
+            <li class="contacts__item">
+              <a class="contacts__link telegram input_style" href="https://teleg.run/dmwebdev" target="_blank" aria-label="напиши в Telegram"></a>
+            </li>
+          </ul>
+        </div>        
+      </div>
+    </section>
   </main>
 
-  <!-- <script src="scripts/modules/swiper-bundle.min.js"></script> -->
-  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <a href="#" class="footer__link link_style">
+        <img class="footer__logo" src="pictures/header/logo.svg" alt="Blanchard - художественная галерея">
+      </a>
 
-  <!-- <script src="scripts/js/gallery.js"></script> -->
- 
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link input_style vk" href="https://vk.com/id597110410" target="_blank" aria-label="я в контакте"></a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link input_style instagram" href="https://www.instagram.com/dmwebdev/" target="_blank" aria-label="я в instagram"></a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link input_style facebook" href="https://www.facebook.com/profile.php?id=100004634804576" target="_blank" aria-label="я в facebook"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
   <div id="modal" class="modal"></div>
+
+  <div class="message none" aria-hidden="true">Данные успешно отправлены</div>
 </body>
 </html>

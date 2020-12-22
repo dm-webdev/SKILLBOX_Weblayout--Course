@@ -67,14 +67,14 @@
   transition: outline .2s, filter .2s;
 }
 
-.search-form__open:focus,
+.search-open:focus,
 .header-nav__burger:focus,
 .header-nav__burger:focus.header-nav__burger::after,
 .header-nav__burger:focus.header-nav__burger::before {
   outline: 2px solid var(--background_btn);
 }
 
-.search-form__open:active,
+.search-open:active,
 .header-nav__burger:active,
 .header-nav__burger:active.header-nav__burger::after,
 .header-nav__burger:active.header-nav__burger::before {
@@ -135,7 +135,7 @@
   background-size: 100%;
 }
 
-.search-form__open {
+.search-open {
   order: 3;
   padding: 8px;
   border: none;

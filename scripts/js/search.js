@@ -1,6 +1,6 @@
 "use strict";
 window.addEventListener("DOMContentLoaded", function () {
-  const showButton = document.querySelector(".search-form__open");
+  const showButton = document.querySelector(".search-open");
   const hideButton = document.querySelector(".search-form__clean");
   const menu = document.querySelector(".header-submenu");
 

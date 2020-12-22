@@ -77,7 +77,7 @@
     background-position: center left;
   }
 
-  .search-form__open {
+  .search-open {
     display: none;
   }
 
@@ -277,6 +277,19 @@
   .katalog__link:hover {
     color: var(--background_btn);
     text-decoration: underline;
+  }
+
+  /*--events--*/
+
+  .evets-card__link:hover {
+    font-weight: 600;
+  }
+
+  /*--projects--*/
+
+  .projects__card {
+    min-height: auto;
+    max-height: auto;
   }
 
 }

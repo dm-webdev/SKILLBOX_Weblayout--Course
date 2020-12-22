@@ -1,0 +1,177 @@
+.events__container {
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+
+.events__heading {
+  margin-top: 0;
+  margin-bottom: 12px;
+  text-indent: -2px;
+}
+
+.events-card {
+  display: flex;
+  flex-flow: column;
+  box-sizing: border-box;
+  padding: 214px 0 48px 0;
+  border: 1px solid var(--grey_CA);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 290px 200px;
+}
+
+.swiper-wrapper.swiper-wrapper_events {
+  display: flex;
+  padding-bottom: 20px;
+  height: 683px;
+}
+
+.events-card__place,
+.events-card__date {
+  margin: 0;
+  padding-right: 11px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  color: var(--grey_99);
+}
+
+.events-card__heading {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  line-height: 31px;
+  text-indent: -2px;
+}
+
+.events-card__text,
+.events-card__link {
+  padding: 0 15px 0 29px;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.events-card__text {
+  margin-top: 3px;
+  display: -webkit-box;
+  margin-bottom: 25px;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.events-card__link {
+  margin: auto 0 0 0;
+  outline: none;
+  text-decoration: underline;
+  color: var(--background_btn);
+  transition: color .2s, outline .2s;
+}
+
+.events-card__link:focus {
+  outline: 2px solid var(--background_btn_hover);
+}
+
+.events-card__link:active {
+  font-weight: 600;
+  color: var(--background_btn_hover);
+}
+
+.events_one {
+  background-image: url("../../pictures/events/xs/rectangle-101-xs@x1_optimized.jpg");
+}
+
+.events_two {
+  background-image: url("../../pictures/events/xs/rectangle-104-xs@x1-1_optimized.jpg");
+}
+
+.events_three {
+  background-image: url("../../pictures/events/xs/rectangle-101-xs@x1-2_optimized.jpg");
+}
+
+.events_four {
+  background-image: url("../../pictures/events/xs/rectangle-104-xs@x1_optimized.jpg");
+}
+
+.events_five {
+  background-image: url("../../pictures/events/xs/rectangle-104-xs@x1-1_optimized.jpg");
+}
+
+.swiper-pagination_events {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination_events > .swiper-pagination-bullet {  
+  width: 10px;
+  height: 10px;
+  background: var(--grey_CA);
+  opacity: 1;
+}
+
+.swiper-pagination_events > .swiper-pagination-bullet:focus {
+  outline: none;
+  background: var(--background_btn_hover);
+}
+
+.swiper-pagination_events.events__controls.swiper-pagination-clickable.swiper-pagination-bullets > .swiper-pagination-bullet {
+  margin: 0 7px;
+}
+
+.swiper-pagination_events > .swiper-pagination-bullet-active {
+  background: var(--grey_66);
+}
+
+.events__btn {
+  display: none;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(-o-min-device-pixel-ratio: 2/1),
+(min-resolution: 2dppx) {
+  .events_one {
+    background-image: url("../../pictures/events/xs/rectangle-101-xs@x2_optimized.jpg");
+  }
+
+  .events_two {
+    background-image: url("../../pictures/events/xs/rectangle-104-xs@x2-1_optimized.jpg");
+  }
+  
+  .events_three {
+    background-image: url("../../pictures/events/xs/rectangle-101-xs@x2-2_optimized.jpg");
+  }
+  
+  .events_four {
+    background-image: url("../../pictures/events/xs/rectangle-104-xs@x2_optimized.jpg");
+  }
+  
+  .events_five {
+    background-image: url("../../pictures/events/xs/rectangle-104-xs@x2-1_optimized.jpg");
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3),
+(-o-min-device-pixel-ratio: 3/1),
+(min-resolution: 3dppx) {
+  .events_one {
+    background-image: url("../../pictures/events/xs/rectangle-101-xs@x3_optimized.jpg");
+  }
+
+  .events_two {
+    background-image: url("../../pictures/events/xs/rectangle-104-xs@x3-1_optimized.jpg");
+  }
+  
+  .events_three {
+    background-image: url("../../pictures/events/xs/rectangle-101-xs@x3-2_optimized.jpg");
+  }
+  
+  .events_four {
+    background-image: url("../../pictures/events/xs/rectangle-104-xs@x3_optimized.jpg");
+  }
+  
+  .events_five {
+    background-image: url("../../pictures/events/xs/rectangle-104-xs@x3-1_optimized.jpg");
+  }
+}
