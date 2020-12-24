@@ -12,7 +12,7 @@ ymaps.ready(function () {
       },
       {
         iconLayout: "default#image",
-        iconImageHref: "/pictures/contacts/map.svg",
+        iconImageHref: "/course/pictures/contacts/map.svg",
         iconImageSize: [20, 20],
       }
     );

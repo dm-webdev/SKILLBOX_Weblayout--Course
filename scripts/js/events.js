@@ -44,7 +44,6 @@ window.addEventListener("DOMContentLoaded", function () {
       eventSliderDestroy();
       btn.classList.remove("none");
     } else if (window.innerWidth > 1023) {
-      console.log(`HI + ${window.innerWidth}`)
       cards.forEach((card) => card.classList.remove("none"));
       for (let card of cards.keys()) {
         if (card > 2) {

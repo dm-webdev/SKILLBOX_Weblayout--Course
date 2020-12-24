@@ -151,27 +151,3 @@
     background-image: url("../../pictures/events/xs/rectangle-104-xs@x2-1_optimized.jpg");
   }
 }
-
-@media (-webkit-min-device-pixel-ratio: 3),
-(-o-min-device-pixel-ratio: 3/1),
-(min-resolution: 3dppx) {
-  .events_one {
-    background-image: url("../../pictures/events/xs/rectangle-101-xs@x3_optimized.jpg");
-  }
-
-  .events_two {
-    background-image: url("../../pictures/events/xs/rectangle-104-xs@x3-1_optimized.jpg");
-  }
-  
-  .events_three {
-    background-image: url("../../pictures/events/xs/rectangle-101-xs@x3-2_optimized.jpg");
-  }
-  
-  .events_four {
-    background-image: url("../../pictures/events/xs/rectangle-104-xs@x3_optimized.jpg");
-  }
-  
-  .events_five {
-    background-image: url("../../pictures/events/xs/rectangle-104-xs@x3-1_optimized.jpg");
-  }
-}

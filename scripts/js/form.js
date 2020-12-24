@@ -38,7 +38,7 @@ window.addEventListener("DOMContentLoaded", function () {
         async: true,
         callback: function () {
           message.classList.remove("none");
-          setTimeout(()=>{modal.classList.add("none")}, 1300);
+          setTimeout(()=>message.classList.add("none"), 1300);
           const form = document.forms.contactUs;
           const btn = document.querySelector(".feedback-form__btn")
           form.elements.name.value = "";

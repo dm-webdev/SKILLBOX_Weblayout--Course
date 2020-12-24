@@ -14,7 +14,6 @@ window.addEventListener("DOMContentLoaded", function () {
 
       targetList.classList.toggle("display");
       targetList.addEventListener("click", (ev) => {
-        console.log(ev.target.tagName)
         if (ev.target.tagName == "A") {
           targetList.classList.add("display");
         };
