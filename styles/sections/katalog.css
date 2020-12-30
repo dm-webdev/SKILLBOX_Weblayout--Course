@@ -117,7 +117,7 @@
 .katalog__group {
   padding: 20px 0;
   position: relative;
-  border: none;  
+  border: none;
   border-top: 1px solid var(--grey_CA);
   border-bottom: 1px solid var(--grey_CA);
   outline: none;
@@ -217,7 +217,7 @@
   transition: outline .2s, font-weight .2s, color .2s;
 }
 
-.active_link {
+.active-link {
   font-weight: 600;
   color: var(--background_btn);
 }
@@ -231,9 +231,7 @@
   color: var(--background_btn);
 }
 
-
-
-.katalog__subtitle {  
+.katalog__subtitle {
   margin-top: 12px;
   margin-bottom: 10px;
   font-weight: 600;
@@ -254,4 +252,40 @@
   padding: 0 3px 0 0;
   font-size: 16px;
   line-height: 32px;
+}
+
+
+
+.katalog__desc,
+.katalog__img,
+.katalog__text,
+.katalog__meta,
+.katalog__subtitle,
+.katalog__link {
+  animation: show_katalog .6s ease-in-out;
+}
+
+@keyframes show_katalog {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.hide {
+  opacity: 0;
+  animation: hide .3s ease-in-out;
+}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }

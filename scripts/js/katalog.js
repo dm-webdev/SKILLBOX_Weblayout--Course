@@ -16,6 +16,27 @@ window.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  const selectCountry = document.querySelectorAll(".katalog__btn");
+  const katalogRubric = document.querySelectorAll(".katalog__subitem")
+  selectCountry.forEach(item => {
+    item.addEventListener("click", (ev)=>{
+      console.log(ev.target.value)
+      katalogRubric.forEach(item => {
+
+        if (item.dataset.country === ev.target.value) {
+          setTimeout(() => {
+            item.classList.remove("none", "hide");
+          }, 300);
+        } else {
+          item.classList.add("hide");
+          setTimeout(() => {
+            item.classList.add("none");
+          }, 300);
+        };
+      });
+    });
+  });
+
   const katalog = Array.from(document.querySelectorAll(".katalog__link"));
   const article = document.querySelector(".katalog__desc");
 
@@ -435,24 +456,29 @@ window.addEventListener("DOMContentLoaded", function () {
   katalog.forEach((item) =>
     item.addEventListener("click", (ev) => {
       ev.preventDefault();
-      katalog.forEach((item) => item.classList.remove("active_link"));
-      ev.target.classList.add("active_link");
+      katalog.forEach((item) => item.classList.remove("active-link"));
+      ev.target.classList.add("active-link");
       const dataOfArtikle = katalogDataBase.find(
         (item) => item.dataId === ev.currentTarget.dataset.name
       );
-      article.innerHTML = "";
-      createArticle(
-        dataOfArtikle.xl,
-        dataOfArtikle.l,
-        dataOfArtikle.m,
-        dataOfArtikle.xs,
-        dataOfArtikle.src,
-        dataOfArtikle.alt,
-        dataOfArtikle.name,
-        dataOfArtikle.meta,
-        dataOfArtikle.description,
-        article
-      );
+
+      article.classList.add("hide");
+      setTimeout(() => {
+        article.innerHTML = "";
+        article.classList.remove("hide");
+        createArticle(
+          dataOfArtikle.xl,
+          dataOfArtikle.l,
+          dataOfArtikle.m,
+          dataOfArtikle.xs,
+          dataOfArtikle.src,
+          dataOfArtikle.alt,
+          dataOfArtikle.name,
+          dataOfArtikle.meta,
+          dataOfArtikle.description,
+          article
+        );
+      }, 300);
 
       if (window.innerWidth < 1024) {
         article.scrollIntoView({ block: "center", behavior: "smooth" });
@@ -473,9 +499,7 @@ window.addEventListener("DOMContentLoaded", function () {
     container
   ) {
     const picture = document.createElement("picture");
-    {
-      /* picture.className = "modal__img"; */
-    }
+    picture.className = "katalog__img";
     const source1920 = document.createElement("source");
     source1920.setAttribute("media", "(min-width: 1920px)");
     source1920.setAttribute("srcset", xl);
@@ -486,6 +510,7 @@ window.addEventListener("DOMContentLoaded", function () {
     source768.setAttribute("media", "(min-width: 768px)");
     source768.setAttribute("srcset", m);
     const img = document.createElement("img");
+    img.className = "katalog__img";
     img.setAttribute("src", src);
     img.setAttribute("srcset", xs);
     img.setAttribute("alt", alt);

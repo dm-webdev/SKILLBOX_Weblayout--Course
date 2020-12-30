@@ -6,7 +6,7 @@
 
   <meta name="description" content="Добро пожаловать на персональную страницу художественной галереи Blanchard">
   <meta name="keywords" content="Blanchard, художественная галерея, картины, искусство, дизайн">
-  
+
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -26,32 +26,35 @@
   <link rel="stylesheet" href="styles/modules/simplebar.css">
   <link rel="stylesheet" href="styles/modules/choices.min.css">
 
-  <!-- <link rel="stylesheet" href="styles/common/fonts.css"> -->
+
   <link rel="stylesheet" href="styles/common/normalize.css">
-  <link rel="stylesheet" href="styles/index.css">  
-  <!-- <link rel="stylesheet" href="styles/common/style.css"> -->
-  <!-- <link rel="stylesheet" href="styles/common/hover.css"> -->
 
-  <!-- <link rel="stylesheet" href="styles/sections/header.css"> -->
-  <!-- <link rel="stylesheet" href="styles/sections/hero.css"> -->
-  <!-- <link rel="stylesheet" href="styles/sections/about.css"> -->
-  <!-- <link rel="stylesheet" href="styles/sections/gallery.css"> -->
-  <!-- <link rel="stylesheet" href="styles/sections/modal.css"> -->
-  <!-- <link rel="stylesheet" href="styles/sections/katalog.css"> -->
-  <!-- <link rel="stylesheet" href="styles/sections/events.css"> -->
-  <!-- <link rel="stylesheet" href="styles/sections/publication.css"> -->
-  <!-- <link rel="stylesheet" href="styles/sections/projects.css"> -->
-  <!-- <link rel="stylesheet" href="styles/sections/contacts.css"> -->
-  <!-- <link rel="stylesheet" href="styles/sections/footer.css"> -->
+  <link rel="stylesheet" href="styles/common/fonts.css">
+  <link rel="stylesheet" href="styles/common/style.css">
+  <link rel="stylesheet" href="styles/common/hover.css">
+
+  <link rel="stylesheet" href="styles/sections/header.css">
+  <link rel="stylesheet" href="styles/sections/hero.css">
+  <link rel="stylesheet" href="styles/sections/about.css">
+  <link rel="stylesheet" href="styles/sections/gallery.css">
+  <link rel="stylesheet" href="styles/sections/modal.css">
+  <link rel="stylesheet" href="styles/sections/katalog.css">
+  <link rel="stylesheet" href="styles/sections/events.css">
+  <link rel="stylesheet" href="styles/sections/publication.css">
+  <link rel="stylesheet" href="styles/sections/projects.css">
+  <link rel="stylesheet" href="styles/sections/contacts.css">
+  <link rel="stylesheet" href="styles/sections/footer.css">
 
 
-  <!-- <link rel="stylesheet" href="styles/adaptation/min768.css"> -->
-  <!-- <link rel="stylesheet" href="styles/adaptation/min1024.css"> -->
-  <!-- <link rel="stylesheet" href="styles/adaptation/min1224.css"> -->
-  <!-- <link rel="stylesheet" href="styles/adaptation/min1696.css"> -->
-  <!-- <link rel="stylesheet" href="styles/adaptation/min1920.css"> -->
+  <link rel="stylesheet" href="styles/adaptation/min768.css">
+  <link rel="stylesheet" href="styles/adaptation/min1024.css">
+  <link rel="stylesheet" href="styles/adaptation/min1224.css">
+  <link rel="stylesheet" href="styles/adaptation/min1696.css">
+  <link rel="stylesheet" href="styles/adaptation/min1920.css">
 
-  <!-- <link rel="stylesheet" href="styles/common/rule.css"> -->
+  <link rel="stylesheet" href="styles/common/rule.css">
+
+  <link rel="stylesheet" href="index.css">
 
 
   <script src="scripts/modules/swiper-bundle.min.js" defer></script>
@@ -59,12 +62,12 @@
   <script src="scripts/modules/simplebar-min.js" defer></script>
   <script src="scripts/modules/inert.js" defer></script>
   <script src="scripts/modules/just-validate.min.js" defer></script>
-  <script src="scripts/modules/inputmask.min.js" defer></script> 
-  
-  
+  <script src="scripts/modules/inputmask.min.js" defer></script>
+
+
   <script src="scripts/js/menu.js" defer></script>
   <script src="scripts/js/search.js" defer></script>
-  <script src="scripts/js/submenu.js" defer></script>  
+  <script src="scripts/js/submenu.js" defer></script>
   <script src="scripts/js/gallery.js" defer></script>
   <script src="scripts/js/modal.js" defer></script>
   <script src="scripts/js/select.js" defer></script>
@@ -80,164 +83,174 @@
 <body>
   <header class="header">
     <div class="header__container container">
-      <a class="header-logo link_style" href="#">
+      <a class="header-logo link" href="#">
         <img class="header-logo__picture" src="pictures/header/logo.svg" alt="Blanchard - художественная галерея" />
-      </a>       
+      </a>
+
+      <button class="header__burger" aria-label="открыть меню"></button>
 
       <nav class="header-nav">
-        <button class="header-nav__burger" aria-label="открыть меню"></button>
-
         <ul class="header-nav__list">
           <li class="header-nav__item">
-            <a class="header__login link_style" href="#">Войти</a>
-
-            <button class="header-nav__hide-btn link_style" type="button" aria-label="скрыть меню"></button>
+            <button class="header-nav__hide-btn link" type="button" aria-label="скрыть меню"></button>
           </li>
           <li class="header-nav__item">
-            <a href="#about" class="header-nav__link link_style">О нас</a>
+            <a href="#about" class="header-nav__link link">О нас</a>
           </li>
           <li class="header-nav__item">
-            <a href="#gallery" class="header-nav__link link_style">Галерея</a>
+            <a href="#gallery" class="header-nav__link link">Галерея</a>
           </li>
           <li class="header-nav__item">
-            <a href="#katalog" class="header-nav__link link_style">Каталог</a>
+            <a href="#katalog" class="header-nav__link link">Каталог</a>
           </li>
           <li class="header-nav__item">
-            <a href="#events" class="header-nav__link link_style">События</a>
+            <a href="#events" class="header-nav__link link">События</a>
           </li>
           <li class="header-nav__item">
-            <a href="#publication" class="header-nav__link link_style">Издания</a>
+            <a href="#publication" class="header-nav__link link">Издания</a>
           </li>
           <li class="header-nav__item">
-            <a href="#projects" class="header-nav__link link_style">Проекты</a>
+            <a href="#projects" class="header-nav__link link">Проекты</a>
           </li>
           <li class="header-nav__item">
-            <a href="#contacts" class="header-nav__link link_style">Контакты</a>
+            <a href="#contacts" class="header-nav__link link">Контакты</a>
           </li>
         </ul>
+
+        <a class="header__login" href="#">Войти</a>
       </nav>
-      
-      <button class="search-open" type="button" aria-label="открыть поиск по сайту"></button>      
+
+      <button class="search-open" type="button" aria-label="открыть поиск по сайту"></button>
     </div>
-    
+
     <div class="header-submenu">
       <div class="header-submenu__container container">
         <ul class="header-submenu__list">
-        <li class="header-submenu__item">
-          <button class="header-submenu__btn link_style header-submenu__btn_style" type="button">Реализм</button>
+          <li class="header-submenu__item">
+            <button class="header-submenu__btn link" type="button">Реализм</button>
 
-          <ul class="header-submenu__sublist display" data-simplebar>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Реализм-1</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Реализм-2</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Реализм-3</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Реализм-4</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Реализм-5</a>
-            </li>
-          </ul>
-        </li>
-        <li class="header-submenu__item">
-          <button class="header-submenu__btn link_style header-submenu__btn_style" type="button">Импрессионизм</button>
-          
-          <ul class="header-submenu__sublist display" data-simplebar>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Импрессионизм-1</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Импрессионизм-2</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Импрессионизм-3</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Импрессионизм-4</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Импрессионизм-5</a>
-            </li>
-          </ul>
-        </li>
-        <li class="header-submenu__item">
-          <button class="header-submenu__btn link_style header-submenu__btn_style" type="button">Постимпрессионизм</button>
-          
-          <ul class="header-submenu__sublist display" data-simplebar>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Постимпрессионизм-1</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Постимпрессионизм-2</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Постимпрессионизм-3</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Постимпрессионизм-4</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Постимпрессионизм-5</a>
-            </li>
-          </ul>
-        </li>
-        <li class="header-submenu__item">
-          <button class="header-submenu__btn link_style header-submenu__btn_style" type="button">Авангард</button>
-          
-          <ul class="header-submenu__sublist display" data-simplebar>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Авангард-1</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Авангард-2</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Авангард-3</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Авангард-4</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Авангард-5</a>
-            </li>
-          </ul>
-        </li>
-        <li class="header-submenu__item">
-          <button class="header-submenu__btn link_style header-submenu__btn_style" type="button">Футуризм</button>
-          
-          <ul class="header-submenu__sublist display" data-simplebar>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Футуризм-1</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Футуризм-2</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Футуризм-3</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Футуризм-4</a>
-            </li>
-            <li class="header-submenu__subitem">
-              <a href="#" class="header-submenu__link">Футуризм-5</a>
-            </li>
-          </ul>
-        </li>
+            <div class="header-submenu__wrap display">
+              <ul class="header-submenu__sublist" data-simplebar>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Тинторетто</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Фридрих</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Леонардо</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Верроккьо</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Реализм-5</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header-submenu__item">
+            <button class="header-submenu__btn link" type="button">Импрессионизм</button>
+
+            <div class="header-submenu__wrap display">
+              <ul class="header-submenu__sublist" data-simplebar>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Моне</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Сислей</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Мане</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Ренуар</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Импрессионизм-5</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header-submenu__item">
+            <button class="header-submenu__btn link" type="button">Постимпрессионизм</button>
+
+            <div class="header-submenu__wrap display">
+              <ul class="header-submenu__sublist" data-simplebar>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Ван Гог</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Сезанн</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Гоген</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Сера</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Постимпрессионизм-5</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header-submenu__item">
+            <button class="header-submenu__btn link" type="button">Авангард</button>
+
+            <div class="header-submenu__wrap display">
+              <ul class="header-submenu__sublist" data-simplebar>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Кандинский</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Маринетти</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Малевич</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Пикассо</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Авангард-5</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header-submenu__item">
+            <button class="header-submenu__btn link" type="button">Футуризм</button>
+
+            <div class="header-submenu__wrap display">
+              <ul class="header-submenu__sublist" data-simplebar>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Карра</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Прателла</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Северини</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Балла</a>
+                </li>
+                <li class="header-submenu__subitem">
+                  <a href="#" class="header-submenu__link">Футуризм-5</a>
+                </li>
+              </ul>
+            </div>
+          </li>
         </ul>
 
-        <form class="search-form">          
-          <div class="search-form__wrap">
-            <button class="search-form__start link_style" type="submit" aria-label="начать поиск"></button>
+        <form class="search-form">
+          <!-- <div class="search-form__wrap"> -->
+          <button class="search-form__start link" type="submit" aria-label="начать поиск"></button>
 
-            <input class="search-form__text input_style" type="text" placeholder="Поиск по сайту" aria-label="введите фразу для поиска по сайту" autofocus>
+          <input class="search-form__text search-form__text_style" type="text" aria-label="введите фразу для поиска по сайту">
 
-            <button class="search-form__clean link_style" type="button" aria-label="отменить поиск"></button>          
-          </div>
+          <button class="search-form__clean link" type="button" aria-label="отменить поиск"></button>
+          <!-- </div> -->
         </form>
       </div>
     </div>
@@ -258,7 +271,7 @@
 
     <section class="about">
       <div class="container about__container">
-        <h2 id="about" class="about__heading section_heading">О нас</h2>
+        <h2 id="about" class="about__heading section-heading">О нас</h2>
 
         <p class="about__desk">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а&nbsp;значит, должны быть разоблачены.</p>
       </div>
@@ -267,465 +280,454 @@
     <section class="gallery">
       <div class="container gallery__container">
         <div class="gallery__controls">
-          <h2 id="gallery" class="gallery__heading section_heading">Галерея</h2>
+          <h2 id="gallery" class="gallery__heading section-heading">Галерея</h2>
 
           <form class="controls">
             <h3 class="controls__heading">Фильтровать по:</h3>
 
             <select class="controls__author controls__control" name="Author">
               <option value="">Автор</option>
-              <option value="author_1">Автор 1</option>
-              <option value="author_2">Автор 2</option>
-              <option value="author_3">Автор 3</option>
-            </select>
-
-            <select class="controls__artdirection controls__control" name="Artdirection">
-              <option value="">Направление</option>
-              <option value="artdirection_1">Направление 1</option>
-              <option value="artdirection_2">Направление 2</option>
-              <option value="artdirection_3">Направление 3</option>
-            </select>
-
-            <select class="controls__arttechnique controls__control" name="Arttechnique">
-              <option value="">Техника</option>
-              <option value="arttechnique_1">Техника 1</option>
-              <option value="arttechnique_2">Техника 2</option>
-              <option value="arttechnique_3">Техника 3</option>
+              <option value="artdirection">Направление</option>
+              <option value="arttechnique">Техника</option>
             </select>
           </form>
         </div>
 
-        <div class="gallery__showroom swiper-container swiper-container_gallery">
-          <div class="swiper-wrapper swiper-wrapper_gallery">
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" data-number="slide#1">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-68-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-68-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-68-xl@x3_optimized.jpg 3x">
-        
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-68-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-68-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-68-l@x3-min_optimized.jpg 3x">
-      
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-68-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-68-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-68-m@x3_optimized.jpg 3x">                  
-                  
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-137-xs@x1_optimized.jpg" alt="author_1 artdirection_1 arttechnique_1" />
-                </picture>
-              </button>
-            </div>
+        <div class="gallery__showroom">
+          <div id="modal" class="modal">
+          </div>
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_2" data-arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#2">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-71-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-71-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-71-xl@x3_optimized.jpg 3x">
-        
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-71-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-71-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-71-l@x3-min_optimized.jpg 3x">
-        
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-71-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-71-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-71-m@x3_optimized.jpg 3x">                  
-                    
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-138-xs@x1_optimized.jpg" alt="author_1 artdirection_2 arttechnique_1" />
-                </picture>
-              </button>
-            </div>
+          <div class="swiper-container swiper-container_gallery">
+            <div class="swiper-wrapper swiper-wrapper_gallery">
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
+                <button class="gallery__btn" type="button" data-number="slide#1">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-68-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-68-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-68-xl@x3_optimized.jpg 3x">
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_3" data-arttechnique="arttechnique_3">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#3">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-70-xl@x1-1_optimized.jpg 1x, pictures/gallery/xl/rectangle-70-xl@x2-1_optimized.jpg 2x, pictures/gallery/xl/rectangle-70-xl@x3-1_optimized.jpg 3x">
-        
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-98-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-98-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-98-l@x3-min_optimized.jpg 3x">
-          
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-98-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-98-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-98-m@x3_optimized.jpg 3x"> 
-                  
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-139-xs@x1_optimized.jpg" alt="author_1 artdirection_3 arttechnique_3" />
-                </picture>
-              </button>
-            </div>
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-68-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-68-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-68-l@x3-min_optimized.jpg 3x">
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_2" data-arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#4">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-72-xl@x1-1_optimized.jpg 1x, pictures/gallery/xl/rectangle-72-xl@x2-1_optimized.jpg 2x, pictures/gallery/xl/rectangle-72-xl@x3-1_optimized.jpg 3x">
-        
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-100-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-100-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-100-l@x3-min_optimized.jpg 3x">
-            
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-100-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-100-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-100-m@x3_optimized.jpg 3x"> 
-                    
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-140-xs@x1_optimized.jpg" alt="author_1 artdirection_2 arttechnique_1" />
-                </picture>
-              </button>
-            </div>
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-68-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-68-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-68-m@x3_optimized.jpg 3x">
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_2" data-arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#5">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-68-xl@x1-1_optimized.jpg 1x, pictures/gallery/xl/rectangle-68-xl@x2-1_optimized.jpg 2x, pictures/gallery/xl/rectangle-68-xl@x3-1_optimized.jpg 3x">
-        
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-92-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-92-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-92-l@x3-min_optimized.jpg 3x">
-              
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-92-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-92-m@x2_optimized.jpg 2x"> 
-                  
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-141-xs@x1_optimized.jpg" alt="author_2 artdirection_2 arttechnique_2" />
-                </picture>
-              </button>
-            </div>
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-137-xs@x1_optimized.jpg" alt="author_1 artdirection_1 arttechnique_1" />
+                  </picture>
+                </button>
+              </div>
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#6">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-71-xl@x1-1_optimized.jpg 1x, pictures/gallery/xl/rectangle-71-xl@x2-1_optimized.jpg 2x, pictures/gallery/xl/rectangle-71-xl@x3-1_optimized.jpg 3x">
-        
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-94-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-94-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-94-l@x3-min_optimized.jpg 3x">
-                
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-94-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-94-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-94-m@x3_optimized.jpg 3x">                     
-                  
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-142-xs@x1_optimized.jpg" alt="author_2 artdirection_1 arttechnique_1" />
-                </picture>
-              </button>
-            </div>
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_2" data-arttechnique="arttechnique_1">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#2">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-71-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-71-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-71-xl@x3_optimized.jpg 3x">
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_3" data-arttechnique="arttechnique_3">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#7">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-73-xl@x1-1_optimized.jpg 1x, pictures/gallery/xl/rectangle-73-xl@x2-1_optimized.jpg 2x, pictures/gallery/xl/rectangle-73-xl@x3-1_optimized.jpg 3x">
-        
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-96-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-96-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-96-l@x3-min_optimized.jpg 3x">
-                  
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-96-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-96-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-96-m@x3_optimized.jpg 3x">    
-                  
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-143-xs@x1_optimized.jpg" alt="author_2 artdirection_3 arttechnique_3" />
-                </picture>
-              </button>
-            </div>
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-71-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-71-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-71-l@x3-min_optimized.jpg 3x">
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#8">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-69-xl@x1-1_optimized.jpg 1x, pictures/gallery/xl/rectangle-69-xl@x2-1_optimized.jpg 2x, pictures/gallery/xl/rectangle-69-xl@x3-1_optimized.jpg 3x">
-        
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-102-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-102-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-102-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-102-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-102-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-102-m@x3_optimized.jpg 3x">                    
-                  
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-144-xs@x1_optimized.jpg" alt="author_3 artdirection_1 arttechnique_1" />
-                </picture>
-              </button>
-            </div>
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-71-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-71-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-71-m@x3_optimized.jpg 3x">
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_3" data-arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#9">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-74-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-74-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-74-xl@x3_optimized.jpg 3x">
-        
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-93-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-93-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-93-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-93-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-93-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-93-m@x3_optimized.jpg 3x">                    
-                                    
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-145-xs@x1_optimized.jpg" alt="author_3 artdirection_3 arttechnique_2" />
-                </picture>
-              </button>
-            </div>
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-138-xs@x1_optimized.jpg" alt="author_1 artdirection_2 arttechnique_1" />
+                  </picture>
+                </button>
+              </div>
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_1" data-arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#10">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-75-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-75-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-75-xl@x3_optimized.jpg 3x">
-        
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-95-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-95-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-95-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-95-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-95-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-95-m@x3_optimized.jpg 3x">                    
-                                                      
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-146-xs@x1_optimized.jpg" alt="author_3 artdirection_1 arttechnique_2" />
-                </picture>
-              </button>
-            </div>
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_3" data-arttechnique="arttechnique_3">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#3">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-70-xl@x1-1_optimized.jpg 1x, pictures/gallery/xl/rectangle-70-xl@x2-1_optimized.jpg 2x, pictures/gallery/xl/rectangle-70-xl@x3-1_optimized.jpg 3x">
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_3" data-arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#11">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-77-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-77-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-77-xl@x3_optimized.jpg 3x">
-        
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-99-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-99-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-99-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-99-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-99-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-99-m@x3_optimized.jpg 3x">                    
-                                                                        
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-147-xs@x1_optimized.jpg" alt="author_3 artdirection_3 arttechnique_2" />
-                </picture>
-              </button>
-            </div>
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-98-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-98-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-98-l@x3-min_optimized.jpg 3x">
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#12">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-78-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-78-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-78-xl@x3_optimized.jpg 3x">
-        
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-101-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-101-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-101-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-101-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-101-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-101-m@x3_optimized.jpg 3x">                    
-                                                                                          
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-148-xs@x1_optimized.jpg" alt="author_2 artdirection_1 arttechnique_1" />
-                </picture>
-              </button>
-            </div>
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-98-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-98-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-98-m@x3_optimized.jpg 3x">
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#13">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-76-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-76-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-76-xl@x3_optimized.jpg 3x">
-        
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-97-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-97-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-97-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-97-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-97-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-97-m@x3_optimized.jpg 3x">                    
-                                                                                                
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-149-xs@x1_optimized.jpg" alt="author_2 artdirection_1 arttechnique_1" />
-                </picture>
-              </button>
-            </div>
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-139-xs@x1_optimized.jpg" alt="author_1 artdirection_3 arttechnique_3" />
+                  </picture>
+                </button>
+              </div>
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_2" data-arttechnique="arttechnique_3">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#14">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-79-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-79-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-79-xl@x3_optimized.jpg 3x">
-        
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-103-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-103-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-103-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-103-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-103-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-103-m@x3_optimized.jpg 3x">                    
-                                        
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-150-xs@x1_optimized.jpg" alt="author_2 artdirection_2 arttechnique_3" />
-                </picture>
-              </button>
-            </div>
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_2" data-arttechnique="arttechnique_1">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#4">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-72-xl@x1-1_optimized.jpg 1x, pictures/gallery/xl/rectangle-72-xl@x2-1_optimized.jpg 2x, pictures/gallery/xl/rectangle-72-xl@x3-1_optimized.jpg 3x">
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_2" data-arttechnique="arttechnique_3">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#15">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-80-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-80-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-80-xl@x3_optimized.jpg 3x">
-        
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-80-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-80-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-80-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-80-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-80-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-80-m@x3_optimized.jpg 3x">                    
-                                                          
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-151-xs@x1_optimized.jpg" alt="author_2 artdirection_2 arttechnique_3" />
-                </picture>
-              </button>
-            </div>
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-100-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-100-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-100-l@x3-min_optimized.jpg 3x">
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_2" data-arttechnique="arttechnique_3">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#16">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-81-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-81-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-81-xl@x3_optimized.jpg 3x">
-        
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-81-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-81-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-81-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-81-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-81-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-81-m@x3_optimized.jpg 3x">                    
-                                             
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-152-xs@x1_optimized.jpg" alt="author_1 artdirection_2 arttechnique_3" />
-                </picture>
-              </button>
-            </div>
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-100-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-100-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-100-m@x3_optimized.jpg 3x">
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_2" data-arttechnique="arttechnique_3">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#17">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-82-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-82-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-82-xl@x3_optimized.jpg 3x">
-        
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-82-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-82-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-82-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-82-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-82-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-82-m@x3_optimized.jpg 3x">                    
-                                               
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-153-xs@x1_optimized.jpg" alt="author_1 artdirection_2 arttechnique_3" />
-                </picture>
-              </button>
-            </div>
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-140-xs@x1_optimized.jpg" alt="author_1 artdirection_2 arttechnique_1" />
+                  </picture>
+                </button>
+              </div>
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_3" data-arttechnique="arttechnique_3">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#18">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-83-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-83-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-83-xl@x3_optimized.jpg 3x">
-      
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-83-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-83-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-83-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-83-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-83-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-83-m@x3_optimized.jpg 3x">                    
-                                           
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-154-xs@x1_optimized.jpg" alt="author_1 artdirection_3 arttechnique_3" />
-                </picture>
-              </button>
-            </div>
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_2" data-arttechnique="arttechnique_2">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#5">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-68-xl@x1-1_optimized.jpg 1x, pictures/gallery/xl/rectangle-68-xl@x2-1_optimized.jpg 2x, pictures/gallery/xl/rectangle-68-xl@x3-1_optimized.jpg 3x">
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_3" data-arttechnique="arttechnique_3">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#19">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-84-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-84-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-84-xl@x3_optimized.jpg 3x">
-      
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-84-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-84-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-84-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-84-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-84-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-84-m@x3_optimized.jpg 3x">                    
-                                     
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-155-xs@x1_optimized.jpg" alt="author_1 artdirection_3 arttechnique_3" />
-                </picture>
-              </button>
-            </div>
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-92-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-92-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-92-l@x3-min_optimized.jpg 3x">
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_3" data-arttechnique="arttechnique_3">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#20">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-85-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-85-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-85-xl@x3_optimized.jpg 3x">
-      
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-85-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-85-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-85-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-85-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-85-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-85-m@x3_optimized.jpg 3x">      
-                  
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-156-xs@x1_optimized.jpg" alt="author_3 artdirection_3 arttechnique_3" />
-                </picture>
-              </button>
-            </div>
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-92-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-92-m@x2_optimized.jpg 2x">
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_3" data-arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#21">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-86-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-86-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-86-xl@x3_optimized.jpg 3x">
-      
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-86-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-86-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-86-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-86-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-86-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-86-m@x3_optimized.jpg 3x">      
-                  
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-157-xs@x1_optimized.jpg" alt="author_1 artdirection_3 arttechnique_2" />
-                </picture>
-              </button>
-            </div>
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-141-xs@x1_optimized.jpg" alt="author_2 artdirection_2 arttechnique_2" />
+                  </picture>
+                </button>
+              </div>
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_3" data-arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#22">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-87-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-87-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-87-xl@x3_optimized.jpg 3x">
-      
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-87-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-87-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-87-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-87-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-87-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-87-m@x3_optimized.jpg 3x">      
-                  
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-158-xs@x1_optimized.jpg" alt="author_2 artdirection_3 arttechnique_2" />
-                </picture>
-              </button>
-            </div>
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#6">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-71-xl@x1-1_optimized.jpg 1x, pictures/gallery/xl/rectangle-71-xl@x2-1_optimized.jpg 2x, pictures/gallery/xl/rectangle-71-xl@x3-1_optimized.jpg 3x">
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_1" data-arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#23">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-88-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-88-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-88-xl@x3_optimized.jpg 3x">
-      
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-88-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-88-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-88-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-88-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-88-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-88-m@x3_optimized.jpg 3x">      
-                  
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-159-xs@x1_optimized.jpg" alt="author_3 artdirection_1 arttechnique_2" />
-                </picture>
-              </button>
-            </div>
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-94-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-94-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-94-l@x3-min_optimized.jpg 3x">
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_1" data-arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#24">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-89-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-89-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-89-xl@x3_optimized.jpg 3x">
-      
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-89-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-89-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-89-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-89-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-89-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-89-m@x3_optimized.jpg 3x">      
-                  
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-160-xs@x1_optimized.jpg" alt="author_3 artdirection_1 arttechnique_2" />
-                </picture>
-              </button>
-            </div>
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-94-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-94-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-94-m@x3_optimized.jpg 3x">
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_2" data-arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#25">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-90-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-90-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-90-xl@x3_optimized.jpg 3x">
-      
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-90-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-90-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-90-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-90-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-90-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-90-m@x3_optimized.jpg 3x">      
-                  
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-161-xs@x1_optimized.jpg" alt="author_3 artdirection_2 arttechnique_2" />
-                </picture>
-              </button>
-            </div>
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-142-xs@x1_optimized.jpg" alt="author_2 artdirection_1 arttechnique_1" />
+                  </picture>
+                </button>
+              </div>
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_2" data-arttechnique="arttechnique_2">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#26">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-91-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-91-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-91-xl@x3_optimized.jpg 3x">
-      
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_3" data-arttechnique="arttechnique_3">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#7">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-73-xl@x1-1_optimized.jpg 1x, pictures/gallery/xl/rectangle-73-xl@x2-1_optimized.jpg 2x, pictures/gallery/xl/rectangle-73-xl@x3-1_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-96-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-96-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-96-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-96-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-96-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-96-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-143-xs@x1_optimized.jpg" alt="author_2 artdirection_3 arttechnique_3" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#8">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-69-xl@x1-1_optimized.jpg 1x, pictures/gallery/xl/rectangle-69-xl@x2-1_optimized.jpg 2x, pictures/gallery/xl/rectangle-69-xl@x3-1_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-102-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-102-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-102-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-102-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-102-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-102-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-144-xs@x1_optimized.jpg" alt="author_3 artdirection_1 arttechnique_1" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_3" data-arttechnique="arttechnique_2">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#9">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-74-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-74-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-74-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-93-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-93-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-93-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-93-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-93-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-93-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-145-xs@x1_optimized.jpg" alt="author_3 artdirection_3 arttechnique_2" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_1" data-arttechnique="arttechnique_2">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#10">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-75-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-75-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-75-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-95-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-95-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-95-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-95-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-95-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-95-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-146-xs@x1_optimized.jpg" alt="author_3 artdirection_1 arttechnique_2" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_3" data-arttechnique="arttechnique_2">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#11">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-77-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-77-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-77-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-99-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-99-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-99-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-99-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-99-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-99-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-147-xs@x1_optimized.jpg" alt="author_3 artdirection_3 arttechnique_2" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение"  data-number="slide#12">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-78-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-78-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-78-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-101-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-101-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-101-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-101-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-101-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-101-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-148-xs@x1_optimized.jpg" alt="author_2 artdirection_1 arttechnique_1" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#13">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-76-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-76-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-76-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-97-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-97-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-97-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-97-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-97-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-97-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-149-xs@x1_optimized.jpg" alt="author_2 artdirection_1 arttechnique_1" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_2" data-arttechnique="arttechnique_3">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#14">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-79-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-79-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-79-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-103-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-103-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-103-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-103-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-103-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-103-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-150-xs@x1_optimized.jpg" alt="author_2 artdirection_2 arttechnique_3" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_2" data-arttechnique="arttechnique_3">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#15">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-80-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-80-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-80-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-80-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-80-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-80-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-80-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-80-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-80-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-151-xs@x1_optimized.jpg" alt="author_2 artdirection_2 arttechnique_3" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_2" data-arttechnique="arttechnique_3">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#16">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-81-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-81-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-81-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-81-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-81-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-81-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-81-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-81-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-81-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-152-xs@x1_optimized.jpg" alt="author_1 artdirection_2 arttechnique_3" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_2" data-arttechnique="arttechnique_3">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#17">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-82-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-82-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-82-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-82-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-82-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-82-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-82-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-82-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-82-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-153-xs@x1_optimized.jpg" alt="author_1 artdirection_2 arttechnique_3" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_3" data-arttechnique="arttechnique_3">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#18">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-83-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-83-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-83-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-83-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-83-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-83-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-83-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-83-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-83-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-154-xs@x1_optimized.jpg" alt="author_1 artdirection_3 arttechnique_3" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_3" data-arttechnique="arttechnique_3">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#19">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-84-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-84-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-84-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-84-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-84-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-84-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-84-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-84-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-84-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-155-xs@x1_optimized.jpg" alt="author_1 artdirection_3 arttechnique_3" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_3" data-arttechnique="arttechnique_3">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#20">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-85-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-85-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-85-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-85-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-85-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-85-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-85-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-85-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-85-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-156-xs@x1_optimized.jpg" alt="author_3 artdirection_3 arttechnique_3" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_3" data-arttechnique="arttechnique_2">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#21">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-86-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-86-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-86-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-86-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-86-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-86-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-86-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-86-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-86-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-157-xs@x1_optimized.jpg" alt="author_1 artdirection_3 arttechnique_2" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_3" data-arttechnique="arttechnique_2">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#22">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-87-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-87-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-87-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-87-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-87-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-87-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-87-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-87-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-87-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-158-xs@x1_optimized.jpg" alt="author_2 artdirection_3 arttechnique_2" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_1" data-arttechnique="arttechnique_2">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#23">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-88-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-88-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-88-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-88-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-88-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-88-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-88-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-88-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-88-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-159-xs@x1_optimized.jpg" alt="author_3 artdirection_1 arttechnique_2" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_1" data-arttechnique="arttechnique_2">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#24">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-89-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-89-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-89-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-89-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-89-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-89-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-89-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-89-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-89-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-160-xs@x1_optimized.jpg" alt="author_3 artdirection_1 arttechnique_2" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_2" data-arttechnique="arttechnique_2">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#25">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-90-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-90-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-90-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-90-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-90-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-90-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-90-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-90-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-90-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-161-xs@x1_optimized.jpg" alt="author_3 artdirection_2 arttechnique_2" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_2" data-arttechnique="arttechnique_2">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#26">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-91-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-91-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-91-xl@x3_optimized.jpg 3x">
+
                   <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-91-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-91-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-91-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-91-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-91-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-91-m@x3_optimized.jpg 3x">      
-                  
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-162-xs@x1_optimized.jpg" alt="author_2 artdirection_2 arttechnique_2" />
-                </picture>
-              </button>
+
+                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-91-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-91-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-91-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-162-xs@x1_optimized.jpg" alt="author_2 artdirection_2 arttechnique_2" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#27">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-69-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-69-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-69-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-69-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-69-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-69-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-69-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-69-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-69-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-69-xs@x1_optimized.jpg" alt="author_1 artdirection_1 arttechnique_1" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#28">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-70-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-70-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-70-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-70-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-70-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-70-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-70-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-70-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-70-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-70-xs@x1_optimized.jpg" alt="author_2 artdirection_1 arttechnique_1" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#29">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-72-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-72-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-72-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-72-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-72-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-72-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-72-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-72-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-72-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-72-xs@x1_optimized.jpg" alt="author_3 artdirection_1 arttechnique_1" />
+                  </picture>
+                </button>
+              </div>
+
+              <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
+                <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#30">
+                  <picture>
+                    <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-73-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-73-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-73-xl@x3_optimized.jpg 3x">
+
+                    <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-73-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-73-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-73-l@x3-min_optimized.jpg 3x">
+
+                    <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-73-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-73-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-73-m@x3_optimized.jpg 3x">
+
+                    <img class="gallery__img" src="pictures/gallery/xs/rectangle-73-xs@x1_optimized.jpg" alt="author_1 artdirection_1 arttechnique_1" />
+                  </picture>
+                </button>
+              </div>
             </div>
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#27">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-69-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-69-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-69-xl@x3_optimized.jpg 3x">
-      
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-69-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-69-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-69-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-69-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-69-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-69-m@x3_optimized.jpg 3x">      
-                  
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-69-xs@x1_optimized.jpg" alt="author_1 artdirection_1 arttechnique_1" />
-                </picture>
-              </button>
-            </div>
+            <div class="swiper-pagination"></div>
 
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_2" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#28">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-70-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-70-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-70-xl@x3_optimized.jpg 3x">
-      
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-70-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-70-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-70-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-70-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-70-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-70-m@x3_optimized.jpg 3x">      
-                  
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-70-xs@x1_optimized.jpg" alt="author_2 artdirection_1 arttechnique_1" />
-                </picture>
-              </button>
-            </div>
-
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_3" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#29">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-72-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-72-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-72-xl@x3_optimized.jpg 3x">
-      
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-72-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-72-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-72-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-72-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-72-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-72-m@x3_optimized.jpg 3x">      
-                  
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-72-xs@x1_optimized.jpg" alt="author_3 artdirection_1 arttechnique_1" />
-                </picture>
-              </button>
-            </div>
-
-            <div class="swiper-slide swiper-slide_gallery" data-author="author_1" data-artdirection="artdirection_1" data-arttechnique="arttechnique_1">
-              <button class="gallery__btn" type="button" aria-label="развернуть изображение" data-number="slide#30">
-                <picture>
-                  <source media="(min-width: 1920px)" srcset="pictures/gallery/xl/rectangle-73-xl@x1_optimized.jpg 1x, pictures/gallery/xl/rectangle-73-xl@x2_optimized.jpg 2x, pictures/gallery/xl/rectangle-73-xl@x3_optimized.jpg 3x">
-      
-                  <source media="(min-width: 1024px)" srcset="pictures/gallery/l/rectangle-73-l@x1-min_optimized.jpg 1x, pictures/gallery/l/rectangle-73-l@x2-min_optimized.jpg 2x, pictures/gallery/l/rectangle-73-l@x3-min_optimized.jpg 3x">
-                    
-                  <source media="(min-width: 768px)" srcset="pictures/gallery/m/rectangle-73-m@x1_optimized.jpg 1x, pictures/gallery/m/rectangle-73-m@x2_optimized.jpg 2x, pictures/gallery/m/rectangle-73-m@x3_optimized.jpg 3x">      
-                  
-                  <img class="gallery__img" src="pictures/gallery/xs/rectangle-73-xs@x1_optimized.jpg" alt="author_1 artdirection_1 arttechnique_1" />
-                </picture>
-              </button>
-            </div>
-          </div>       
-            
-          <div class="swiper-pagination"></div>
-        
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>    
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
-         
         <p class="gallery__note">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
-          <a class="gallery__link link_underline" href="#"> авторизуйтесь</a>, либо воспользуйтесь лицензией.
+          <a class="gallery__link link_gallery" href="#"> авторизуйтесь</a>, либо воспользуйтесь лицензией.
         </p>
       </div>
     </section>
@@ -733,12 +735,11 @@
     <section class="katalog">
       <div class="container katalog__container">
         <div class="katalog__controls">
-          <h2 id="katalog" class="katalog__heading section_heading">Каталог</h2>
+          <h2 id="katalog" class="katalog__heading section-heading">Каталог</h2>
 
           <div class="katalog__countries">
-
             <label class="katalog__country__desk" aria-label="выбрать французких художников">
-              <input type="radio" class="katalog_hide katalog__btn" name="country" value="france" checked/>
+              <input type="radio" class="katalog_hide katalog__btn" name="country" value="france"/>
 
               <span class="katalog__custom__btn katalog_france"></span>
             </label>
@@ -750,13 +751,13 @@
             </label>
 
             <label class="katalog__country__desk" aria-label="выбрать итальянских художников">
-              <input type="radio" class="katalog_hide katalog__btn" name="country" value="italy" />
+              <input type="radio" class="katalog_hide katalog__btn" name="country" value="italy" checked/>
 
               <span class="katalog__custom__btn katalog_italy"></span>
             </label>
 
             <label class="katalog__country__desk" aria-label="выбрать российских художников">
-              <input type="radio" class="katalog_hide katalog__btn" name="country" value="belgium" />
+              <input type="radio" class="katalog_hide katalog__btn" name="country" value="russia" />
 
               <span class="katalog__custom__btn katalog_russia"></span>
             </label>
@@ -775,81 +776,99 @@
         <div class="katalog__content">
           <ul class="katalog__list">
             <li class="katalog__item">
-              <button class="katalog__group" type="button">
+              <button class="katalog__group katalog__group_active" type="button">
                 <span class="katalog__group__desc">C 1400 по 1499 гг.</span>
               </button>
 
-              <ul class="katalog__sublist none">
-                <li class="katalog__subitem">
+              <ul class="katalog__sublist">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="BenedettoDiBindo">Бенедетто ди Биндо</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button"  data-name="AmbrogioBergognone">Бергоньоне, Амброджо</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="FrancescoBissolo">Биссоло, Франческо</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="FrancescoBonsignori">Бонсиньори, Франческо</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="RaffaelloBotticini">Боттичини, Рафаэлло</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="Bartolommeo">Брамантино</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="LouisBrea">Бреа, Людовико</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="BiagioTucci">Бьяджо д’Антонио Туччи</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="LorenzoPietro">Веккьетта</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="AndreaVerrocchio">Андреа Верроккьо</button>
                 </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link active_link" type="button" data-name="DomenicoGhirlandaio">Доменико Гирландайо</button>
+                <li class="katalog__subitem" data-country="italy">
+                  <button class="katalog__link active-link" type="button" data-name="DomenicoGhirlandaio">Доменико Гирландайо</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="BenozzoGozzoli">Беноццо Гоццоли</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="FrancescoGranacci">Граначчи, Франческо</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="GregorioCecco">Грегорио ди Чекко</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="GiovanniUdine">Джованни да Удине</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="GiovanniPaolo">Джованни ди Паоло</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="Giorgione">Джорджоне</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
+                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                </li>
+                <li class="katalog__subitem none" data-country="russia">
+                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
+                </li>
+                <li class="katalog__subitem none" data-country="france">
+                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
+                </li>
+                <li class="katalog__subitem none" data-country="germany">
+                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
+                </li>
+                <li class="katalog__subitem none" data-country="germany">
+                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                </li>
+                <li class="katalog__subitem none" data-country="belgium">
+                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                </li>
+                <li class="katalog__subitem none" data-country="belgium">
                   <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
@@ -861,76 +880,31 @@
               </button>
 
               <ul class="katalog__sublist none">
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BenedettoDiBindo">Бенедетто ди Биндо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button"  data-name="AmbrogioBergognone">Бергоньоне, Амброджо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="FrancescoBissolo">Биссоло, Франческо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="FrancescoBonsignori">Бонсиньори, Франческо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="RaffaelloBotticini">Боттичини, Рафаэлло</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="Bartolommeo">Брамантино</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="LouisBrea">Бреа, Людовико</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BiagioTucci">Бьяджо д’Антонио Туччи</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="LorenzoPietro">Веккьетта</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="AndreaVerrocchio">Андреа Верроккьо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link active_link" type="button" data-name="DomenicoGhirlandaio">Доменико Гирландайо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BenozzoGozzoli">Беноццо Гоццоли</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="FrancescoGranacci">Граначчи, Франческо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GregorioCecco">Грегорио ди Чекко</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GiovanniUdine">Джованни да Удине</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GiovanniPaolo">Джованни ди Паоло</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="Giorgione">Джорджоне</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
-                </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
+                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                </li>
+                <li class="katalog__subitem none" data-country="russia">
+                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
+                </li>
+                <li class="katalog__subitem none" data-country="france">
+                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
+                </li>
+                <li class="katalog__subitem none" data-country="germany">
+                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
+                </li>
+                <li class="katalog__subitem none" data-country="germany">
+                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                </li>
+                <li class="katalog__subitem none" data-country="belgium">
+                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                </li>
+                <li class="katalog__subitem none" data-country="belgium">
                   <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
@@ -942,76 +916,31 @@
               </button>
 
               <ul class="katalog__sublist none">
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BenedettoDiBindo">Бенедетто ди Биндо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button"  data-name="AmbrogioBergognone">Бергоньоне, Амброджо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="FrancescoBissolo">Биссоло, Франческо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="FrancescoBonsignori">Бонсиньори, Франческо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="RaffaelloBotticini">Боттичини, Рафаэлло</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="Bartolommeo">Брамантино</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="LouisBrea">Бреа, Людовико</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BiagioTucci">Бьяджо д’Антонио Туччи</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="LorenzoPietro">Веккьетта</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="AndreaVerrocchio">Андреа Верроккьо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link active_link" type="button" data-name="DomenicoGhirlandaio">Доменико Гирландайо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BenozzoGozzoli">Беноццо Гоццоли</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="FrancescoGranacci">Граначчи, Франческо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GregorioCecco">Грегорио ди Чекко</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GiovanniUdine">Джованни да Удине</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GiovanniPaolo">Джованни ди Паоло</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="Giorgione">Джорджоне</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
-                </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
+                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                </li>
+                <li class="katalog__subitem none" data-country="russia">
+                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
+                </li>
+                <li class="katalog__subitem none" data-country="france">
+                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
+                </li>
+                <li class="katalog__subitem none" data-country="germany">
+                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
+                </li>
+                <li class="katalog__subitem none" data-country="germany">
+                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                </li>
+                <li class="katalog__subitem none" data-country="belgium">
+                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                </li>
+                <li class="katalog__subitem none" data-country="belgium">
                   <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
@@ -1023,76 +952,31 @@
               </button>
 
               <ul class="katalog__sublist none">
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BenedettoDiBindo">Бенедетто ди Биндо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button"  data-name="AmbrogioBergognone">Бергоньоне, Амброджо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="FrancescoBissolo">Биссоло, Франческо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="FrancescoBonsignori">Бонсиньори, Франческо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="RaffaelloBotticini">Боттичини, Рафаэлло</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="Bartolommeo">Брамантино</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="LouisBrea">Бреа, Людовико</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BiagioTucci">Бьяджо д’Антонио Туччи</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="LorenzoPietro">Веккьетта</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="AndreaVerrocchio">Андреа Верроккьо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link active_link" type="button" data-name="DomenicoGhirlandaio">Доменико Гирландайо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BenozzoGozzoli">Беноццо Гоццоли</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="FrancescoGranacci">Граначчи, Франческо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GregorioCecco">Грегорио ди Чекко</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GiovanniUdine">Джованни да Удине</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GiovanniPaolo">Джованни ди Паоло</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="Giorgione">Джорджоне</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
-                </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
+                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                </li>
+                <li class="katalog__subitem none" data-country="russia">
+                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
+                </li>
+                <li class="katalog__subitem none" data-country="france">
+                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
+                </li>
+                <li class="katalog__subitem none" data-country="germany">
+                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
+                </li>
+                <li class="katalog__subitem none" data-country="germany">
+                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                </li>
+                <li class="katalog__subitem none" data-country="belgium">
+                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                </li>
+                <li class="katalog__subitem none" data-country="belgium">
                   <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
@@ -1104,76 +988,31 @@
               </button>
 
               <ul class="katalog__sublist none">
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BenedettoDiBindo">Бенедетто ди Биндо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button"  data-name="AmbrogioBergognone">Бергоньоне, Амброджо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="FrancescoBissolo">Биссоло, Франческо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="FrancescoBonsignori">Бонсиньори, Франческо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="RaffaelloBotticini">Боттичини, Рафаэлло</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="Bartolommeo">Брамантино</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="LouisBrea">Бреа, Людовико</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BiagioTucci">Бьяджо д’Антонио Туччи</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="LorenzoPietro">Веккьетта</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="AndreaVerrocchio">Андреа Верроккьо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link active_link" type="button" data-name="DomenicoGhirlandaio">Доменико Гирландайо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BenozzoGozzoli">Беноццо Гоццоли</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="FrancescoGranacci">Граначчи, Франческо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GregorioCecco">Грегорио ди Чекко</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GiovanniUdine">Джованни да Удине</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GiovanniPaolo">Джованни ди Паоло</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="Giorgione">Джорджоне</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
-                </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
+                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                </li>
+                <li class="katalog__subitem none" data-country="russia">
+                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
+                </li>
+                <li class="katalog__subitem none" data-country="france">
+                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
+                </li>
+                <li class="katalog__subitem none" data-country="germany">
+                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
+                </li>
+                <li class="katalog__subitem none" data-country="germany">
+                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                </li>
+                <li class="katalog__subitem none" data-country="belgium">
+                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                </li>
+                <li class="katalog__subitem none" data-country="belgium">
                   <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
@@ -1185,76 +1024,31 @@
               </button>
 
               <ul class="katalog__sublist none">
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BenedettoDiBindo">Бенедетто ди Биндо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button"  data-name="AmbrogioBergognone">Бергоньоне, Амброджо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="FrancescoBissolo">Биссоло, Франческо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="FrancescoBonsignori">Бонсиньори, Франческо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="RaffaelloBotticini">Боттичини, Рафаэлло</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="Bartolommeo">Брамантино</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="LouisBrea">Бреа, Людовико</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BiagioTucci">Бьяджо д’Антонио Туччи</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="LorenzoPietro">Веккьетта</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="AndreaVerrocchio">Андреа Верроккьо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link active_link" type="button" data-name="DomenicoGhirlandaio">Доменико Гирландайо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BenozzoGozzoli">Беноццо Гоццоли</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="FrancescoGranacci">Граначчи, Франческо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GregorioCecco">Грегорио ди Чекко</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GiovanniUdine">Джованни да Удине</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GiovanniPaolo">Джованни ди Паоло</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="Giorgione">Джорджоне</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
-                </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
+                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                </li>
+                <li class="katalog__subitem none" data-country="russia">
+                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
+                </li>
+                <li class="katalog__subitem none" data-country="france">
+                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
+                </li>
+                <li class="katalog__subitem none" data-country="germany">
+                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
+                </li>
+                <li class="katalog__subitem none" data-country="germany">
+                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                </li>
+                <li class="katalog__subitem none" data-country="belgium">
+                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                </li>
+                <li class="katalog__subitem none" data-country="belgium">
                   <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
@@ -1266,76 +1060,31 @@
               </button>
 
               <ul class="katalog__sublist none">
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BenedettoDiBindo">Бенедетто ди Биндо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button"  data-name="AmbrogioBergognone">Бергоньоне, Амброджо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="FrancescoBissolo">Биссоло, Франческо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="FrancescoBonsignori">Бонсиньори, Франческо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="RaffaelloBotticini">Боттичини, Рафаэлло</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="Bartolommeo">Брамантино</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="LouisBrea">Бреа, Людовико</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BiagioTucci">Бьяджо д’Антонио Туччи</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="LorenzoPietro">Веккьетта</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="AndreaVerrocchio">Андреа Верроккьо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link active_link" type="button" data-name="DomenicoGhirlandaio">Доменико Гирландайо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BenozzoGozzoli">Беноццо Гоццоли</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="FrancescoGranacci">Граначчи, Франческо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GregorioCecco">Грегорио ди Чекко</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GiovanniUdine">Джованни да Удине</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="GiovanniPaolo">Джованни ди Паоло</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="Giorgione">Джорджоне</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
-                </li>
-                <li class="katalog__subitem">
-                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
-                </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
                   <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem">
+                <li class="katalog__subitem" data-country="italy">
+                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                </li>
+                <li class="katalog__subitem none" data-country="russia">
+                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
+                </li>
+                <li class="katalog__subitem none" data-country="france">
+                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
+                </li>
+                <li class="katalog__subitem none" data-country="germany">
+                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
+                </li>
+                <li class="katalog__subitem none" data-country="germany">
+                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                </li>
+                <li class="katalog__subitem none" data-country="belgium">
+                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                </li>
+                <li class="katalog__subitem none" data-country="belgium">
                   <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
@@ -1343,13 +1092,13 @@
           </ul>
 
           <article class="katalog__desc">
-            <picture>
+            <picture class="katalog__img">
               <source media="(min-width: 1920px)" srcset="pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x">
-    
+
               <source media="(min-width: 1024px)" srcset="pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x">
-  
-              <source media="(min-width: 768px)" srcset="pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x">                  
-              
+
+              <source media="(min-width: 768px)" srcset="pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x">
+
               <img class="katalog__img" src="pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg" srcset="pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x" alt="Доменико Гирландайо" />
             </picture>
 
@@ -1365,12 +1114,12 @@
 
     <section class="events">
       <div class="container events__container">
-        <h2 id="events" class="events__heading section_heading">События</h2>
+        <h2 id="events" class="events__heading section-heading">События</h2>
 
         <div class="swiper-container swiper-container_events">
           <div class="swiper-wrapper swiper-wrapper_events">
               <div class="swiper-slide swiper-slide_events events-card events_one">
-                
+
                 <div class="events-card__place">Музей им. Щусева</div>
 
                 <div class="events-card__date">с 20 марта по 30 апреля</div>
@@ -1383,7 +1132,7 @@
               </div>
 
               <div class="swiper-slide swiper-slide_events events-card events_two">
-                
+
                 <div class="events-card__place">ММОМА</div>
 
                 <div class="events-card__date">24 марта 19:00</div>
@@ -1396,7 +1145,7 @@
               </div>
 
               <div class="swiper-slide swiper-slide_events events-card events_three">
-                
+
                 <div class="events-card__place">Еврейский музей</div>
 
                 <div class="events-card__date">с 31 марта по 21 апреля</div>
@@ -1409,7 +1158,7 @@
               </div>
 
               <div class="swiper-slide swiper-slide_events events-card events_four">
-                
+
                 <div class="events-card__place">Третьяковка на Крымском валу</div>
 
                 <div class="events-card__date">с 30 марта по 30 апреля</div>
@@ -1422,7 +1171,7 @@
               </div>
 
               <div class="swiper-slide swiper-slide_events events-card events_five">
-                
+
                 <div class="events-card__place">ММАМ</div>
 
                 <div class="events-card__date">с 8 апреля по 20 мая</div>
@@ -1434,7 +1183,7 @@
                 <a class="events-card__link" href="#">Подробнее</a>
               </div>
           </div>
-          
+
           <div class="swiper-pagination_events events__controls"></div>
         </div>
 
@@ -1445,24 +1194,24 @@
     <section class="publication">
       <div class="container publication__container">
         <form class="publication__choice">
-          <h2 id="publication" class="publication__heading section_heading">Издания</h2>
+          <h2 id="publication" class="publication__heading section-heading">Издания</h2>
 
           <div class="publication__category__heading" tabindex="0">Категории</div>
-          
+
           <div class="publication__category__wrap">
             <label class="category none">
-              <input type="checkbox" class="category__btn btn_hide" name="bookCategory" value="bestSellers" />
+              <input type="checkbox" class="category__btn btn_hide" name="bookCategory" value="bestSellers"/>
 
               <span class="category__custom"></span>
 
               <span class="category__desc">Бестселлеры</span>
             </label>
-  
+
             <label class="category none">
               <input type="checkbox" class="category__btn btn_hide" name="bookCategory" value="art" />
 
               <span class="category__custom"></span>
-              
+
               <span class="category__desc">Искусство</span>
             </label>
 
@@ -1473,7 +1222,7 @@
 
               <span class="category__desc">Архитектура</span>
             </label>
-  
+
             <label class="category none">
               <input type="checkbox" class="category__btn btn_hide" name="bookCategory" value="design" />
 
@@ -1553,11 +1302,11 @@
             <div class="publication__price__wrap">
               <label for="min_price" class="publication__price__min" >От</label>
 
-              <input id="min_price" type="text" class="publication__price__text" name="minPrice" />                
+              <input id="min_price" type="text" class="publication__price__text" name="minPrice" />
 
               <label for="max_price" class="publication__price__max">до</label>
 
-              <input id="max_price" type="text" class="publication__price__text" name="minPrice" />                
+              <input id="max_price" type="text" class="publication__price__text" name="minPrice" />
 
               <span class="publication__price__unit">рублей</span>
             </div>
@@ -1569,11 +1318,11 @@
               <article class="swiper-slide_publication publication-card">
                 <picture class="publication-card__img" >
                   <source media="(min-width: 1920px)" srcset="pictures/publication/xl/rectangle-111-xl@x1_optimized.jpg 1x, pictures/publication/xl/rectangle-111-xl@x2_optimized.jpg 2x, pictures/publication/xl/rectangle-111-xl@x3_optimized.jpg 3x">
-      
+
                   <source media="(min-width: 1024px)" srcset="pictures/publication/l/rectangle-111-l@x1-1_optimized.jpg 1x, pictures/publication/l/rectangle-111-l@x2-1_optimized.jpg 2x, pictures/publication/l/rectangle-111-l@x3-1_optimized.jpg 3x">
-    
-                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1-1_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2-1_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3-1_optimized.jpg 3x">                  
-                
+
+                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1-1_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2-1_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3-1_optimized.jpg 3x">
+
                   <img class="publication-card__img" src="pictures/publication/xs/rectangle-111-xs@x1_optimized.jpg" srcset="pictures/publication/xs/rectangle-111-xs@x2_optimized.jpg 2x" alt="Искусство цвета Иттен, Иоханнес" />
                 </picture>
 
@@ -1589,11 +1338,11 @@
               <article class="swiper-slide_publication publication-card">
                 <picture class="publication-card__img" >
                   <source media="(min-width: 1920px)" srcset="pictures/publication/xl/rectangle-111-xl@x1-1_optimized.jpg 1x, pictures/publication/xl/rectangle-111-xl@x2-1_optimized.jpg 2x, pictures/publication/xl/rectangle-111-xl@x3-1_optimized.jpg 3x">
-      
+
                   <source media="(min-width: 1024px)" srcset="pictures/publication/l/rectangle-111-l@x1_optimized.jpg 1x, pictures/publication/l/rectangle-111-l@x2_optimized.jpg 2x, pictures/publication/l/rectangle-111-l@x3_optimized.jpg 3x">
-    
-                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3_optimized.jpg 3x">                  
-                
+
+                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3_optimized.jpg 3x">
+
                   <img class="publication-card__img" src="pictures/publication/xs/rectangle-111-xs@x1-3_optimized.jpg" srcset="pictures/publication/xs/rectangle-111-xs@x2-3_optimized.jpg 2x" alt="Типографика" />
                 </picture>
 
@@ -1609,11 +1358,11 @@
               <article class="swiper-slide_publication publication-card">
                 <picture class="publication-card__img" >
                   <source media="(min-width: 1920px)" srcset="pictures/publication/xl/rectangle-111-xl@x1-2_optimized.jpg 1x, pictures/publication/xl/rectangle-111-xl@x2-2_optimized.jpg 2x, pictures/publication/xl/rectangle-111-xl@x3-2_optimized.jpg 3x">
-      
+
                   <source media="(min-width: 1024px)" srcset="pictures/publication/l/rectangle-111-l@x1-6_optimized.jpg 1x, pictures/publication/l/rectangle-111-l@x2-6_optimized.jpg 2x, pictures/publication/l/rectangle-111-l@x3-6_optimized.jpg 3x">
-    
-                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1-6_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2-6_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3-6_optimized.jpg 3x">                  
-                
+
+                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1-6_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2-6_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3-6_optimized.jpg 3x">
+
                   <img class="publication-card__img" src="pictures/publication/xs/rectangle-112-xs@x1_optimized.jpg" srcset="pictures/publication/xs/rectangle-112-xs@x2_optimized.jpg 2x" alt="Книга про буквы" />
                 </picture>
 
@@ -1629,11 +1378,11 @@
               <article class="swiper-slide_publication publication-card">
                 <picture class="publication-card__img" >
                   <source media="(min-width: 1920px)" srcset="pictures/publication/xl/rectangle-111-xl@x1-3_optimized.jpg 1x, pictures/publication/xl/rectangle-111-xl@x2-3_optimized.jpg 2x, pictures/publication/xl/rectangle-111-xl@x3-3_optimized.jpg 3x">
-      
+
                   <source media="(min-width: 1024px)" srcset="pictures/publication/l/rectangle-111-l@x1-2_optimized.jpg 1x, pictures/publication/l/rectangle-111-l@x2-2_optimized.jpg 2x, pictures/publication/l/rectangle-111-l@x3-2_optimized.jpg 3x">
-    
-                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1-2_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2-2_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3-2_optimized.jpg 3x">                  
-                
+
+                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1-2_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2-2_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3-2_optimized.jpg 3x">
+
                   <img class="publication-card__img" src="pictures/publication/xs/rectangle-111-xs@x1-4_optimized.jpg" srcset="pictures/publication/xs/rectangle-111-xs@x2-4_optimized.jpg 2x" alt="Николай Ильин" />
                 </picture>
 
@@ -1649,11 +1398,11 @@
               <article class="swiper-slide_publication publication-card">
                 <picture class="publication-card__img" >
                   <source media="(min-width: 1920px)" srcset="pictures/publication/xl/rectangle-111-xl@x1-4_optimized.jpg 1x, pictures/publication/xl/rectangle-111-xl@x2-4_optimized.jpg 2x, pictures/publication/xl/rectangle-111-xl@x3-4_optimized.jpg 3x">
-      
+
                   <source media="(min-width: 1024px)" srcset="pictures/publication/l/rectangle-111-l@x1-3_optimized.jpg 1x, pictures/publication/l/rectangle-111-l@x2-3_optimized.jpg 2x, pictures/publication/l/rectangle-111-l@x3-3_optimized.jpg 3x">
-    
-                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1-3_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2-3_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3-3_optimized.jpg 3x">                  
-                
+
+                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1-3_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2-3_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3-3_optimized.jpg 3x">
+
                   <img class="publication-card__img" src="pictures/publication/xs/rectangle-111-xs@x1-1_optimized.jpg" srcset="pictures/publication/xs/rectangle-111-xs@x2-1_optimized.jpg 2x" alt="Модульные системы в графическом дизайне" />
                 </picture>
 
@@ -1669,11 +1418,11 @@
               <article class="swiper-slide_publication publication-card">
                 <picture class="publication-card__img" >
                   <source media="(min-width: 1920px)" srcset="pictures/publication/xl/rectangle-111-xl@x1-5_optimized.jpg 1x, pictures/publication/xl/rectangle-111-xl@x2-5_optimized.jpg 2x, pictures/publication/xl/rectangle-111-xl@x3-5_optimized.jpg 3x">
-      
+
                   <source media="(min-width: 1024px)" srcset="pictures/publication/l/rectangle-111-l@x1-4_optimized.jpg 1x, pictures/publication/l/rectangle-111-l@x2-4_optimized.jpg 2x, pictures/publication/l/rectangle-111-l@x3-4_optimized.jpg 3x">
-    
-                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1-4_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2-4_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3-4_optimized.jpg 3x">                  
-                
+
+                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1-4_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2-4_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3-4_optimized.jpg 3x">
+
                   <img class="publication-card__img" src="pictures/publication/xs/rectangle-112-xs@x1-1_optimized.jpg" srcset="pictures/publication/xs/rectangle-112-xs@x2-1_optimized.jpg 2x" alt="Эволюция графических стилей" />
                 </picture>
 
@@ -1689,11 +1438,11 @@
               <article class="swiper-slide_publication publication-card">
                 <picture class="publication-card__img" >
                   <source media="(min-width: 1920px)" srcset="pictures/publication/xl/rectangle-111-xl@x1-6_optimized.jpg 1x, pictures/publication/xl/rectangle-111-xl@x2-6_optimized.jpg 2x, pictures/publication/xl/rectangle-111-xl@x3-6_optimized.jpg 3x">
-      
+
                   <source media="(min-width: 1024px)" srcset="pictures/publication/l/rectangle-111-l@x1-5_optimized.jpg 1x, pictures/publication/l/rectangle-111-l@x2-5_optimized.jpg 2x, pictures/publication/l/rectangle-111-l@x3-5_optimized.jpg 3x">
-    
-                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1-5_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2-5_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3-5_optimized.jpg 3x">                  
-                
+
+                  <source media="(min-width: 768px)" srcset="pictures/publication/m/rectangle-111-m@x1-5_optimized.jpg 1x, pictures/publication/m/rectangle-111-m@x2-5_optimized.jpg 2x, pictures/publication/m/rectangle-111-m@x3-5_optimized.jpg 3x">
+
                   <img class="publication-card__img" src="pictures/publication/xs/rectangle-111-xs@x1-2_optimized.jpg" srcset="pictures/publication/xs/rectangle-111-xs@x2-2_optimized.jpg 2x" alt="Эволюция графических стилей" />
                 </picture>
 
@@ -1721,7 +1470,7 @@
     <section class="projects">
       <div class="container projects__container">
 
-        <h2 id="projects" class="projects__heading section_heading">Проекты</h2>
+        <h2 id="projects" class="projects__heading section-heading">Проекты</h2>
 
         <div class="projects__desc">
           <p class="projects__text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское</p>
@@ -1739,7 +1488,7 @@
 
             <span class="tooltip__desc" role="tooltip" id="tooltip-label__two">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции</span>
           </div>
-          
+
           <p class="projects__text">исключительно в разрезе маркетинговых и финансовых</p>
 
           <div class="tooltip">
@@ -1750,7 +1499,7 @@
 
           <p class="projects__text"> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее:</p>
 
-          <a class="projects__link link_underline" href="blanchard-art.ru/projects/about">blanchard-art.ru/projects/about</a>
+          <a class="projects__link link_gallery" href="blanchard-art.ru/projects/about">blanchard-art.ru/projects/about</a>
         </div>
 
         <h3 class="projects__subheading">Партнёры проектов:</h3>
@@ -1763,66 +1512,66 @@
                     <img class="projects__img" src="pictures/projects/group-73-@x1_optimized.jpg" srcset="pictures/projects/group-73-@x2_optimized.jpg 2x" alt="Freelands Foundation">
                   </a>
                 </div>
-  
+
                 <div class="swiper-slide swiper-slide_projects">
                   <a class="projects__card" href="#">
                     <img class="projects__img" src="pictures/projects/group-72-@x1_optimized.jpg" srcset="pictures/projects/group-72-@x2_optimized.jpg 2x" alt="Institute for contemporary art">
                   </a>
                 </div>
-  
+
                 <div class="swiper-slide swiper-slide_projects">
                   <a class="projects__card" href="#">
                     <img class="projects__img" src="pictures/projects/group-37-@x1_optimized.jpg" srcset="pictures/projects/group-37-@x2_optimized.jpg 2x" alt="Workhouse arts center">
                   </a>
                 </div>
-  
+
                 <div class="swiper-slide swiper-slide_projects">
                   <a class="projects__card" href="#">
                     <img class="projects__img" src="pictures/projects/group-22-@x1_optimized.jpg" srcset="pictures/projects/group-22-@x2_optimized.jpg 2x" alt="1849">
                   </a>
                 </div>
-  
+
                 <div class="swiper-slide swiper-slide_projects">
                   <a class="projects__card" href="#">
                     <img class="projects__img" src="pictures/projects/group-60-@x1_optimized.jpg" srcset="pictures/projects/group-60-@x2_optimized.jpg 2x" alt="Hiscox">
                   </a>
                 </div>
-  
+
                 <div class="swiper-slide swiper-slide_projects">
                   <a class="projects__card" href="#">
                     <img class="projects__img" src="pictures/projects/group-23-@x1_optimized.jpg" srcset="pictures/projects/group-23-@x2_optimized.jpg 2x" alt="Camden arts centre">
                   </a>
                 </div>
-  
+
                 <div class="swiper-slide swiper-slide_projects">
                   <a class="projects__card" href="#">
                     <img class="projects__img" src="pictures/projects/group-26-@x1_optimized.jpg" srcset="pictures/projects/group-26-@x2_optimized.jpg 2x" alt="Stassen">
                   </a>
                 </div>
-  
+
                 <div class="swiper-slide swiper-slide_projects">
                   <a class="projects__card" href="#">
                     <img class="projects__img" src="pictures/projects/group-59-@x1_optimized.jpg" srcset="pictures/projects/group-59-@x2_optimized.jpg 2x" alt="Watts gallery artsts village">
                   </a>
                 </div>
-  
+
                 <div class="swiper-slide swiper-slide_projects">
                   <a class="projects__card" href="#">
                     <img class="projects__img" src="pictures/projects/group-27-@x1_optimized.jpg" srcset="pictures/projects/group-27-@x2_optimized.jpg 2x" alt="Ecole superieure d'ar et de design de valenciennes">
                   </a>
                 </div>
-            </div>          
+            </div>
           </div>
 
           <div class="swiper-button-prev_projects"></div>
-  
+
           <div class="swiper-button-next_projects"></div>
         </div>
       </div>
     </section>
 
-    <section class="contacts">      
-      <h2 id="contacts" class="section_heading contacts__heading">Контакты</h2>
+    <section class="contacts">
+      <h2 id="contacts" class="section-heading contacts__heading">Контакты</h2>
 
       <div class="contacts__container">
         <address class="contacts__adress">
@@ -1838,38 +1587,38 @@
           <input type="hidden" name="project_name" value="blanchard">
           <input type="hidden" name="admin_email" value="dmwebdevelop@gmail.com">
           <input type="hidden" name="form_subject" value="Форма обратной связи">
-      
-          <label class="feedback-form__wrap" aria-label="введите ваше имя">      
+
+          <label class="feedback-form__wrap" aria-label="введите ваше имя">
             <input class="feedback-form__item item_name" type="text" name="name" data-validate-field="name" placeholder="Имя*" required>
           </label>
 
-          <label class="feedback-form__wrap" aria-label="введите ваш номер телефона">      
+          <label class="feedback-form__wrap" aria-label="введите ваш номер телефона">
             <input class="feedback-form__item item_tel" type="tel" name="phoneNumber" data-validate-field="phoneNumber" placeholder="Телефон*" required>
           </label>
-      
+
           <button class="feedback-form__btn ovalbtn_style" type="submit">Заказать</button>
         </form>
 
         <div class="contacts__social">
           <h3 class="contacts__social__heading">Связаться в один клик</h3>
 
-          <ul class="contacts__list">         
+          <ul class="contacts__list">
             <li class="contacts__item">
               <a class="contacts__link whatsapp input_style" href="https://api.whatsapp.com/send?phone=79805592680&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D1%8F%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83..." target="_blank" aria-label="напиши в Whatsapp" rel="noreferrer noopener"></a>
             </li>
-  
+
             <li class="contacts__item">
               <a class="contacts__link telegram input_style" href="https://teleg.run/dmwebdev" target="_blank" aria-label="напиши в Telegram" rel="noreferrer noopener"></a>
             </li>
           </ul>
-        </div>        
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer__container container">
-      <a href="#" class="footer__link link_style">
+      <a href="#" class="footer__link link">
         <img class="footer__logo" src="pictures/header/logo.svg" alt="Blanchard - художественная галерея">
       </a>
 
@@ -1888,8 +1637,6 @@
       </ul>
     </div>
   </footer>
-
-  <div id="modal" class="modal"></div>
 
   <div class="message none" aria-hidden="true">Данные успешно отправлены</div>
 </body>

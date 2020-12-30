@@ -1,15 +1,15 @@
 "use strict";
 
 window.addEventListener("DOMContentLoaded", function () {
-  const showButton = document.querySelector(".header-nav__burger");
+  const showButton = document.querySelector(".header__burger");
   const hideButton = document.querySelector(".header-nav__hide-btn");
-  const menu = document.querySelector(".header-nav__list");
+  const menu = document.querySelector(".header-nav");
 
   if (window.innerWidth < 1224) {
     menu.inert = true;
       showButton.addEventListener("click", show);
       menu.addEventListener("click", hideOnClick);
-      document.addEventListener("keydown", hideOnPress);    
+      document.addEventListener("keydown", hideOnPress);
   } else {
     menu.inert = false;
   }
@@ -29,7 +29,7 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
   function show() {
-    showMenu(menu, "header-nav__list_show", showButton);
+    showMenu(menu, "header-nav_show", showButton);
   };
 
   function hideOnClick(ev) {
@@ -38,13 +38,13 @@ window.addEventListener("DOMContentLoaded", function () {
       ev.target.tagName == "A" ||
       ev.target.tagName == "SPAN"
     ) {
-      hideMenu(menu, "header-nav__list_show", showButton);
+      hideMenu(menu, "header-nav_show", showButton);
     };
   };
 
   function hideOnPress(ev) {
     if (ev.code == "Escape") {
-      hideMenu(menu, "header-nav__list_show", showButton);
+      hideMenu(menu, "header-nav_show", showButton);
     }
   };
 

@@ -3,6 +3,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const showButton = document.querySelector(".search-open");
   const hideButton = document.querySelector(".search-form__clean");
   const menu = document.querySelector(".header-submenu");
+  const place = document.querySelector(".search-form__text");
 
   if (window.innerWidth < 1224) {
     menu.inert = true;
@@ -11,6 +12,7 @@ window.addEventListener("DOMContentLoaded", function () {
     document.addEventListener("keydown", hideOnPress);
   } else {
     menu.inert = false;
+    place.setAttribute("placeholder", "Поиск по сайту");
   }
 
   window.addEventListener("resize", () => {
@@ -24,6 +26,7 @@ window.addEventListener("DOMContentLoaded", function () {
       showButton.removeEventListener("click", show);
       menu.removeEventListener("click", hideOnClick);
       document.removeEventListener("keydown", hideOnPress);
+      place.setAttribute("placeholder", "Поиск по сайту");
     }
   });
 
@@ -57,78 +60,5 @@ window.addEventListener("DOMContentLoaded", function () {
     element.classList.add(showClass);
     element.inert = false;
     showButton.inert = true;
-  }
-
-  // search_logic
-
-  const originalHtml = document.querySelector("main").innerHTML;
-
-  function canceling() {
-    document.querySelector("main").innerHTML = originalHtml;
-  }
-
-  const cleanBtn = document.querySelector(".search-form__clean");
-  const searchForm = document.querySelector(".search-form");
-  const searchInput = document.querySelector(".search-form__text");
-
-  cleanBtn.addEventListener("click", (ev) => {
-    ev.preventDefault();
-    canceling();
-    searchInput.value = "";
-    location.reload();
-  });
-
-  searchForm.addEventListener("submit", (ev) => {
-    ev.preventDefault();
-    selectSearchPhrase(searchInput);
-    searchInput.value = "";
-  });
-
-  function selectSearchPhrase(inputElement) {
-    const searchPhrase = inputElement.value.trim();
-    if (searchPhrase.length < 4) {
-      canceling();
-      return () => {
-        location.reload();
-        alert("it's to shot");
-      };
-    }
-    canceling();
-
-    let replacingHtml = document.querySelector("main").innerHTML;
-    const searchArea = replacingHtml.match(/>(.*?)</g);
-    const searchRegex = new RegExp(`${searchPhrase}`, "gi");
-
-    let isAlert = true;
-    for (let phrase of searchArea) {
-      if (phrase.match(searchRegex) !== null) {
-        isAlert = false;
-      }
-    }
-
-    if (isAlert) {
-      canceling();
-      return () => {
-        alert("Не найдено ни одного совпадения");
-        location.reload();
-      };
-    }
-
-    let resultArr = [];
-    for (let i = 0; i < searchArea.length; i++) {
-      resultArr[i] = searchArea[i].replace(
-        searchRegex,
-        `<span style="background-color: yellow" class="result">${searchPhrase}</span>`
-      );
-    }
-
-    for (let i = 0; i < searchArea.length; i++) {
-      replacingHtml = replacingHtml.replace(searchArea[i], resultArr[i]);
-    }
-
-    document.querySelector("main").innerHTML = replacingHtml;
-    document
-      .querySelector(".result")
-      .scrollIntoView({ block: "center", behavior: "smooth" });
   }
 });

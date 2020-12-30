@@ -14,6 +14,8 @@
   }
 
   .header-nav {
+    justify-content: space-between;
+    padding: 20px 0 18px 26px;
     width: 80%;
   }
 
@@ -39,7 +41,7 @@
   }
 
   .header-nav__list {
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 
   .header-submenu__container {
@@ -51,13 +53,20 @@
     margin-right: 95px;
   }
 
-  .search-form__wrap {
-    padding: 5px 0;
+  .header-submenu__container {
+    justify-content: space-between;
+  }
+
+  .search-form {
+    padding: 0 0 0 2px;
+    width: 16.1%;
   }
 
   .search-form__text {
     position: relative;
+    flex-grow: 0;
     padding-left: 0;
+    padding-top: 0;
     width: 218px;
   }
 
@@ -65,8 +74,22 @@
     padding-top: 10px;
   }
 
-  .header-submenu__sublist {
+  .header-submenu__wrap {
     top: 55px;
+    padding: 40px 0;
+  }
+
+  .header-submenu__sublist {
+    padding: 0 40px;
+    height: 220px;
+  }
+
+  .header-submenu__link {
+    padding: 4px 14px;
+  }
+
+  .simplebar-track {
+    right: 20px;
   }
 
   /*--hero---*/
@@ -79,7 +102,24 @@
   .hero__desk {
     margin-top: 17px;
     margin-bottom: 93px;
-    padding-right: 65%;
+    max-width: 37%;
+  }
+
+  /*--modal--*/
+
+  .modal__wrap {
+    top: 160px;
+    left: 100px;
+    right: 100px;
+  }
+
+  .modal__picture__wrap {
+    width: 44%;
+  }
+
+  .modal__content {
+    width: 56%;
+    padding: 48px;
   }
 
   /*--about--*/
@@ -121,6 +161,11 @@
   .events-card__text,
   .events-card__link {
     padding: 0 34px 0 53px;
+  }
+
+  .events-card__link::after {
+    left: 53px;
+    right: 34px;
   }
 
   .events_one {

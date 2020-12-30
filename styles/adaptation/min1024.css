@@ -1,4 +1,25 @@
 @media all and (min-width: 1024px) {
+  /*--header--*/
+  .header {
+    position: relative;
+  }
+
+  .header-submenu {
+    width: auto;
+  }
+
+  .header-submenu__container {
+    margin-right: 0;
+    width: auto;
+  }
+
+  .search-form__clean {
+    display: none;
+  }
+
+  .search-form__text {
+    margin-right: 0;
+  }
 
   /*---hero-----*/
 
@@ -11,7 +32,7 @@
   }
 
   .hero__desk {
-    padding-right: 20%;
+    max-width: 80%;
   }
 
   @keyframes background-img {
@@ -286,7 +307,7 @@
   .feedback-form__heading {
     margin-bottom: 16px;
   }
-  
+
   .contacts__street {
     line-height: 35px;
   }
