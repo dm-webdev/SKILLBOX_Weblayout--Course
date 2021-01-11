@@ -146,6 +146,12 @@
     height: 995px;
   }
 
+  /*--gallery--*/
+
+  .swiper-contr {
+    padding-left: 35px;
+  }
+
   /*--events--*/
 
   .events-card {
@@ -168,23 +174,23 @@
     right: 34px;
   }
 
-  .events_one {
+  .events-card_one {
     background-image: url("../../pictures/events/xl/rectangle-101-xl@x1_optimized.jpg");
   }
 
-  .events_two {
+  .events-card_two {
     background-image: url("../../pictures/events/xl/rectangle-101-xl@x1-1_optimized.jpg");
   }
 
-  .events_three {
+  .events-card_three {
     background-image: url("../../pictures/events/xl/rectangle-101-xl@x1-2_optimized.jpg");
   }
 
-  .events_four {
+  .events-card_four {
     background-image: url("../../pictures/events/xl/rectangle-101-xl@x1-3_optimized.jpg");
   }
 
-  .events_five {
+  .events-card_five {
     background-image: url("../../pictures/events/xl/rectangle-101-xl@x1-4_optimized.jpg");
   }
 
@@ -286,23 +292,23 @@
 @media screen and (min-width: 1696px) and (-webkit-min-device-pixel-ratio: 2),
 screen and (min-width: 1696px) and (-o-min-device-pixel-ratio: 2/1),
 screen and (min-width: 1696px) and (min-resolution: 2dppx) {
-  .events_one {
+  .events-card_one {
     background-image: url("../../pictures/events/xl/rectangle-101-xl@x2_optimized.jpg");
   }
 
-  .events_two {
+  .events-card_two {
     background-image: url("../../pictures/events/xl/rectangle-101-xl@x2-1_optimized.jpg");
   }
 
-  .events_three {
+  .events-card_three {
     background-image: url("../../pictures/events/xl/rectangle-101-xl@x2-2_optimized.jpg");
   }
 
-  .events_four {
+  .events-card_four {
     background-image: url("../../pictures/events/xl/rectangle-101-xl@x2-3_optimized.jpg");
   }
 
-  .events_five {
+  .events-card_five {
     background-image: url("../../pictures/events/xl/rectangle-101-xl@x2-4_optimized.jpg");
   }
 }
@@ -310,23 +316,23 @@ screen and (min-width: 1696px) and (min-resolution: 2dppx) {
 @media screen and (min-width: 1696px) and (-webkit-min-device-pixel-ratio: 3),
 screen and (min-width: 1696px) and (-o-min-device-pixel-ratio: 3/1),
 screen and (min-width: 1696px) and (min-resolution: 3dppx) {
-  .events_one {
+  .events-card_one {
     background-image: url("../../pictures/events/xl/rectangle-101-xl@x3_optimized.jpg");
   }
 
-  .events_two {
+  .events-card_two {
     background-image: url("../../pictures/events/xl/rectangle-101-xl@x3-1_optimized.jpg");
   }
 
-  .events_three {
+  .events-card_three {
     background-image: url("../../pictures/events/xl/rectangle-101-xl@x3-2_optimized.jpg");
   }
 
-  .events_four {
+  .events-card_four {
     background-image: url("../../pictures/events/xl/rectangle-101-xl@x3-3_optimized.jpg");
   }
 
-  .events_five {
+  .events-card_five {
     background-image: url("../../pictures/events/xl/rectangle-101-xl@x3-4_optimized.jpg");
   }
 }

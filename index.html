@@ -26,7 +26,6 @@
   <link rel="stylesheet" href="styles/modules/simplebar.css">
   <link rel="stylesheet" href="styles/modules/choices.min.css">
 
-
   <link rel="stylesheet" href="styles/common/normalize.css">
 
   <link rel="stylesheet" href="styles/common/fonts.css">
@@ -38,13 +37,12 @@
   <link rel="stylesheet" href="styles/sections/about.css">
   <link rel="stylesheet" href="styles/sections/gallery.css">
   <link rel="stylesheet" href="styles/sections/modal.css">
-  <link rel="stylesheet" href="styles/sections/katalog.css">
+  <link rel="stylesheet" href="styles/sections/catalog.css">
   <link rel="stylesheet" href="styles/sections/events.css">
   <link rel="stylesheet" href="styles/sections/publication.css">
   <link rel="stylesheet" href="styles/sections/projects.css">
   <link rel="stylesheet" href="styles/sections/contacts.css">
   <link rel="stylesheet" href="styles/sections/footer.css">
-
 
   <link rel="stylesheet" href="styles/adaptation/min768.css">
   <link rel="stylesheet" href="styles/adaptation/min1024.css">
@@ -54,9 +52,6 @@
 
   <link rel="stylesheet" href="styles/common/rule.css">
 
-  <link rel="stylesheet" href="index.css">
-
-
   <script src="scripts/modules/swiper-bundle.min.js" defer></script>
   <script src="scripts/modules/choices.min.js" defer></script>
   <script src="scripts/modules/simplebar-min.js" defer></script>
@@ -64,21 +59,18 @@
   <script src="scripts/modules/just-validate.min.js" defer></script>
   <script src="scripts/modules/inputmask.min.js" defer></script>
 
-
   <script src="scripts/js/menu.js" defer></script>
   <script src="scripts/js/search.js" defer></script>
   <script src="scripts/js/submenu.js" defer></script>
   <script src="scripts/js/gallery.js" defer></script>
   <script src="scripts/js/modal.js" defer></script>
   <script src="scripts/js/select.js" defer></script>
-  <script src="scripts/js/katalog.js" defer></script>
+  <script src="scripts/js/catalog.js" defer></script>
   <script src="scripts/js/events.js" defer></script>
   <script src="scripts/js/publication.js" defer></script>
   <script src="scripts/js/projects.js" defer></script>
   <script src="scripts/js/map.js" defer></script>
   <script src="scripts/js/form.js" defer></script>
-
-
 </head>
 <body>
   <header class="header">
@@ -101,7 +93,7 @@
             <a href="#gallery" class="header-nav__link link">Галерея</a>
           </li>
           <li class="header-nav__item">
-            <a href="#katalog" class="header-nav__link link">Каталог</a>
+            <a href="#catalog" class="header-nav__link link">Каталог</a>
           </li>
           <li class="header-nav__item">
             <a href="#events" class="header-nav__link link">События</a>
@@ -720,10 +712,13 @@
               </div>
             </div>
 
-            <div class="swiper-pagination"></div>
+            <div class="swiper-contr">
+              <div class="swiper-button-prev_gallery"></div>
 
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+              <div class="swiper-pagination_gallery"></div>
+
+              <div class="swiper-button-next_gallery"></div>
+            </div>
           </div>
         </div>
         <p class="gallery__note">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
@@ -732,381 +727,381 @@
       </div>
     </section>
 
-    <section class="katalog">
-      <div class="container katalog__container">
-        <div class="katalog__controls">
-          <h2 id="katalog" class="katalog__heading section-heading">Каталог</h2>
+    <section class="catalog">
+      <div class="container catalog__container">
+        <div class="catalog__controls">
+          <h2 id="catalog" class="catalog__heading section-heading">Каталог</h2>
 
-          <div class="katalog__countries">
-            <label class="katalog__country__desk" aria-label="выбрать французких художников">
-              <input type="radio" class="katalog_hide katalog__btn" name="country" value="france"/>
+          <div class="catalog__countries">
+            <label class="catalog__country__desk" aria-label="выбрать французких художников">
+              <input type="radio" class="catalog_hide catalog__btn" name="country" value="france"/>
 
-              <span class="katalog__custom__btn katalog_france"></span>
+              <span class="catalog__custom__btn catalog_france"></span>
             </label>
 
-            <label class="katalog__country__desk" aria-label="выбрать немецких художников">
-              <input type="radio" class="katalog_hide katalog__btn" name="country" value="germany" />
+            <label class="catalog__country__desk" aria-label="выбрать немецких художников">
+              <input type="radio" class="catalog_hide catalog__btn" name="country" value="germany" />
 
-              <span class="katalog__custom__btn katalog_germany"></span>
+              <span class="catalog__custom__btn catalog_germany"></span>
             </label>
 
-            <label class="katalog__country__desk" aria-label="выбрать итальянских художников">
-              <input type="radio" class="katalog_hide katalog__btn" name="country" value="italy" checked/>
+            <label class="catalog__country__desk" aria-label="выбрать итальянских художников">
+              <input type="radio" class="catalog_hide catalog__btn" name="country" value="italy" checked/>
 
-              <span class="katalog__custom__btn katalog_italy"></span>
+              <span class="catalog__custom__btn catalog_italy"></span>
             </label>
 
-            <label class="katalog__country__desk" aria-label="выбрать российских художников">
-              <input type="radio" class="katalog_hide katalog__btn" name="country" value="russia" />
+            <label class="catalog__country__desk" aria-label="выбрать российских художников">
+              <input type="radio" class="catalog_hide catalog__btn" name="country" value="russia" />
 
-              <span class="katalog__custom__btn katalog_russia"></span>
+              <span class="catalog__custom__btn catalog_russia"></span>
             </label>
 
-            <label class="katalog__country__desk" aria-label="выбрать бельгийских художников">
-              <input type="radio" class="katalog_hide katalog__btn" name="country" value="belgium" />
+            <label class="catalog__country__desk" aria-label="выбрать бельгийских художников">
+              <input type="radio" class="catalog_hide catalog__btn" name="country" value="belgium" />
 
-              <span class="katalog__custom__btn katalog_belgium"></span>
+              <span class="catalog__custom__btn catalog_belgium"></span>
             </label>
 
           </div>
         </div>
 
-        <p class="katalog__remark">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
+        <p class="catalog__remark">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
 
-        <div class="katalog__content">
-          <ul class="katalog__list">
-            <li class="katalog__item">
-              <button class="katalog__group katalog__group_active" type="button">
-                <span class="katalog__group__desc">C 1400 по 1499 гг.</span>
+        <div class="catalog__content">
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <button class="catalog__group catalog__group_active" type="button">
+                <span class="catalog__group__desc">C 1400 по 1499 гг.</span>
               </button>
 
-              <ul class="katalog__sublist">
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="BenedettoDiBindo">Бенедетто ди Биндо</button>
+              <ul class="catalog__sublist">
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="BenedettoDiBindo">Бенедетто ди Биндо</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button"  data-name="AmbrogioBergognone">Бергоньоне, Амброджо</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button"  data-name="AmbrogioBergognone">Бергоньоне, Амброджо</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="FrancescoBissolo">Биссоло, Франческо</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="FrancescoBissolo">Биссоло, Франческо</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="GiovanniAntonioBoltraffio">Больтраффио, Джованни</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="FrancescoBonsignori">Бонсиньори, Франческо</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="FrancescoBonsignori">Бонсиньори, Франческо</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="RaffaelloBotticini">Боттичини, Рафаэлло</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="RaffaelloBotticini">Боттичини, Рафаэлло</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="Bartolommeo">Брамантино</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="Bartolommeo">Брамантино</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="LouisBrea">Бреа, Людовико</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="LouisBrea">Бреа, Людовико</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="BiagioTucci">Бьяджо д’Антонио Туччи</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="BiagioTucci">Бьяджо д’Антонио Туччи</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="LorenzoPietro">Веккьетта</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="LorenzoPietro">Веккьетта</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="AndreaVerrocchio">Андреа Верроккьо</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="AndreaVerrocchio">Андреа Верроккьо</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link active-link" type="button" data-name="DomenicoGhirlandaio">Доменико Гирландайо</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link active-link" type="button" data-name="DomenicoGhirlandaio">Доменико Гирландайо</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="BenozzoGozzoli">Беноццо Гоццоли</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="BenozzoGozzoli">Беноццо Гоццоли</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="FrancescoGranacci">Граначчи, Франческо</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="FrancescoGranacci">Граначчи, Франческо</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="GregorioCecco">Грегорио ди Чекко</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="GregorioCecco">Грегорио ди Чекко</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="GiovanniUdine">Джованни да Удине</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="GiovanniUdine">Джованни да Удине</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="GiovanniPaolo">Джованни ди Паоло</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="GiovanniPaolo">Джованни ди Паоло</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="Giorgione">Джорджоне</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="Giorgione">Джорджоне</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="Pesellino">Пезеллино</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
-                <li class="katalog__subitem none" data-country="russia">
-                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
+                <li class="catalog__subitem none" data-country="russia">
+                  <button class="catalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
                 </li>
-                <li class="katalog__subitem none" data-country="france">
-                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
+                <li class="catalog__subitem none" data-country="france">
+                  <button class="catalog__link" type="button" data-name="Pesellino">Пезеллино</button>
                 </li>
-                <li class="katalog__subitem none" data-country="germany">
-                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
+                <li class="catalog__subitem none" data-country="germany">
+                  <button class="catalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
                 </li>
-                <li class="katalog__subitem none" data-country="germany">
-                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                <li class="catalog__subitem none" data-country="germany">
+                  <button class="catalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem none" data-country="belgium">
-                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                <li class="catalog__subitem none" data-country="belgium">
+                  <button class="catalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem none" data-country="belgium">
-                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                <li class="catalog__subitem none" data-country="belgium">
+                  <button class="catalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </li>
 
-            <li class="katalog__item">
-              <button class="katalog__group" type="button">
-                <span class="katalog__group__desc">C 1500 по 1599 гг.</span>
+            <li class="catalog__item">
+              <button class="catalog__group" type="button">
+                <span class="catalog__group__desc">C 1500 по 1599 гг.</span>
               </button>
 
-              <ul class="katalog__sublist none">
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+              <ul class="catalog__sublist none">
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
-                <li class="katalog__subitem none" data-country="russia">
-                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
+                <li class="catalog__subitem none" data-country="russia">
+                  <button class="catalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
                 </li>
-                <li class="katalog__subitem none" data-country="france">
-                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
+                <li class="catalog__subitem none" data-country="france">
+                  <button class="catalog__link" type="button" data-name="Pesellino">Пезеллино</button>
                 </li>
-                <li class="katalog__subitem none" data-country="germany">
-                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
+                <li class="catalog__subitem none" data-country="germany">
+                  <button class="catalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
                 </li>
-                <li class="katalog__subitem none" data-country="germany">
-                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                <li class="catalog__subitem none" data-country="germany">
+                  <button class="catalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem none" data-country="belgium">
-                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                <li class="catalog__subitem none" data-country="belgium">
+                  <button class="catalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem none" data-country="belgium">
-                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                <li class="catalog__subitem none" data-country="belgium">
+                  <button class="catalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </li>
 
-            <li class="katalog__item">
-              <button class="katalog__group" type="button">
-                <span class="katalog__group__desc">C 1600 по 1699 гг.</span>
+            <li class="catalog__item">
+              <button class="catalog__group" type="button">
+                <span class="catalog__group__desc">C 1600 по 1699 гг.</span>
               </button>
 
-              <ul class="katalog__sublist none">
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+              <ul class="catalog__sublist none">
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
-                <li class="katalog__subitem none" data-country="russia">
-                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
+                <li class="catalog__subitem none" data-country="russia">
+                  <button class="catalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
                 </li>
-                <li class="katalog__subitem none" data-country="france">
-                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
+                <li class="catalog__subitem none" data-country="france">
+                  <button class="catalog__link" type="button" data-name="Pesellino">Пезеллино</button>
                 </li>
-                <li class="katalog__subitem none" data-country="germany">
-                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
+                <li class="catalog__subitem none" data-country="germany">
+                  <button class="catalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
                 </li>
-                <li class="katalog__subitem none" data-country="germany">
-                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                <li class="catalog__subitem none" data-country="germany">
+                  <button class="catalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem none" data-country="belgium">
-                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                <li class="catalog__subitem none" data-country="belgium">
+                  <button class="catalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem none" data-country="belgium">
-                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                <li class="catalog__subitem none" data-country="belgium">
+                  <button class="catalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </li>
 
-            <li class="katalog__item">
-              <button class="katalog__group" type="button">
-                <span class="katalog__group__desc">C 1700 по 1799 гг.</span>
+            <li class="catalog__item">
+              <button class="catalog__group" type="button">
+                <span class="catalog__group__desc">C 1700 по 1799 гг.</span>
               </button>
 
-              <ul class="katalog__sublist none">
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+              <ul class="catalog__sublist none">
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
-                <li class="katalog__subitem none" data-country="russia">
-                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
+                <li class="catalog__subitem none" data-country="russia">
+                  <button class="catalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
                 </li>
-                <li class="katalog__subitem none" data-country="france">
-                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
+                <li class="catalog__subitem none" data-country="france">
+                  <button class="catalog__link" type="button" data-name="Pesellino">Пезеллино</button>
                 </li>
-                <li class="katalog__subitem none" data-country="germany">
-                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
+                <li class="catalog__subitem none" data-country="germany">
+                  <button class="catalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
                 </li>
-                <li class="katalog__subitem none" data-country="germany">
-                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                <li class="catalog__subitem none" data-country="germany">
+                  <button class="catalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem none" data-country="belgium">
-                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                <li class="catalog__subitem none" data-country="belgium">
+                  <button class="catalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem none" data-country="belgium">
-                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                <li class="catalog__subitem none" data-country="belgium">
+                  <button class="catalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </li>
 
-            <li class="katalog__item">
-              <button class="katalog__group" type="button">
-                <span class="katalog__group__desc">C 1800 по 1899 гг.</span>
+            <li class="catalog__item">
+              <button class="catalog__group" type="button">
+                <span class="catalog__group__desc">C 1800 по 1899 гг.</span>
               </button>
 
-              <ul class="katalog__sublist none">
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+              <ul class="catalog__sublist none">
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
-                <li class="katalog__subitem none" data-country="russia">
-                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
+                <li class="catalog__subitem none" data-country="russia">
+                  <button class="catalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
                 </li>
-                <li class="katalog__subitem none" data-country="france">
-                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
+                <li class="catalog__subitem none" data-country="france">
+                  <button class="catalog__link" type="button" data-name="Pesellino">Пезеллино</button>
                 </li>
-                <li class="katalog__subitem none" data-country="germany">
-                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
+                <li class="catalog__subitem none" data-country="germany">
+                  <button class="catalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
                 </li>
-                <li class="katalog__subitem none" data-country="germany">
-                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                <li class="catalog__subitem none" data-country="germany">
+                  <button class="catalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem none" data-country="belgium">
-                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                <li class="catalog__subitem none" data-country="belgium">
+                  <button class="catalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem none" data-country="belgium">
-                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                <li class="catalog__subitem none" data-country="belgium">
+                  <button class="catalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </li>
 
-            <li class="katalog__item">
-              <button class="katalog__group" type="button">
-                <span class="katalog__group__desc">C 1900 по 1999 гг.</span>
+            <li class="catalog__item">
+              <button class="catalog__group" type="button">
+                <span class="catalog__group__desc">C 1900 по 1999 гг.</span>
               </button>
 
-              <ul class="katalog__sublist none">
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+              <ul class="catalog__sublist none">
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
-                <li class="katalog__subitem none" data-country="russia">
-                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
+                <li class="catalog__subitem none" data-country="russia">
+                  <button class="catalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
                 </li>
-                <li class="katalog__subitem none" data-country="france">
-                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
+                <li class="catalog__subitem none" data-country="france">
+                  <button class="catalog__link" type="button" data-name="Pesellino">Пезеллино</button>
                 </li>
-                <li class="katalog__subitem none" data-country="germany">
-                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
+                <li class="catalog__subitem none" data-country="germany">
+                  <button class="catalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
                 </li>
-                <li class="katalog__subitem none" data-country="germany">
-                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                <li class="catalog__subitem none" data-country="germany">
+                  <button class="catalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem none" data-country="belgium">
-                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                <li class="catalog__subitem none" data-country="belgium">
+                  <button class="catalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem none" data-country="belgium">
-                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                <li class="catalog__subitem none" data-country="belgium">
+                  <button class="catalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </li>
 
-            <li class="katalog__item">
-              <button class="katalog__group" type="button">
-                <span class="katalog__group__desc">C 2000 г.</span>
+            <li class="catalog__item">
+              <button class="catalog__group" type="button">
+                <span class="catalog__group__desc">C 2000 г.</span>
               </button>
 
-              <ul class="katalog__sublist none">
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+              <ul class="catalog__sublist none">
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem" data-country="italy">
-                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                <li class="catalog__subitem" data-country="italy">
+                  <button class="catalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
-                <li class="katalog__subitem none" data-country="russia">
-                  <button class="katalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
+                <li class="catalog__subitem none" data-country="russia">
+                  <button class="catalog__link" type="button" data-name="BernardoParentino">Парентино, Бернардо</button>
                 </li>
-                <li class="katalog__subitem none" data-country="france">
-                  <button class="katalog__link" type="button" data-name="Pesellino">Пезеллино</button>
+                <li class="catalog__subitem none" data-country="france">
+                  <button class="catalog__link" type="button" data-name="Pesellino">Пезеллино</button>
                 </li>
-                <li class="katalog__subitem none" data-country="germany">
-                  <button class="katalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
+                <li class="catalog__subitem none" data-country="germany">
+                  <button class="catalog__link" type="button" data-name="PietroPerugino">Пьетро Перуджино</button>
                 </li>
-                <li class="katalog__subitem none" data-country="germany">
-                  <button class="katalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
+                <li class="catalog__subitem none" data-country="germany">
+                  <button class="catalog__link" type="button" data-name="TommasoPeruzzi">Перуцци, Бальдассаре</button>
                 </li>
-                <li class="katalog__subitem none" data-country="belgium">
-                  <button class="katalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
+                <li class="catalog__subitem none" data-country="belgium">
+                  <button class="catalog__link" type="button" data-name="PuccioPisano">Пизанелло</button>
                 </li>
-                <li class="katalog__subitem none" data-country="belgium">
-                  <button class="katalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
+                <li class="catalog__subitem none" data-country="belgium">
+                  <button class="catalog__link" type="button" data-name="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </li>
           </ul>
 
-          <article class="katalog__desc">
-            <picture class="katalog__img">
-              <source media="(min-width: 1920px)" srcset="pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x">
+          <article class="catalog__desc">
+            <picture class="catalog__img">
+              <source media="(min-width: 1920px)" srcset="pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x">
 
-              <source media="(min-width: 1024px)" srcset="pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x">
+              <source media="(min-width: 1024px)" srcset="pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x">
 
-              <source media="(min-width: 768px)" srcset="pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x">
+              <source media="(min-width: 768px)" srcset="pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x">
 
-              <img class="katalog__img" src="pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg" srcset="pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x" alt="Доменико Гирландайо" />
+              <img class="catalog__img" src="pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg" srcset="pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x" alt="Доменико Гирландайо" />
             </picture>
 
-            <h3 class="katalog__subtitle">Доменико Гирландайо</h3>
+            <h3 class="catalog__subtitle">Доменико Гирландайо</h3>
 
-            <p class="katalog__meta">2 июня 1448 — 11 января 1494.</p>
+            <p class="catalog__meta">2 июня 1448 — 11 января 1494.</p>
 
-            <p class="katalog__text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            <p class="catalog__text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
           </article>
         </div>
       </div>
@@ -1118,7 +1113,7 @@
 
         <div class="swiper-container swiper-container_events">
           <div class="swiper-wrapper swiper-wrapper_events">
-              <div class="swiper-slide swiper-slide_events events-card events_one">
+              <div class="swiper-slide swiper-slide_events events-card events-card_one">
 
                 <div class="events-card__place">Музей им. Щусева</div>
 
@@ -1131,7 +1126,7 @@
                 <a class="events-card__link" href="#">Подробнее</a>
               </div>
 
-              <div class="swiper-slide swiper-slide_events events-card events_two">
+              <div class="swiper-slide swiper-slide_events events-card events-card_two">
 
                 <div class="events-card__place">ММОМА</div>
 
@@ -1144,7 +1139,7 @@
                 <a class="events-card__link" href="#">Подробнее</a>
               </div>
 
-              <div class="swiper-slide swiper-slide_events events-card events_three">
+              <div class="swiper-slide swiper-slide_events events-card events-card_three">
 
                 <div class="events-card__place">Еврейский музей</div>
 
@@ -1157,7 +1152,7 @@
                 <a class="events-card__link" href="#">Подробнее</a>
               </div>
 
-              <div class="swiper-slide swiper-slide_events events-card events_four">
+              <div class="swiper-slide swiper-slide_events events-card events-card_four">
 
                 <div class="events-card__place">Третьяковка на Крымском валу</div>
 
@@ -1170,7 +1165,7 @@
                 <a class="events-card__link" href="#">Подробнее</a>
               </div>
 
-              <div class="swiper-slide swiper-slide_events events-card events_five">
+              <div class="swiper-slide swiper-slide_events events-card events-card_five">
 
                 <div class="events-card__place">ММАМ</div>
 

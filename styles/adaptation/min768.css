@@ -188,6 +188,7 @@
   /*modal*/
 
   .modal__wrap {
+    top: 60px;
     flex-flow: row nowrap;
     align-items: stretch;
   }
@@ -218,6 +219,11 @@
 
   .modal__close-btn {
     padding: 20px;
+  }
+
+  .modal__close-btn:hover {
+    background-color: var(--background_btn_hover);
+    cursor: pointer;
   }
 
   /*gallery*/
@@ -263,115 +269,98 @@
     padding-bottom: 0;
   }
 
-  .swiper-button-next,
-  .swiper-button-prev {
+  .swiper-contr {
     top: 0;
     bottom: auto;
-  }
-
-  .swiper-button-prev,
-  .swiper-container-rtl .swiper-button-next {
-    left: 0;
-  }
-
-  .swiper-button-next,
-  .swiper-container-rtl .swiper-button-prev {
-    left: 100px;
-  }
-
-  .swiper-pagination-fraction {
-    top: 0;
-    bottom: auto;
-    padding-left: 48px;
-    text-align: left;
+    justify-content: flex-start;
   }
 
   .gallery__note {
     margin-top: 31px;
   }
 
-  /*--katalog--*/
+  /*--catalog--*/
 
-  .katalog__controls {
+  .catalog__controls {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
   }
 
-  .katalog__countries {
+  .catalog__countries {
     margin-bottom: 0;
     flex-grow: 1;
     margin-left: 40px;
     margin-bottom: 7px;
   }
 
-  .katalog__custom__btn {
+  .catalog__custom__btn {
     padding: 23px;
     background-size: 46px 46px;
   }
 
-  .katalog__btn:checked+.katalog__custom__btn::after {
+  .catalog__btn:checked+.catalog__custom__btn::after {
     width: 58px;
     height: 58px;
     top: -6px;
     left: -6px;
   }
 
-  .katalog__remark {
+  .catalog__remark {
     display: block;
     margin-top: 5px;
     margin-bottom: 20px;
   }
 
-  .katalog__list {
+  .catalog__list {
     margin-bottom: 51px;
   }
 
-  .katalog__group {
+  .catalog__group {
     padding: 38px 0 42px 0;
     font-size: 24px;
     line-height: 32px;
   }
 
-  .katalog__group::after {
+  .catalog__group::after {
     top: 32px;
     width: 50px;
     height: 50px;
   }
 
-  .katalog__group::before {
+  .catalog__group::before {
     right: 18px;
     top: 52px;
     width: 12px;
     height: 12px;
   }
 
-  .katalog__group_active::before {
+  .catalog__group_active::before {
     top: 52px;
   }
 
-  .katalog__sublist {
+  .catalog__sublist {
     display: flex;
     flex-flow: column wrap;
     padding-right: 0px;
     max-height: 341px;
   }
 
-  .katalog__subitem {
+  .catalog__subitem {
     width: 33%;
   }
 
-  .katalog__subtitle {
+  .catalog__subtitle {
     margin-top: 20px;
     margin-bottom: 0px;
   }
 
-  .katalog__meta {
+  .catalog__meta {
     margin-top: 9px;
   }
 
-  .katalog__text {
+  .catalog__text {
     padding: 0px 0px 0 0;
   }
 
@@ -427,23 +416,23 @@
     margin-bottom: 53px;
   }
 
-  .events_one {
+  .events-card_one {
     background-image: url("../../pictures/events/m/rectangle-101-m@x1_optimized.jpg");
   }
 
-  .events_two {
+  .events-card_two {
     background-image: url("../../pictures/events/m/rectangle-104-m@x1-1_optimized.jpg");
   }
 
-  .events_three {
+  .events-card_three {
     background-image: url("../../pictures/events/m/rectangle-101-m@x1-2_optimized.jpg");
   }
 
-  .events_four {
+  .events-card_four {
     background-image: url("../../pictures/events/m/rectangle-104-m@x1_optimized.jpg");
   }
 
-  .events_five {
+  .events-card_five {
     background-image: url("../../pictures/events/m/rectangle-104-m@x1-1_optimized.jpg");
   }
 
@@ -839,23 +828,23 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
     background-image: url("../../pictures/gallery/bgimg/birmingham-museums-trust-mk_98nuc4-4-unsplash-3-m@x2_optimized.jpg");
   }
 
-  .events_one {
+  .events-card_one {
     background-image: url("../../pictures/events/m/rectangle-101-m@x2_optimized.jpg");
   }
 
-  .events_two {
+  .events-card_two {
     background-image: url("../../pictures/events/m/rectangle-104-m@x2-1_optimized.jpg");
   }
 
-  .events_three {
+  .events-card_three {
     background-image: url("../../pictures/events/m/rectangle-101-m@x2-2_optimized.jpg");
   }
 
-  .events_four {
+  .events-card_four {
     background-image: url("../../pictures/events/m/rectangle-104-m@x2_optimized.jpg");
   }
 
-  .events_five {
+  .events-card_five {
     background-image: url("../../pictures/events/m/rectangle-104-m@x2-1_optimized.jpg");
   }
 }
@@ -896,23 +885,23 @@ screen and (min-width: 768px) and (min-resolution: 3dppx) {
     background-image: url("../../pictures/gallery/bgimg/birmingham-museums-trust-mk_98nuc4-4-unsplash-3-m@x3_optimized.jpg");
   }
 
-  .events_one {
+  .events-card_one {
     background-image: url("../../pictures/events/m/rectangle-101-m@x3_optimized.jpg");
   }
 
-  .events_two {
+  .events-card_two {
     background-image: url("../../pictures/events/m/rectangle-104-m@x3-1_optimized.jpg");
   }
 
-  .events_three {
+  .events-card_three {
     background-image: url("../../pictures/events/m/rectangle-101-m@x3-2_optimized.jpg");
   }
 
-  .events_four {
+  .events-card_four {
     background-image: url("../../pictures/events/m/rectangle-104-m@x3_optimized.jpg");
   }
 
-  .events_five {
+  .events-card_five {
     background-image: url("../../pictures/events/m/rectangle-104-m@x3-1_optimized.jpg");
   }
 }

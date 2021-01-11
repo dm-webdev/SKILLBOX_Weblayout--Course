@@ -110,54 +110,54 @@
     padding-right: 5px;
   }
 
-  /*--katalog--*/
+  /*--catalog--*/
 
-  .katalog__container {
+  .catalog__container {
     padding-top: 81px;
   }
 
-  .katalog__countries {
+  .catalog__countries {
     justify-content: flex-start;
     margin-bottom: -8px;
   }
 
-  .katalog__country__desk {
+  .catalog__country__desk {
     margin-right: 46px;
   }
 
-  .katalog__remark {
+  .catalog__remark {
     margin-bottom: 39px;
   }
 
-  .katalog__content {
+  .catalog__content {
     flex-flow: row nowrap;
   }
 
-  .katalog__list {
+  .catalog__list {
     order: 2;
     flex-grow: 1;
   }
 
-  .katalog__desc {
+  .catalog__desc {
     order: 1;
     max-width: 47.3%;
     margin-right: 50px;
   }
 
-  .katalog__desc img {
+  .catalog__desc img {
     width: 100%;
   }
 
-  .katalog__sublist {
+  .catalog__sublist {
     padding-top: 24px;
     max-height: 438px;
   }
 
-  .katalog__subitem {
+  .catalog__subitem {
     width: 50%;
   }
 
-  .katalog__text {
+  .catalog__text {
     padding: 0;
   }
 
@@ -181,23 +181,23 @@
     margin-right: 0;
   }
 
-  .events_one {
+  .events-card_one {
     background-image: url("../../pictures/events/l/rectangle-101-l@x1_optimized.jpg");
   }
 
-  .events_two {
+  .events-card_two {
     background-image: url("../../pictures/events/l/rectangle-104-l@x1-1_optimized.jpg");
   }
 
-  .events_three {
+  .events-card_three {
     background-image: url("../../pictures/events/l/rectangle-101-l@x1-2_optimized.jpg");
   }
 
-  .events_four {
+  .events-card_four {
     background-image: url("../../pictures/events/l/rectangle-104-l@x1_optimized.jpg");
   }
 
-  .events_five {
+  .events-card_five {
     background-image: url("../../pictures/events/l/rectangle-104-l@x1-1_optimized.jpg");
   }
 
@@ -349,23 +349,23 @@ screen and (min-width: 1024px) and (min-resolution: 2dppx) {
     }
   }
 
-  .events_one {
+  .events-card_one {
     background-image: url("../../pictures/events/l/rectangle-101-l@x2_optimized.jpg");
   }
 
-  .events_two {
+  .events-card_two {
     background-image: url("../../pictures/events/l/rectangle-104-l@x2-1_optimized.jpg");
   }
 
-  .events_three {
+  .events-card_three {
     background-image: url("../../pictures/events/l/rectangle-101-l@x2-2_optimized.jpg");
   }
 
-  .events_four {
+  .events-card_four {
     background-image: url("../../pictures/events/l/rectangle-104-l@x2_optimized.jpg");
   }
 
-  .events_five {
+  .events-card_five {
     background-image: url("../../pictures/events/l/rectangle-104-l@x2-1_optimized.jpg");
   }
 
@@ -404,23 +404,23 @@ screen and (min-width: 1024px) and (min-resolution: 3dppx) {
     }
   }
 
-  .events_one {
+  .events-card_one {
     background-image: url("../../pictures/events/l/rectangle-101-l@x3_optimized.jpg");
   }
 
-  .events_two {
+  .events-card_two {
     background-image: url("../../pictures/events/l/rectangle-104-l@x3-1_optimized.jpg");
   }
 
-  .events_three {
+  .events-card_three {
     background-image: url("../../pictures/events/l/rectangle-101-l@x3-2_optimized.jpg");
   }
 
-  .events_four {
+  .events-card_four {
     background-image: url("../../pictures/events/l/rectangle-104-l@x3_optimized.jpg");
   }
 
-  .events_five {
+  .events-card_five {
     background-image: url("../../pictures/events/l/rectangle-104-l@x3-1_optimized.jpg");
   }
 }

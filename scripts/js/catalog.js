@@ -1,27 +1,27 @@
 "use strict";
 
 window.addEventListener("DOMContentLoaded", function () {
-  const showBtn = document.querySelectorAll(".katalog__group");
-  const katalogList = document.querySelectorAll(".katalog__sublist");
+  const showBtn = document.querySelectorAll(".catalog__group");
+  const catalogList = document.querySelectorAll(".catalog__sublist");
 
   const arrayElements = Array.from(showBtn);
 
   showBtn.forEach(function (element) {
     element.addEventListener("click", function (ev) {
-      ev.currentTarget.classList.toggle("katalog__group_active");
+      ev.currentTarget.classList.toggle("catalog__group_active");
       let key = arrayElements.indexOf(ev.currentTarget);
-      let targetList = katalogList[key];
+      let targetList = catalogList[key];
 
       targetList.classList.toggle("none");
     });
   });
 
-  const selectCountry = document.querySelectorAll(".katalog__btn");
-  const katalogRubric = document.querySelectorAll(".katalog__subitem")
+  const selectCountry = document.querySelectorAll(".catalog__btn");
+  const catalogRubric = document.querySelectorAll(".catalog__subitem")
   selectCountry.forEach(item => {
     item.addEventListener("click", (ev)=>{
       console.log(ev.target.value)
-      katalogRubric.forEach(item => {
+      catalogRubric.forEach(item => {
 
         if (item.dataset.country === ev.target.value) {
           setTimeout(() => {
@@ -37,21 +37,21 @@ window.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const katalog = Array.from(document.querySelectorAll(".katalog__link"));
-  const article = document.querySelector(".katalog__desc");
+  const catalog = Array.from(document.querySelectorAll(".catalog__link"));
+  const article = document.querySelector(".catalog__desc");
 
-  const katalogDataBase = [
+  const catalogDataBase = [
     {
       dataId: "BenedettoDiBindo",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Бенедетто ди Биндо",
       name: "Бенедетто ди Биндо",
       meta: " ок. 1380—85 — 19 сентября 1417",
@@ -61,14 +61,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "AmbrogioBergognone",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Бергоньоне, Амброджо",
       name: "Бергоньоне, Амброджо",
       meta: "1453 — 1523",
@@ -78,14 +78,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "FrancescoBissolo",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Биссоло, Франческо",
       name: "Биссоло, Франческо",
       meta: "1470 или 1472 — 20 апреля 1554",
@@ -95,14 +95,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "GiovanniAntonioBoltraffio",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Больтраффио, Джованни",
       name: "Больтраффио, Джованни",
       meta: "1466 или 1467, Милан — 1516",
@@ -112,14 +112,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "FrancescoBonsignori",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Бонсиньори, Франческо",
       name: "Бонсиньори, Франческо",
       meta:
@@ -130,14 +130,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "Bartolommeo",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Брамантино",
       name: "Брамантино",
       meta: "Милан или Бергамо, ок. 1465—1530",
@@ -147,14 +147,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "RaffaelloBotticini",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Боттичини, Рафаэлло",
       name: "Боттичини, Рафаэлло",
       meta: "11 сентября 1477, Флоренция — известен до 1520 года",
@@ -164,14 +164,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "LouisBrea",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Бреа, Людовико",
       name: "Бреа, Людовико",
       meta: "прибл. 1450, Ницца, Генуэзская республика — прибл. 1522/1525",
@@ -181,14 +181,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "BiagioTucci",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Бьяджо д’Антонио Туччи",
       name: "Бьяджо д’Антонио Туччи",
       meta: "1446, Флоренция — 1 июня 1516, там же",
@@ -198,14 +198,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "LorenzoPietro",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Веккьетта",
       name: "Веккьетта",
       meta: "ок. 1410, Сиена — 6 июня 1480, Сиена",
@@ -215,14 +215,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "AndreaVerrocchio",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Андреа Верроккьо",
       name: "Андреа Верроккьо",
       meta:
@@ -233,14 +233,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "DomenicoGhirlandaio",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Доменико Гирландайо",
       name: "Доменико Гирландайо",
       meta: "2 июня 1448 — 11 января 1494.",
@@ -250,14 +250,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "BenozzoGozzoli",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Беноццо Гоццоли",
       name: "Беноццо Гоццоли",
       meta: "1420. Флоренция — 1497, Пистоя",
@@ -267,14 +267,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "FrancescoGranacci",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Граначчи, Франческо",
       name: "Граначчи, Франческо",
       meta: "Граначчи, Франческо",
@@ -284,14 +284,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "GregorioCecco",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Грегорио ди Чекко",
       name: "Грегорио ди Чекко",
       meta: "известен с 1418 г. по 1424 г.",
@@ -301,14 +301,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "GiovanniUdine",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Джованни да Удине",
       name: "Джованни да Удине",
       meta: "1487, Удине — 1561, Рим",
@@ -318,14 +318,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "GiovanniPaolo",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Джованни ди Паоло",
       name: "Джованни ди Паоло",
       meta: "ок. 1403—1482, Сиена",
@@ -335,14 +335,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "Giorgione",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Джорджоне",
       name: "Джорджоне",
       meta: " 1477/1478—1510",
@@ -352,14 +352,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "BernardoParentino",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Парентино, Бернардо",
       name: "Парентино, Бернардо",
       meta: "1450—1500",
@@ -369,14 +369,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "Pesellino",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Пезеллино",
       name: "Пезеллино",
       meta: "род. ок. 1422 г. Флоренция — ум. 1457 г. Флоренция",
@@ -386,14 +386,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "PietroPerugino",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Пьетро Перуджино",
       name: "Пьетро Перуджино",
       meta: "1446—1524",
@@ -403,14 +403,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "TommasoPeruzzi",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Перуцци, Бальдассаре",
       name: "Перуцци, Бальдассаре",
       meta: "15 января 1481, Сиена — 6 января 1536, Рим",
@@ -420,14 +420,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "PuccioPisano",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Пизанелло",
       name: "Пизанелло",
       meta: " ок. 1392—1395, Пиза — вероятно, 1455, Рим",
@@ -437,14 +437,14 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       dataId: "Pinturicchio",
       xl:
-        "pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/katalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 1x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 2x, pictures/catalog/artists/xl/image-3-xl@x1_optimized.jpg 3x",
       l:
-        "pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/katalog/artists/l/image-3-l@x1_optimized.jpg 3x",
+        "pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 1x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 2x, pictures/catalog/artists/l/image-3-l@x1_optimized.jpg 3x",
       m:
-        "pictures/katalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/katalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/katalog/artists/m/image-3-m@x3_optimized.jpg 3x",
+        "pictures/catalog/artists/m/image-3-m@x1_optimized.jpg 1x, pictures/catalog/artists/m/image-3-m@x2_optimized.jpg 2x, pictures/catalog/artists/m/image-3-m@x3_optimized.jpg 3x",
       xs:
-        "pictures/katalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/katalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
-      src: "pictures/katalog/artists/xs/image-3-xs@x1_optimized.jpg",
+        "pictures/catalog/artists/xs/image-3-xs@x2_optimized.jpg 2x, pictures/catalog/artists/xs/image-3-xs@x3_optimized.jpg 3x",
+      src: "pictures/catalog/artists/xs/image-3-xs@x1_optimized.jpg",
       alt: "Пинтуриккьо",
       name: "Пинтуриккьо",
       meta: "1481—1482",
@@ -453,12 +453,12 @@ window.addEventListener("DOMContentLoaded", function () {
     },
   ];
 
-  katalog.forEach((item) =>
+  catalog.forEach((item) =>
     item.addEventListener("click", (ev) => {
       ev.preventDefault();
-      katalog.forEach((item) => item.classList.remove("active-link"));
+      catalog.forEach((item) => item.classList.remove("active-link"));
       ev.target.classList.add("active-link");
-      const dataOfArtikle = katalogDataBase.find(
+      const dataOfArtikle = catalogDataBase.find(
         (item) => item.dataId === ev.currentTarget.dataset.name
       );
 
@@ -499,7 +499,7 @@ window.addEventListener("DOMContentLoaded", function () {
     container
   ) {
     const picture = document.createElement("picture");
-    picture.className = "katalog__img";
+    picture.className = "catalog__img";
     const source1920 = document.createElement("source");
     source1920.setAttribute("media", "(min-width: 1920px)");
     source1920.setAttribute("srcset", xl);
@@ -510,24 +510,24 @@ window.addEventListener("DOMContentLoaded", function () {
     source768.setAttribute("media", "(min-width: 768px)");
     source768.setAttribute("srcset", m);
     const img = document.createElement("img");
-    img.className = "katalog__img";
+    img.className = "catalog__img";
     img.setAttribute("src", src);
     img.setAttribute("srcset", xs);
     img.setAttribute("alt", alt);
     picture.append(source1920, source1024, source768, img);
 
     const header = document.createElement("h3");
-    header.className = "katalog__subtitle";
+    header.className = "catalog__subtitle";
     header.innerText = name;
 
     const metaDesc = document.createElement("p");
-    metaDesc.className = "katalog__meta";
+    metaDesc.className = "catalog__meta";
     metaDesc.innerText = meta;
 
-    const katalogDesc = document.createElement("p");
-    katalogDesc.className = "katalog__text";
-    katalogDesc.innerText = description;
+    const catalogDesc = document.createElement("p");
+    catalogDesc.className = "catalog__text";
+    catalogDesc.innerText = description;
 
-    container.append(picture, header, metaDesc, katalogDesc);
+    container.append(picture, header, metaDesc, catalogDesc);
   }
 });

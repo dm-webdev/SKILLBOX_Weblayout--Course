@@ -32,26 +32,32 @@
     }
   }
 
-  /*--katalog--*/
+  /*--gallery--*/
 
-  .katalog__countries {
+  .swiper-contr {
+    padding-left: 0;
+  }
+
+  /*--catalog--*/
+
+  .catalog__countries {
     margin-left: 42px;
     margin-bottom: 7px;
   }
 
-  .katalog__remark {
+  .catalog__remark {
     padding-right: 31%;
   }
 
-  .katalog__desc {
+  .catalog__desc {
     max-width: 46.9%;
   }
 
-  .katalog__subitem {
+  .catalog__subitem {
     width: 33.3%;
   }
 
-  .katalog__sublist {
+  .catalog__sublist {
     max-height: 341px;
   }
 }

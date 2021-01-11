@@ -42,7 +42,13 @@
   background-image: url('../../pictures/modal/close-modal.svg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 16px 16px
+  background-size: 16px 16px;
+  transition: background-color .2s;
+}
+
+.modal__close-btn:active,
+.modal__close-btn:focus {
+  background-color: var(--background_btn_hover);
 }
 
 .modal__img {

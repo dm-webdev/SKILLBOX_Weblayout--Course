@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", function () {
   function gallerySwiperInit() {
     gallerySwiper = new Swiper(".swiper-container_gallery", {
       slidesPerView: 1,
-      
+
       breakpoints: {
         768: {
           slidesPerView: 2,
@@ -24,16 +24,16 @@ window.addEventListener("DOMContentLoaded", function () {
           spaceBetween: 50,
         },
       },
-  
+
       pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination_gallery",
         type: "fraction",
         clickable: true,
       },
-  
+
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next_gallery",
+        prevEl: ".swiper-button-prev_gallery",
       },
     });
   };

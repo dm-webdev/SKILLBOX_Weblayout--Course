@@ -1,33 +1,33 @@
-.katalog__container {
+.catalog__container {
   padding-top: 80px;
 }
 
-.katalog__heading {
+.catalog__heading {
   margin-top: 0;
   margin-bottom: 10px;
   text-indent: -2px;
 }
 
-.katalog__countries {
+.catalog__countries {
   display: flex;
   justify-content: space-between;
   margin-bottom: 18px;
 }
 
-.katalog__country__desk {
+.catalog__country__desk {
   display: flex;
   align-items: center;
   cursor: pointer;
   user-select: none;
 }
 
-.katalog_hide {
+.catalog_hide {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
-.katalog__custom__btn {
+.catalog__custom__btn {
   position: relative;
   padding: 16px;
   border: 2px solid transparent;
@@ -38,42 +38,42 @@
   transition: border .2s, box-shadow .2s;
 }
 
-.katalog_france {
-  background-image: url("../../pictures/katalog/icon/france.svg");
+.catalog_france {
+  background-image: url("../../pictures/catalog/icon/france.svg");
 }
 
-.katalog_germany {
-  background-image: url("../../pictures/katalog/icon/germany.svg");
+.catalog_germany {
+  background-image: url("../../pictures/catalog/icon/germany.svg");
 }
 
-.katalog_italy {
-  background-image: url("../../pictures/katalog/icon/italy.svg");
+.catalog_italy {
+  background-image: url("../../pictures/catalog/icon/italy.svg");
 }
 
-.katalog_russia {
-  background-image: url("../../pictures/katalog/icon/russia.svg");
+.catalog_russia {
+  background-image: url("../../pictures/catalog/icon/russia.svg");
 }
 
-.katalog_belgium {
-  background-image: url("../../pictures/katalog/icon/belgium.svg");
+.catalog_belgium {
+  background-image: url("../../pictures/catalog/icon/belgium.svg");
 }
 
-.katalog__btn:not(:disabled):not(:checked)+.katalog__custom__btn:hover,
-.katalog__btn:focus+.katalog__custom__btn {
+.catalog__btn:not(:disabled):not(:checked)+.catalog__custom__btn:hover,
+.catalog__btn:focus+.catalog__custom__btn {
   box-shadow: 0px 0px 20px rgba(157, 92, 208, 0.7);
 }
 
-.katalog__btn:hover+.katalog__custom__btn,
-.katalog__btn:not(:disabled):active+.katalog__custom__btn,
-.katalog__btn:focus:not(:checked)+.katalog__custom__btn {
+.catalog__btn:hover+.catalog__custom__btn,
+.catalog__btn:not(:disabled):active+.catalog__custom__btn,
+.catalog__btn:focus:not(:checked)+.catalog__custom__btn {
   border: 2px solid var(--background_btn);
 }
 
-.katalog__custom__btn::after {
+.catalog__custom__btn::after {
   transition: border .2s;
 }
 
-.katalog__btn:checked+.katalog__custom__btn::after {
+.catalog__btn:checked+.catalog__custom__btn::after {
   position: absolute;
   content: "";
   width: 44px;
@@ -84,23 +84,23 @@
   left: -6px;
 }
 
-.katalog__btn:disabled,
-.katalog__btn:disabled+.katalog__custom__btn,
-.katalog__btn:disabled+.katalog__custom__btn:hover,
-.katalog__btn:disabled:hover+.katalog__custom__btn {
+.catalog__btn:disabled,
+.catalog__btn:disabled+.catalog__custom__btn,
+.catalog__btn:disabled+.catalog__custom__btn:hover,
+.catalog__btn:disabled:hover+.catalog__custom__btn {
   opacity: .3;
 }
 
-.katalog__remark {
+.catalog__remark {
   display: none;
 }
 
-.katalog__content {
+.catalog__content {
   display: flex;
   flex-flow: column nowrap;
 }
 
-.katalog__list {
+.catalog__list {
   display: flex;
   flex-flow: column nowrap;
   margin-bottom: 49px;
@@ -109,12 +109,12 @@
 }
 
 
-.katalog__item {
+.catalog__item {
   display: flex;
   flex-flow: column nowrap;
 }
 
-.katalog__group {
+.catalog__group {
   padding: 20px 0;
   position: relative;
   border: none;
@@ -128,12 +128,12 @@
   background: none;
 }
 
-.katalog__group__desc {
+.catalog__group__desc {
   outline: 2px solid transparent;
   transition: border .2s, color .2s;
 }
 
-.katalog__group::after {
+.catalog__group::after {
   position: absolute;
   right: 0;
   top: center;
@@ -146,7 +146,7 @@
   transition: border .2s, background-color .2s;
 }
 
-.katalog__group::before {
+.catalog__group::before {
   position: absolute;
   z-index: 10;
   right: 12px;
@@ -161,38 +161,38 @@
   transition: border .2s;
 }
 
-.katalog__group_active::before {
+.catalog__group_active::before {
   transform: rotate(-45deg);
   top: 33px;
   border-bottom: none;
 }
 
-.katalog__group:active.katalog__group::after,
-.katalog__group:focus.katalog__group::after {
+.catalog__group:active.catalog__group::after,
+.catalog__group:focus.catalog__group::after {
   border: 2px solid var(--background_btn_hover);
 }
 
-.katalog__group:active .katalog__group__desc,
-.katalog__group:focus .katalog__group__desc {
+.catalog__group:active .catalog__group__desc,
+.catalog__group:focus .catalog__group__desc {
   outline: 2px solid var(--background_btn_hover);
 }
 
-.katalog__group:active.katalog__group::before {
+.catalog__group:active.catalog__group::before {
   transform: rotate(-45deg);
   top: 33px;
 }
 
-.katalog__group:active.katalog__group::after {
+.catalog__group:active.catalog__group::after {
   background-color: var(--background_btn_hover);
   border: 2px solid var(--background_btn_active);
 }
 
-.katalog__group:active.katalog__group::before {
+.catalog__group:active.catalog__group::before {
   border-color: var(--text_light) var(--text_light) transparent transparent;
   top: 53px;
 }
 
-.katalog__sublist {
+.catalog__sublist {
   display: flex;
   flex-flow: column nowrap;
   padding-top: 16px;
@@ -201,14 +201,14 @@
   border-bottom: 1px solid var(--background_btn);
 }
 
-.katalog__subitem {
+.catalog__subitem {
   display: flex;
   flex-flow: column nowrap;
   font-size: 16px;
   line-height: 32px;
 }
 
-.katalog__link {
+.catalog__link {
   padding: 0 0 0 0;
   border: none;
   background-color: transparent;
@@ -222,16 +222,16 @@
   color: var(--background_btn);
 }
 
-.katalog__link:focus {
+.catalog__link:focus {
   outline: 2px solid var(--background_btn_hover);
 }
 
-.katalog__link:active {
+.catalog__link:active {
   font-weight: 600;
   color: var(--background_btn);
 }
 
-.katalog__subtitle {
+.catalog__subtitle {
   margin-top: 12px;
   margin-bottom: 10px;
   font-weight: 600;
@@ -239,7 +239,7 @@
   line-height: 33px;
 }
 
-.katalog__meta {
+.catalog__meta {
   margin-bottom: 7px;
   padding: 0;
   font-size: 12px;
@@ -247,7 +247,7 @@
   color: var(--grey_99);
 }
 
-.katalog__text {
+.catalog__text {
   margin-top: 0;
   padding: 0 3px 0 0;
   font-size: 16px;
@@ -256,16 +256,16 @@
 
 
 
-.katalog__desc,
-.katalog__img,
-.katalog__text,
-.katalog__meta,
-.katalog__subtitle,
-.katalog__link {
-  animation: show_katalog .6s ease-in-out;
+.catalog__desc,
+.catalog__img,
+.catalog__text,
+.catalog__meta,
+.catalog__subtitle,
+.catalog__link {
+  animation: show_catalog .6s ease-in-out;
 }
 
-@keyframes show_katalog {
+@keyframes show_catalog {
   from {
     opacity: 0;
   }

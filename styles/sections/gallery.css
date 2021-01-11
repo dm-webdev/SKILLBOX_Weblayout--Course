@@ -194,15 +194,6 @@
   background-size: 81px 79px;
 }
 
-.swiper-pagination {
-  font-size: 16px;
-  line-height: 32px;
-}
-
-.swiper-pagination-fraction {
-  bottom: -2px;
-}
-
 .gallery__showroom {
   position: relative;
 }
@@ -211,48 +202,70 @@
   padding-bottom: 49px;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.swiper-contr {
   position: absolute;
-  top: auto;
   bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-pagination_gallery {
+  position: relative;
+  bottom: auto;
+  margin: 0 14px;
+  width: auto;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.swiper-button-next_gallery,
+.swiper-button-prev_gallery {
+  position: relative;
   width: 30px;
   height: 30px;
-  margin-top: 0;
   border: 1px solid var(--grey_66);
   border-radius: 50%;
   background-color: var(--grey_66);
   transition: border .2s, background-color .2s;
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-family: swiper-icons;
-  font-size: 10px;
-  color: var(--text_light);
+.swiper-button-next_gallery:after,
+.swiper-button-prev_gallery:after {
+  position: absolute;
+  top: 10px;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-color: transparent transparent var(--text_light) var(--text_light);
+  border-style: solid;
+  border-width: 1px;
 }
 
-.swiper-button-next:focus,
-.swiper-button-prev:focus {
+.swiper-button-prev_gallery:after {
+  left: 11px;
+  transform: rotate(45deg);
+}
+
+.swiper-button-next_gallery:after {
+  right: 11px;
+  transform: rotate(-135deg);
+}
+
+.swiper-button-next_gallery:focus,
+.swiper-button-prev_gallery:focus {
   outline: none;
   border: 2px solid var(--background_btn);
 }
 
-.swiper-button-next:active,
-.swiper-button-prev:active {
+.swiper-button-next_gallery:active,
+.swiper-button-prev_gallery:active {
   outline: none;
   background: var(--background_btn_hover);
   border: 2px solid var(--background_btn_active);
-}
-
-.swiper-button-prev,
-.swiper-container-rtl .swiper-button-next {
-  left: 27.5%;
-}
-
-.swiper-button-next,
-.swiper-container-rtl .swiper-button-prev {
-  right: 27.5%;
 }
 
 .gallery__note {

@@ -97,23 +97,23 @@
   outline: 2px solid var(--background_btn_hover);
 }
 
-.events_one {
+.events-card_one {
   background-image: url("../../pictures/events/xs/rectangle-101-xs@x1_optimized.jpg");
 }
 
-.events_two {
+.events-card_two {
   background-image: url("../../pictures/events/xs/rectangle-104-xs@x1-1_optimized.jpg");
 }
 
-.events_three {
+.events-card_three {
   background-image: url("../../pictures/events/xs/rectangle-101-xs@x1-2_optimized.jpg");
 }
 
-.events_four {
+.events-card_four {
   background-image: url("../../pictures/events/xs/rectangle-104-xs@x1_optimized.jpg");
 }
 
-.events_five {
+.events-card_five {
   background-image: url("../../pictures/events/xs/rectangle-104-xs@x1-1_optimized.jpg");
 }
 
