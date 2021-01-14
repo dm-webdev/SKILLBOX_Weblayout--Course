@@ -344,4 +344,8 @@
     min-height: auto;
     max-height: auto;
   }
+
+  .modal__picture__wrap {
+    max-height: 90vh;
+  }
 }

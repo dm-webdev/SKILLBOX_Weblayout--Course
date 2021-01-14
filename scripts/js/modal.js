@@ -3,6 +3,8 @@
 window.addEventListener("DOMContentLoaded", function () {
   const gallery = Array.from(document.querySelectorAll(".gallery__btn"));
   const modalContainer = document.querySelector("#modal");
+  const header = document.querySelector(".header");
+  const main = document.querySelector("main");
 
   const modalDataBase = [
     {
@@ -415,11 +417,18 @@ window.addEventListener("DOMContentLoaded", function () {
         dataOfModal.year,
         modalContainer
       );
+      document.body.classList.add("overflow");
+      header.inert = true;
+      main.inert = true;
+
       modalClose();
     })
   );
 
   function createModal(xs, m, l, xl, description, alt, author, heading, year, container) {
+    const modalContainer = document.createElement("div")
+    modalContainer.className = "modal__container"
+
     const modalWrap = document.createElement("article");
     modalWrap.className = "modal__wrap";
 
@@ -472,14 +481,38 @@ window.addEventListener("DOMContentLoaded", function () {
     modalContent.append(modalAuthor, modalHeading, modalYear, modalDesk)
 
     modalWrap.append(modalPictureWrap, modalContent);
-    container.append(modalWrap);
+    modalContainer.append(modalWrap)
+
+    container.append(modalContainer);
   }
 
   function modalClose() {
     const closeBtn = document.querySelector(".modal__close-btn");
-    const modal = document.querySelector(".modal__wrap");
-    closeBtn.addEventListener("click", () => {
+    const modal = document.querySelector(".modal__container");
+
+    document.addEventListener("keydown", hideOnEsc);
+    document.addEventListener("click", handleClick)
+
+    function modalHide() {
+      header.inert = false;
+      main.inert = false;
+      document.body.classList.remove("overflow");
       modal.remove();
-    });
+      
+      document.removeEventListener("keydown", hideOnEsc);
+      document.removeEventListener("click", handleClick);
+    }
+
+    function hideOnEsc(ev) {
+      if (ev.code == "Escape") {
+        modalHide();
+      }
+    };
+
+    function handleClick(ev) {
+      if (ev.target === modal || ev.target === closeBtn) {
+        modalHide();
+      }
+    }
   }
 });

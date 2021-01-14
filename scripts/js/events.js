@@ -1,9 +1,9 @@
 window.addEventListener("DOMContentLoaded", function () {
   let eventsSwiper;
   const cards = document.querySelectorAll(".events-card");
-  const swiperContainer = document.querySelector(".swiper-container_events");
-  const swiperWrapper = document.querySelector(".swiper-wrapper_events");
-  const swiperSlide = document.querySelectorAll(".swiper-slide_events");
+  const swiperContainer = document.querySelector(".events__swiper");
+  const swiperWrapper = document.querySelector(".events__wrapper");
+  const swiperSlide = document.querySelectorAll(".events-card");
   const btn = document.querySelector(".events__btn");
 
   const eventSliderInit = () => {
@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", function () {
     swiperWrapper.classList.add("swiper-wrapper");
     swiperSlide.forEach((item) => item.classList.add("swiper-slide"));
 
-    eventsSwiper = new Swiper(".swiper-container_events", {
+    eventsSwiper = new Swiper(".events__swiper", {
       slidesPerView: 1,
       spaceBetween: 30,
       pagination: {

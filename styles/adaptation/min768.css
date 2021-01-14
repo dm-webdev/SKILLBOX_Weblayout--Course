@@ -377,7 +377,7 @@
     margin-bottom: 16px;
   }
 
-  .swiper-wrapper_events {
+  .events__wrapper {
     display: flex;
     flex-flow: row wrap;
     margin-bottom: 10px;
@@ -386,6 +386,7 @@
   .events-card {
     flex-shrink: 0;
     margin-bottom: 40px;
+    padding: 214px 19px 48px 35px;
     width: 47.45%;
     background-size: 100% 200px;
   }
@@ -398,22 +399,14 @@
     display: none;
   }
 
-  .events-card__place,
-  .events-card__date {
-    padding-right: 15px;
-  }
-
   .events-card__text,
-  .events-card__link {
-    padding: 0 23px 0 34px;
-  }
-
-  .events-card__text {
-    -webkit-line-clamp: 9;
+  .events-card__heading {
+    padding-right: 20px;
   }
 
   .events-card__text {
     margin-bottom: 53px;
+    -webkit-line-clamp: 7;
   }
 
   .events-card_one {
@@ -477,7 +470,7 @@
     letter-spacing: 0.038em;
   }
 
-  .swiper-wrapper_publication {
+  .publication__wrapper {
     flex-flow: initial;
   }
 
@@ -515,7 +508,7 @@
     margin-bottom: 30px;
   }
 
-  .swiper-container_publication {
+  .publication__swiper {
     padding-top: 50px;
     position: relative;
   }
@@ -580,7 +573,7 @@
     padding-left: 0;
   }
 
-  .swiper-container_publication {
+  .publication__swiper {
     padding-top: 60px;
     padding-left: 27px;
     padding-right: 27px;

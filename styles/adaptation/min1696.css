@@ -108,9 +108,12 @@
   /*--modal--*/
 
   .modal__wrap {
-    top: 160px;
-    left: 100px;
-    right: 100px;
+    margin: 2% auto 0;
+    max-width: 70%;
+  }
+
+  .modal__close-btn {
+    margin-top: 2%;
   }
 
   .modal__picture__wrap {
@@ -120,6 +123,10 @@
   .modal__content {
     width: 56%;
     padding: 48px;
+  }
+
+  .modal__close-btn {
+    right: 15%;
   }
 
   /*--about--*/
@@ -155,7 +162,7 @@
   /*--events--*/
 
   .events-card {
-    padding: 314px 0 40px 0;
+    padding: 314px 19px 40px 53px;
     background-size: 100% 300px;
   }
 
@@ -165,13 +172,8 @@
   }
 
   .events-card__text,
-  .events-card__link {
-    padding: 0 34px 0 53px;
-  }
-
-  .events-card__link::after {
-    left: 53px;
-    right: 34px;
+  .events-card__heading {
+    padding-right: 20px;
   }
 
   .events-card_one {
@@ -216,7 +218,7 @@
     width: 28.2%;
   }
 
-  .swiper-container_publication {
+  .publication__swiper {
     width: 71.8%;
   }
 

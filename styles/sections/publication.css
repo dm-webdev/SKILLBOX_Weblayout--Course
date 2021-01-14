@@ -203,7 +203,7 @@
   margin-right: 8px;
 }
 
-.swiper-wrapper_publication {
+.publication__wrapper {
   display: flex;
   flex-flow: row wrap;
 }

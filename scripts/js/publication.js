@@ -3,9 +3,9 @@ window.addEventListener("DOMContentLoaded", function () {
   const categoryList = document.querySelectorAll(".category");
 
   let publicationSwiper;
-  const swiperContainer = document.querySelector(".swiper-container_publication");
-  const swiperWrapper = document.querySelector(".swiper-wrapper_publication");
-  const swiperSlide = document.querySelectorAll(".swiper-slide_publication"); 
+  const swiperContainer = document.querySelector(".publication__swiper");
+  const swiperWrapper = document.querySelector(".publication__wrapper");
+  const swiperSlide = document.querySelectorAll(".publication__slide");
 
   resizeHandler();
 
@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded", function () {
   };
 
   function handleCategoryClick() {
-    publicationBtn.classList.toggle("publication__category_active");    
+    publicationBtn.classList.toggle("publication__category_active");
     if (publicationBtn.classList.contains("publication__category_active")) {
       categoryList.forEach((item) => {
         item.classList.remove("none");
@@ -62,7 +62,7 @@ window.addEventListener("DOMContentLoaded", function () {
     swiperSlide.forEach((item) => item.classList.add("swiper-slide"));
     document.querySelector(".swiper-controls_publication").classList.remove("none");
 
-    publicationSwiper = new Swiper(".swiper-container_publication", {
+    publicationSwiper = new Swiper(".publication__swiper", {
       slidesPerView: 2,
       spaceBetween: 34,
 
@@ -87,7 +87,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
       navigation: {
         nextEl: ".swiper-button-next_publication",
-        prevEl: ".swiper-button-prev_publication",  
+        prevEl: ".swiper-button-prev_publication",
       },
     });
   };
