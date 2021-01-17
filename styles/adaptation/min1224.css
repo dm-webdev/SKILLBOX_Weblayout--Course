@@ -317,6 +317,7 @@
   .catalog__link:hover::after {
     transition: background-color .2s;
   }
+
   .catalog__link:hover::after {
     content: "";
     position: absolute;
@@ -343,6 +344,23 @@
   .projects__card {
     min-height: auto;
     max-height: auto;
+  }
+
+  .tooltip__btn:hover.tooltip__btn::after {
+    height: 8px;
+    transform: none;
+  }
+
+  .tooltip__btn:hover.tooltip__btn::before {
+    bottom: 12px;
+    height: 2px;
+    transform: none;
+  }
+
+  /*modal*/
+
+  .modal__wrap {
+    max-width: 56%;
   }
 
   .modal__picture__wrap {

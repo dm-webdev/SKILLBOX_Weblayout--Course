@@ -1,4 +1,5 @@
 @media all and (min-width: 1024px) {
+
   /*--header--*/
   .header {
     position: relative;
@@ -25,10 +26,6 @@
 
   .hero {
     background-image: url("../../pictures/hero/l/birmingham-museums-trust-MK_98NuC4-4-unsplash_1-l@x1-min.jpg");
-  }
-
-  .hero__heading {
-    padding-right: 20%;
   }
 
   .hero__desk {
@@ -67,6 +64,10 @@
   }
 
   /*--modal--*/
+
+  .modal__wrap {
+    max-width: 60%;
+  }
 
   .modal__close-btn {
     padding: 20px;
@@ -211,11 +212,14 @@
     position: relative;
     display: flex;
     flex-flow: row nowrap;
-    padding-bottom: 60px;
+    padding-bottom: 83px;
+  }
+
+  .publication__choice {
+    margin-bottom: 0;
   }
 
   .publication__category__wrap {
-
     flex-flow: column nowrap;
     max-height: 100%;
     padding-bottom: 0;
@@ -259,19 +263,19 @@
   }
 
   .publication-card__price {
-    bottom: 99px;
+    bottom: 76px;
   }
 
   .publication-card {
     margin-bottom: 0;
   }
 
-  .publication-card__btn {
-    margin-bottom: 23px;
-  }
-
   .publication-card__heading {
     width: 70%;
+  }
+
+  .publication-card {
+    justify-content: flex-end;
   }
 
   /*--projects--*/
@@ -280,8 +284,11 @@
     padding-right: 0;
   }
 
+  .projects__desc {
+    margin-bottom: 18px;
+  }
+
   .projects__subheading {
-    margin-top: 18px;
     margin-bottom: 24px;
   }
 
@@ -292,12 +299,9 @@
 
   /*--contacts--*/
 
-  .contacts__adress {
-    width: 47.6%;
-  }
-
-  .feedback-form {
+  .contacts__container {
     padding-right: 101px;
+    width: 47.6%;
   }
 
   .contacts__map {
@@ -309,11 +313,15 @@
   }
 
   .contacts__street {
-    line-height: 35px;
+    line-height: 29px;
   }
 
   .contacts__social__heading {
     margin-bottom: 13px;
+  }
+
+  .footer__container {
+    padding-bottom: 40px;
   }
 }
 

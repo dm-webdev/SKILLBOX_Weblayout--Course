@@ -37,20 +37,6 @@
   outline: 2px solid var(--background_btn_hover);
 }
 
-
-
-
-
-/* .link_style {
-  transition: filter .2s;
-}
-
-.link_style:active,
-.link_style:focus {
-  outline: 2px solid var(--text_light);
-  filter: invert(30%) sepia(35%) saturate(1393%) hue-rotate(234deg) brightness(98%) contrast(91%);
-} */
-
 .link_gallery {
   position: relative;
 }
@@ -119,18 +105,13 @@
 }
 
 .events__btn_style,
-.ovalbtn_style {
+.ellipsebtn_style {
   position: relative;
-  transition: outline .2s, background-color .2s, border .2s;
-}
-
-.events__btn_style,
-.ovalbtn_style {
-  transition: outline .2s;
+  transition: background-color .2s, outline .2s, border-color .2s, color .2s;
 }
 
 .events__btn_style:focus::after,
-.ovalbtn_style:focus::after {
+.ellipsebtn_style:focus::after {
   position: absolute;
   content: "";
   top: 11px;
@@ -141,13 +122,11 @@
 }
 
 .events__btn_style:active,
-.ovalbtn_style:active {
+.ellipsebtn_style:active {
   color: var(--text_light);
   background-color: var(--background_btn_hover);
   border: 3px solid var(--background_btn_active);
 }
-
-
 
 @media all and (min-width: 1224px) {
   .link:hover {
@@ -200,10 +179,10 @@
   }
 
   .events__btn_style:hover,
-  .ovalbtn_style:hover {
+  .ellipsebtn_style:hover {
     color: var(--text_light);
     background-color: var(--background_btn);
-    border: 3px solid var(--background_btn);
+    border-color: var(--background_btn);
   }
 
   .link_gallery:hover::after {

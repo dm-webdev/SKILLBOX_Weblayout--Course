@@ -37,6 +37,7 @@
 
 .publication__category_btn {
   cursor: pointer;
+  transition: color .2s;
 }
 
 .publication__category_btn::after {
@@ -92,7 +93,7 @@
   cursor: pointer;
 }
 
-.category__btn:checked + .category__custom::after {
+.category__btn:checked+.category__custom::after {
   content: "";
   position: absolute;
   top: 3px;
@@ -103,17 +104,17 @@
   background: #C283F3;
 }
 
-.category__btn:checked + .category__custom {
+.category__btn:checked+.category__custom {
   border: 1px solid #C283F3;
 }
 
-.category__btn:checked ~ .category__desc {
+.category__btn:checked~.category__desc {
   color: #C283F3;
   transition: color .2s;
 }
 
-.category__btn:checked ~ .category__desc::after,
-.category__btn:checked ~ .category__desc::before {
+.category__btn:checked~.category__desc::after,
+.category__btn:checked~.category__desc::before {
   content: "";
   position: absolute;
   right: 0;
@@ -123,33 +124,33 @@
   background: #C283F3;
 }
 
-.category__btn:checked ~ .category__desc::after {
+.category__btn:checked~.category__desc::after {
   transform: rotate(45deg);
 }
 
-.category__btn:checked ~ .category__desc::before {
+.category__btn:checked~.category__desc::before {
   transform: rotate(-45deg);
 }
 
-.category__btn:not(:disabled):focus ~ .category__desc {
+.category__btn:not(:disabled):focus~.category__desc {
   outline: 2px solid var(--background_btn_hover);
 }
 
-.category__btn:not(:disabled):hover ~ .category__desc {
+.category__btn:not(:disabled):hover~.category__desc {
   color: var(--background_btn_hover);
 }
 
-.category__btn:not(:disabled):hover + .category__custom {
+.category__btn:not(:disabled):hover+.category__custom {
   border: 1px solid var(--background_btn_hover);
 }
 
 .category__btn:disabled,
-.category__btn:disabled  ~ .category__desc,
-.category__btn:disabled  ~ .category__custom {
+.category__btn:disabled~.category__desc,
+.category__btn:disabled~.category__custom {
   opacity: .3;
 }
 
-.category__btn:disabled ~ .category__desc {
+.category__btn:disabled~.category__desc {
   cursor: default;
 }
 
@@ -223,6 +224,7 @@
 
 .publication-card__img {
   display: flex;
+  margin-bottom: 9px;
   width: 100%;
   object-fit: cover;
 }
@@ -232,19 +234,21 @@
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
-
   text-overflow: ellipsis;
 }
 
 .publication-card__heading {
-  margin-top: 9px;
   font-size: 12px;
   line-height: 15px;
 }
 
+.publication-card__author {
+  margin-bottom: 3px;
+}
+
 .publication-card__price {
   margin-bottom: 10px;
-  margin-top: 3px;
+  margin-top: 0;
   font-style: italic;
   font-weight: normal;
 }

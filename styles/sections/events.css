@@ -37,7 +37,8 @@
 }
 
 .events-card__heading {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 3px;
   font-size: 24px;
   font-weight: 600;
   letter-spacing: -0.005em;
@@ -52,8 +53,8 @@
 }
 
 .events-card__text {
-  margin-top: 3px;
   display: -webkit-box;
+  margin-top: 0;
   margin-bottom: 25px;
   -webkit-line-clamp: 8;
   -webkit-box-orient: vertical;

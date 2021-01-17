@@ -23,7 +23,7 @@
 
 .hero__heading {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 32px;
   line-height: 37px;
@@ -31,6 +31,7 @@
 }
 
 .hero__desk {
+  margin-top: 0;
   margin-bottom: 42px;
   padding-right: 10px;
   padding-left: 10px;

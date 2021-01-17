@@ -122,7 +122,6 @@
   }
 
   .hero__desk {
-    margin-top: 12px;
     margin-bottom: 133px;
     padding-left: 5px;
     font-weight: 700;
@@ -187,8 +186,14 @@
 
   /*modal*/
 
+  .modal__container {
+    display: flex;
+    align-items: center;
+  }
+
   .modal__wrap {
-    top: 60px;
+    margin: 0 auto;
+    max-width: 86%;
     flex-flow: row nowrap;
     align-items: stretch;
   }
@@ -214,11 +219,11 @@
     padding: 36px;
     font-size: 16px;
     line-height: 22px;
-    color: var(--text_dark);
   }
 
   .modal__close-btn {
     padding: 20px;
+    transition: background-color .2s;
   }
 
   .modal__close-btn:hover {
@@ -249,7 +254,7 @@
   }
 
   .gallery__controls {
-    margin-bottom: 29px;
+    margin-bottom: 31px;
   }
 
   .swiper-wrapper_gallery {
@@ -275,8 +280,8 @@
     justify-content: flex-start;
   }
 
-  .gallery__note {
-    margin-top: 31px;
+  .gallery__showroom {
+    margin-bottom: 29px;
   }
 
   /*--catalog--*/
@@ -351,13 +356,12 @@
     width: 33%;
   }
 
-  .catalog__subtitle {
-    margin-top: 20px;
-    margin-bottom: 0px;
+  .catalog__img {
+    margin-bottom: 20px;
   }
 
-  .catalog__meta {
-    margin-top: 9px;
+  .catalog__subtitle {
+    margin-bottom: 9px;
   }
 
   .catalog__text {
@@ -380,12 +384,11 @@
   .events__wrapper {
     display: flex;
     flex-flow: row wrap;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
 
   .events-card {
     flex-shrink: 0;
-    margin-bottom: 40px;
     padding: 214px 19px 48px 35px;
     width: 47.45%;
     background-size: 100% 200px;
@@ -405,7 +408,7 @@
   }
 
   .events-card__text {
-    margin-bottom: 53px;
+    margin-bottom: 5px;
     -webkit-line-clamp: 7;
   }
 
@@ -581,6 +584,7 @@
   }
 
   .publication-card__img {
+    margin-bottom: 13px;
     width: 100%;
   }
 
@@ -606,9 +610,7 @@
     margin-top: 0;
   }
 
-
   .publication-card__heading {
-    margin-top: 13px;
     font-size: 16px;
     line-height: 22px;
   }
@@ -647,8 +649,11 @@
     text-indent: -4px;
   }
 
+  .projects__desc {
+    margin-bottom: 26px;
+  }
+
   .projects__subheading {
-    margin-top: 26px;
     margin-bottom: 29px;
     font-size: 24px;
     text-indent: -4px;
@@ -674,68 +679,58 @@
 
   .contacts {
     padding-top: 50px;
+    flex-flow: row wrap;
   }
 
   .contacts__heading {
+    order: 1;
     margin-bottom: 15px;
     padding-right: 46px;
     padding-left: 46px;
+    width: 100%;
+    font-size: 48px;
+    line-height: 65px;
   }
 
   .contacts__container {
+    order: 2;
     flex-flow: column wrap;
     padding-bottom: 0;
-    height: 700px;
-  }
-
-  .contacts__adress {
-    order: 1;
-    margin-bottom: 29px;
-    padding-top: 123px;
-    padding-right: 50px;
+    padding-right: 44px;
     padding-left: 48px;
-    width: 55.9%;
+    padding-top: 123px;
+    width: 56%;
     border-top: 1px solid var(--grey_CA);
     border-left: 1px solid var(--grey_CA);
     border-right: 1px solid var(--grey_CA);
   }
 
-  .feedback-form {
-    order: 2;
-    padding-right: 44px;
-    padding-left: 48px;
-    border-left: 1px solid var(--grey_CA);
-    border-right: 1px solid var(--grey_CA);
+  .contacts__adress {
+    position: relative;
+    top: auto;
+    margin-bottom: 29px;
   }
 
-  .contacts__social {
-    order: 3;
-    flex: 2 1 0;
-    padding-top: 13px;
-    padding-right: 50px;
-    padding-left: 48px;
-    padding-bottom: 124px;
-    border-left: 1px solid var(--grey_CA);
-    border-right: 1px solid var(--grey_CA);
-    border-bottom: 1px solid var(--grey_CA);
+  .feedback-form {
+    margin-bottom: 35px;
   }
 
   .contacts__map {
-    order: 4;
-    flex-basis: 100%;
+    order: 3;
     margin-bottom: 0;
     width: 44%;
+    height: 700px;
   }
 
   .contacts__showroom,
   .feedback-form__heading,
   .contacts__social__heading {
     font-size: 24px;
-    line-height: 32px;
+    line-height: 35px;
   }
 
   .feedback-form__heading {
-    margin-bottom: 16px;
+    margin-bottom: 13px;
   }
 
   .contacts__street {

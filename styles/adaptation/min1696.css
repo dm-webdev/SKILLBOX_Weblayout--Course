@@ -99,8 +99,11 @@
     padding-bottom: 122px;
   }
 
+  .hero__heading {
+    margin-bottom: 17px;
+  }
+
   .hero__desk {
-    margin-top: 17px;
     margin-bottom: 93px;
     max-width: 37%;
   }
@@ -108,12 +111,7 @@
   /*--modal--*/
 
   .modal__wrap {
-    margin: 2% auto 0;
-    max-width: 70%;
-  }
-
-  .modal__close-btn {
-    margin-top: 2%;
+    max-width: 50%;
   }
 
   .modal__picture__wrap {
@@ -123,10 +121,6 @@
   .modal__content {
     width: 56%;
     padding: 48px;
-  }
-
-  .modal__close-btn {
-    right: 15%;
   }
 
   /*--about--*/
@@ -166,9 +160,13 @@
     background-size: 100% 300px;
   }
 
+  .events-card__heading {
+    margin-bottom: 11px;
+  }
+
   .events-card__text {
     margin-bottom: 15px;
-    -webkit-line-clamp: 8;
+    -webkit-line-clamp: 6;
   }
 
   .events-card__text,
@@ -231,11 +229,11 @@
   }
 
   .publication__container {
-    padding-bottom: 58px;
+    padding-bottom: 79px;
   }
 
-  .publication-card__heading {
-    margin-top: 24px;
+  .publication-card__img {
+    margin-bottom: 24px;
   }
 
   /*--projects--*/
@@ -245,7 +243,8 @@
   }
 
   .projects__desc {
-    padding-right: 34%;
+    max-width: 66%;
+    padding-right: 0;
   }
 
   .project-swiper {
@@ -265,29 +264,19 @@
     padding-left: 156px;
   }
 
+  .contacts__container {
+    padding-top: 126px;
+    padding-left: 156px;
+    padding-right: 120px;
+    width: 35.5%;
+  }
+
   .contacts__adress {
     margin-bottom: 26px;
-    padding-top: 126px;
-    padding-right: 60px;
-    padding-left: 158px;
-  }
-
-  .feedback-form {
-    padding-right: 120px;
-    padding-left: 158px;
-  }
-
-  .contacts__adress {
-    width: 35.5%;
   }
 
   .contacts__map {
     width: 64.5%;
-  }
-
-  .contacts__social {
-    padding-right: 120px;
-    padding-left: 158px;
   }
 }
 
