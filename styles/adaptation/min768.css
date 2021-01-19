@@ -528,36 +528,15 @@
 
   .swiper-button-prev_publication,
   .swiper-button-next_publication {
-    position: relative;
     flex-shrink: 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
     background-color: var(--grey_66);
-    cursor: pointer;
-    transition: background-color .2s;
   }
 
   .swiper-button-prev_publication::after,
   .swiper-button-next_publication::after {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    content: "";
-    width: 8px;
-    height: 8px;
-    border-width: 1px;
-    border-style: solid;
     border-color: transparent transparent var(--text_light) var(--text_light);
   }
 
-  .swiper-button-prev_publication::after {
-    transform: rotate(45deg);
-  }
-
-  .swiper-button-next_publication::after {
-    transform: rotate(-135deg);
-  }
 
   .swiper-button-prev_publication:focus,
   .swiper-button-next_publication:focus,

@@ -270,6 +270,10 @@
     outline: none;
     background: var(--background_btn);
     border: 2px solid var(--background_btn);
+  }
+
+  .next-btn,
+  .prev-btn {
     cursor: pointer;
   }
 
@@ -355,6 +359,11 @@
     bottom: 12px;
     height: 2px;
     transform: none;
+  }
+  
+  .swiper-button-prev_projects:hover,
+  .swiper-button-next_projects:hover {
+    background-color: var(--background_btn_hover);
   }
 
   /*modal*/

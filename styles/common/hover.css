@@ -129,6 +129,10 @@
 }
 
 @media all and (min-width: 1224px) {
+  .link {
+    transition: filter .2s;
+  }
+  
   .link:hover {
     filter: invert(30%) sepia(35%) saturate(1393%) hue-rotate(234deg) brightness(98%) contrast(91%);
   }

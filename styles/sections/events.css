@@ -17,7 +17,7 @@
   border: 1px solid var(--grey_CA);
   background-position: top left;
   background-repeat: no-repeat;
-  background-size: 290px 200px;
+  background-size: 100% 200px;
 }
 
 .swiper-wrapper.events__wrapper {

@@ -124,10 +124,18 @@
   background-size: 40px 40px;
   background-position: center;
   background-repeat: no-repeat;
+  transition: filter .2s, transform .2s;
 }
 
 .contacts__item:not(:last-child) {
   margin-right: 20px;
+}
+
+.contacts__link:hover,
+.contacts__link:active,
+.contacts__link:focus {
+  filter: drop-shadow(3px 3px 6px var(--background_btn));
+  transform: scale(1.1);
 }
 
 .whatsapp {

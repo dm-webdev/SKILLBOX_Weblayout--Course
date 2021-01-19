@@ -112,11 +112,6 @@
 .tooltip__btn:hover.tooltip__btn::before,
 .tooltip__btn:focus.tooltip__btn::after,
 .tooltip__btn:focus.tooltip__btn::before {
-
-
-
-
-
   background-color: var(--text_light);
 }
 
@@ -169,11 +164,7 @@
 .swiper-button-next_projects {
   position: absolute;
   top: calc(50% - 18px);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
   background-color: var(--grey_CE);
-  cursor: pointer;
   transition: background-color .2s;
 }
 
@@ -187,25 +178,7 @@
 
 .swiper-button-prev_projects::after,
 .swiper-button-next_projects::after {
-  position: absolute;
-  top: 11px;
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-width: 1px;
-  border-style: solid;
   border-color: transparent transparent var(--background_dark) var(--background_dark);
-}
-
-
-.swiper-button-prev_projects::after {
-  left: 13px;
-  transform: rotate(45deg);
-}
-
-.swiper-button-next_projects::after {
-  right: 13px;
-  transform: rotate(-135deg);
 }
 
 .swiper-button-prev_projects:focus,
@@ -213,11 +186,6 @@
 .swiper-button-prev_projects:active,
 .swiper-button-next_projects:active {
   background-color: var(--background_btn);
-}
-
-.swiper-button-prev_projects:hover,
-.swiper-button-next_projects:hover {
-  background-color: var(--background_btn_hover);
 }
 
 .projects__img {

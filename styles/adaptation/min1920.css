@@ -66,6 +66,13 @@
   .modal__wrap {
     max-width: 48%;
   }
+
+  /*contacts*/
+
+  .contacts__heading,
+  .contacts__container {
+    padding-left: calc((100vw - 1920px) / 2 + 158px);
+  }
 }
 
 @media screen and (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2),

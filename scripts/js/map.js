@@ -32,4 +32,10 @@ function getYaMap() {
     }
   );
   myMap.geoObjects.add(myPlacemark);
+
+  if (window.innerWidth < 1224) {
+    myMap.behaviors.disable('scrollZoom');
+    myMap.behaviors.disable('drag');
+  }
+
 }
